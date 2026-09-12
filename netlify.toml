@@ -1,0 +1,4 @@
+[build]
+  # Die fertige Website liegt in site/ und ist bereits im Repo committet.
+  # Es ist kein Build-Schritt noetig - Netlify serviert site/ direkt als Wurzel.
+  publish = "site"
