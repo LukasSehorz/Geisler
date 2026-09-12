@@ -1,0 +1,18 @@
+# Python environment & caches
+_tools/.venv/
+__pycache__/
+*.pyc
+_tools/upload_cache.json
+_tools/map/cache/
+
+# Working material (large / not needed to run the site)
+_shots/
+_review/
+_research/
+_gen/
+*.tmp.*
+
+# OS / editor
+.DS_Store
+.idea/
+.vscode/

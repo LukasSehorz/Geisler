@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+{% import 'partials/macros.html' as m %}
+{% block title %}{{ c.services_overview.seo_title }}{% endblock %}
+{% block description %}{{ c.services_overview.seo_description }}{% endblock %}
+{% block body_class %}has-hero page-overview page-overview--services{% endblock %}
+{% block styles %}<link rel="stylesheet" href="{{ asset('css/pages/overview.css') }}">{% endblock %}
+
+{% block content %}
+{% set O = c.services_overview %}
+{% set HM = media.pages.services_overview %}
+{% set split_after = 6 %}
+
+{# ================================================================ HERO #}
+{{ m.page_hero(HM.src, O.title_html, O.lead, label=O.label, crumbs=[('Home', 'index.html')], focus=HM.focus, alt=HM.alt) }}
+
+{# ================================================================ INTRO + INDEX #}
+<section class="ov-intro container" aria-labelledby="ov-index-title">
+  <div class="ov-intro__text">
+    <span class="eyebrow" data-fade>{{ services|length }} Leistungen aus einer Hand</span>
+    <p class="p-lg" data-fade>{{ O.excerpt }}</p>
+    <a class="cta" href="{{ url('kontakt.html') }}" data-fade>Beratung anfragen {{ m.icon('arrow') }}</a>
+  </div>
+  <nav class="ov-index" aria-labelledby="ov-index-title">
+    <h2 class="eyebrow ov-index__title" id="ov-index-title" data-fade>Direkt zur Leistung</h2>
+    <ol class="ov-index__list" data-fade-group style="--rows: {{ ((services|length + 1) // 2) }}">
+      {% for s in services %}
+      <li><a class="ov-index__link" href="#{{ s.slug }}"><span class="ov-index__num">{{ '%02d'|format(loop.index) }}</span><span class="ov-index__name">{{ s.nav_name }}</span></a></li>
+      {% endfor %}
+    </ol>
+  </nav>
+</section>
+
+{# ================================================================ LIST #}
+<section class="ov-list container" aria-label="Alle Dienstleistungen">
+  <div class="featured">
+    {% for s in services %}
+    {% set M = s.media %}
+    {% set second = M.images[0] if M.images[0].src != M.tile.src else M.images[1] %}
+    <article class="featured__item ov-row" id="{{ s.slug }}">
+      <a class="it{% if loop.index is even %} it--reversed{% endif %}" href="{{ url(s.url) }}" data-cta-trigger="main" data-cta-label="{{ s.name }} entdecken">
+        <div class="it__media">
+          {% for im in [M.tile, second] %}
+          <div class="images" data-reveal-img>
+            {{ pic(im.src, alt=im.alt, ratio='505/702', focus=im.focus, sizes='(max-width: 1000px) 50vw, 27vw', widths=(480, 800, 1200)) }}
+          </div>
+          {% endfor %}
+        </div>
+        <div class="it__content">
+          <div class="paragraph-spaced">
+            {{ m.heading_label('%02d'|format(loop.index), s.name, 'h2') }}
+            <div class="paragraph-spaced__bottom">
+              <p class="p-md">{{ s.teaser or s.lead }}</p>
+              <ul class="chips" aria-label="Schwerpunkte">
+                {% for f in s.features[:3] %}<li>{{ f.title }}</li>{% endfor %}
+              </ul>
+              <span class="ov-row__more">{{ m.more('Mehr erfahren') }}</span>
+            </div>
+          </div>
+        </div>
+      </a>
+    </article>
+
+    {% if loop.index == split_after %}
+    {# ---------------------------------------------------------- statement band #}
+    <aside class="featured__item ov-statement" aria-label="Unser Anspruch">
+      <span class="eyebrow" data-fade>Unser Anspruch</span>
+      <p class="heading ov-statement__text" data-scrub-reveal>Fachgerecht, sauber und <em>termingerecht</em></p>
+      <p class="p-lg ov-statement__sub" data-fade>Vom ersten Entwurf bis zur letzten Pflanze – und in den Jahren danach.</p>
+    </aside>
+    {% endif %}
+    {% endfor %}
+  </div>
+</section>
+
+{# ================================================================ WISH #}
+{% set W = c.home.wish %}
+<section class="wish ov-wish">
+  <h2 class="title" data-scrub-reveal>{{ W.title_html|safe }}</h2>
+  <div class="wish__text" data-fade>
+    {% for p in W.paragraphs %}<p class="p-lg">{{ p }}</p>{% endfor %}
+    <a class="cta cta--filled" href="{{ url('kontakt.html') }}">{{ W.cta }} {{ m.icon('arrow') }}</a>
+    <a class="link" href="{{ company.phone_href }}">Oder direkt anrufen: {{ company.phone }}</a>
+  </div>
+</section>
+
+{# ================================================================ CROSS LINK: SMART GARDEN #}
+<nav class="ov-cross container" aria-label="Smart Garden">
+  <a class="ov-cross__head" href="{{ url('smart-garden.html') }}">
+    <span class="eyebrow">Weiter entdecken</span>
+    <span class="title-medium">{{ c.home.smart.title_html|safe }}</span>
+  </a>
+  <ul class="ov-cross__links">
+    {% for sp in smart_pages %}
+    <li><a class="ov-cross__link" href="{{ url(sp.url) }}"><span class="ov-cross__num">{{ '%02d'|format(loop.index) }}</span><span class="title-small">{{ sp.nav_name or sp.name }}</span>{{ m.icon('arrow') }}</a></li>
+    {% endfor %}
+  </ul>
+  <a class="cta" href="{{ url('smart-garden.html') }}">{{ c.home.smart.cta }} {{ m.icon('arrow') }}</a>
+</nav>
+{% endblock %}

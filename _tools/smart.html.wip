@@ -1,0 +1,228 @@
+{% extends 'base.html' %}
+{% import 'partials/macros.html' as m %}
+{% block title %}{{ s.seo_title }}{% endblock %}
+{% block description %}{{ s.seo_description }}{% endblock %}
+{% block body_class %}has-hero page-smart page-smart--{{ s.slug }}{% endblock %}
+{% block styles %}<link rel="stylesheet" href="{{ asset('css/pages/smart.css') }}">{% endblock %}
+
+{% block content %}
+{% set M = s.media %}
+{% set is_light = s.slug == 'lichtdesign' %}
+{% set total = smart_all|length %}
+{% set ns = namespace(idx=1) %}
+{% for x in smart_all %}{% if x.slug == s.slug %}{% set ns.idx = loop.index %}{% endif %}{% endfor %}
+
+{# image plan: portrait tile -> hero frame, wide hero -> atmospheric band, remaining images -> story #}
+{% if is_light %}
+  {% set band_img = M.tile %}
+  {% set band_focus = [0.5, 0.5] %}
+  {% set story = M.images[:1] %}
+{% else %}
+  {% set band_img = M.hero %}
+  {% set band_focus = M.hero.focus %}
+  {% set story = [] %}
+  {% for im in M.images %}{% if im.src != M.tile.src %}{% set story = story + [im] %}{% endif %}{% endfor %}
+  {% if not story %}{% set story = [M.feature] %}{% endif %}
+{% endif %}
+{% set excerpt_parts = s.excerpt.split('. ', 1) %}
+
+{# ================================================================ HERO #}
+<section class="sg-hero" data-page-hero aria-labelledby="sg-title">
+  <div class="sg-hero__panel is-dark">
+    <svg class="sg-rings sg-hero__rings" viewBox="0 0 600 600" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1">
+      <circle cx="300" cy="300" r="80"/><circle cx="300" cy="300" r="150"/><circle cx="300" cy="300" r="220"/><circle cx="300" cy="300" r="290" stroke-dasharray="2 7"/>
+    </g></svg>
+
+    <nav class="sg-hero__crumb" aria-label="Brotkrumen" data-hero-fade>
+      <a href="{{ url('smart-garden.html') }}">Smart Garden</a><span aria-hidden="true">/</span><span aria-current="page">{{ s.name }}</span>
+    </nav>
+
+    <div class="sg-hero__main">
+      <h1 class="title sg-hero__title" id="sg-title" data-text-reveal>{{ s.title_html|safe }}</h1>
+      <p class="sg-hero__claim" data-hero-fade>{{ s.claim_html|safe }}</p>
+      <p class="p-lg sg-hero__lead" data-hero-fade>{{ s.lead }}</p>
+      <div class="sg-hero__actions" data-hero-fade>
+        <a class="cta cta--filled cta--bigger" href="{{ url('kontakt.html') }}">Beratung anfragen {{ m.icon('arrow') }}</a>
+        <a class="cta cta--light cta--bigger" href="#ablauf">So funktioniert es</a>
+      </div>
+    </div>
+
+    <nav class="sg-system" aria-label="Smart-Garden-Lösungen" data-hero-fade>
+      {% for x in smart_all %}
+      <a class="sg-system__item{% if x.slug == s.slug %} is-current{% endif %}" href="{{ url(x.url) }}"{% if x.slug == s.slug %} aria-current="page"{% endif %}>
+        <span class="sg-system__num">{{ '%02d'|format(loop.index) }}</span>
+        <span class="sg-system__name">{{ x.nav_name or x.name }}</span>
+        <i class="sg-system__bar" aria-hidden="true"></i>
+      </a>
+      {% endfor %}
+    </nav>
+  </div>
+
+  <div class="sg-hero__frame">
+    <div class="page-hero__media sg-hero__media">
+      {% if is_light %}
+      <video class="sg-video" autoplay muted loop playsinline preload="auto" data-autoplay data-sg-video poster="{{ asset('video/smart-portrait-poster.jpg') }}" aria-hidden="true">
+        <source src="{{ asset('video/smart-portrait.mp4') }}" type="video/mp4">
+      </video>
+      {% else %}
+      <picture>
+        {{ source(M.tile.src, '(max-width: 700px)', ratio='4/5', focus=M.tile.focus, widths=(600, 900, 1200)) }}
+        {{ source(M.tile.src, '(max-width: 1000px)', ratio='4/3', focus=[M.tile.focus[0], 0.55], widths=(800, 1200, 1600)) }}
+        {{ pic(M.tile.src, alt=M.tile.alt, ratio='5/6', focus=M.tile.focus, sizes='(max-width: 1000px) 100vw, 54vw', priority=True, widths=(900, 1300, 1800)) }}
+      </picture>
+      {% endif %}
+    </div>
+    <span class="sg-corners" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+    <div class="sg-chip" data-hero-fade>
+      <span class="sg-chip__dot" aria-hidden="true"></span>
+      <span>{{ s.label }} · {{ '%02d'|format(ns.idx) }} / {{ '%02d'|format(total) }}</span>
+      {% if is_light %}
+      <button class="sg-chip__toggle" type="button" data-sg-video-toggle aria-label="Video pausieren" aria-pressed="false">
+        <svg class="sg-icon-pause" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2v8M8.5 2v8" stroke="currentColor" stroke-width="1.4" fill="none"/></svg>
+        <svg class="sg-icon-play" viewBox="0 0 12 12" aria-hidden="true"><path d="M3.5 2l6 4-6 4z" fill="currentColor"/></svg>
+      </button>
+      {% endif %}
+    </div>
+  </div>
+</section>
+
+{# ================================================================ BENEFITS #}
+<section class="sg-benefits container" aria-labelledby="sg-benefits-title">
+  <header class="sg-head">
+    <div class="sg-head__title">
+      <span class="sg-eyebrow" data-fade><i aria-hidden="true"></i>Vorteile</span>
+      <h2 class="heading" id="sg-benefits-title" data-scrub-reveal>Ihre Vorteile auf einen <em>Blick</em></h2>
+    </div>
+    <p class="p-lg sg-head__text" data-fade>{{ s.teaser }}</p>
+  </header>
+  <ul class="sg-benefits__grid sg-benefits__grid--{{ s.benefits|length }}" data-fade-group>
+    {% for b in s.benefits %}
+    <li>
+      <div class="sg-benefit">
+        <div class="sg-benefit__top">
+          <span class="sg-benefit__num">{{ '%02d'|format(loop.index) }}</span>
+          <span class="sg-benefit__check" aria-hidden="true"><svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M3.5 8.4l3 3 6-6.8"/></svg></span>
+        </div>
+        <p class="sg-benefit__text">{{ b }}</p>
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+{# ================================================================ STORY #}
+<section class="sg-story{% if story|length > 1 %} sg-story--duo{% endif %}" aria-label="{{ s.name }} im Überblick">
+  <div class="sg-story__media">
+    <div class="sg-story__frame" data-reveal-img>
+      <div class="sg-story__parallax" data-parallax="7">
+        {{ pic(story[0].src, alt=story[0].alt, ratio='4/5', focus=story[0].focus, sizes='(max-width: 1000px) 100vw, 44vw', widths=(700, 1100, 1500)) }}
+      </div>
+    </div>
+  </div>
+  <div class="sg-story__content">
+    <span class="sg-eyebrow" data-fade><i aria-hidden="true"></i>{{ s.label }} · {{ s.name }}</span>
+    {% if excerpt_parts|length > 1 %}
+    <p class="sg-story__quote" data-fade>{{ excerpt_parts[0] }}.</p>
+    <p class="p-lg sg-story__text" data-fade>{{ excerpt_parts[1] }}</p>
+    {% else %}
+    <p class="p-lg sg-story__text" data-fade>{{ s.excerpt }}</p>
+    {% endif %}
+    <a class="link-more sg-story__link" href="{{ url('kontakt.html') }}" data-fade>Persönlich beraten lassen {{ m.icon('arrow') }}</a>
+  </div>
+</section>
+
+{# ================================================================ STEPS #}
+<section class="sg-steps" id="ablauf" aria-labelledby="sg-steps-title" data-sg-steps>
+  <header class="sg-head sg-head--steps">
+    <div class="sg-head__title">
+      <span class="sg-eyebrow" data-fade><i aria-hidden="true"></i>So funktioniert es</span>
+      <h2 class="heading" id="sg-steps-title" data-scrub-reveal>{{ s.features_title_html|safe }}</h2>
+    </div>
+    <p class="sg-steps__count" data-fade aria-hidden="true"><span data-sg-step-count>01</span> / {{ '%02d'|format(s.features|length) }}</p>
+  </header>
+  <ol class="sg-steps__list" style="--n: {{ s.features|length }}">
+    <li class="sg-steps__track" aria-hidden="true"><i class="sg-steps__fill"></i></li>
+    {% for f in s.features %}
+    <li class="sg-step" data-sg-step>
+      <span class="sg-step__node"><span>{{ '%02d'|format(loop.index) }}</span></span>
+      <div class="sg-step__body">
+        <h3 class="sg-step__title">{{ f.title }}</h3>
+        <p class="sg-step__text">{{ f.text }}</p>
+      </div>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+
+{# ================================================================ ATMOSPHERE BAND #}
+<section class="sg-band is-dark" aria-labelledby="sg-band-title">
+  <div class="sg-band__media">
+    <div class="sg-band__parallax" data-parallax="8">
+      <picture>
+        {{ source(band_img.src, '(max-width: 700px)', ratio='3/4', focus=band_focus, widths=(600, 900, 1200)) }}
+        {{ pic(band_img.src, alt=band_img.alt, ratio='16/9', focus=band_focus, sizes='100vw', widths=(1000, 1600, 2200)) }}
+      </picture>
+    </div>
+  </div>
+  <div class="sg-band__inner">
+    <span class="sg-eyebrow sg-eyebrow--light" data-fade><i aria-hidden="true"></i>So gehen wir vor</span>
+    <h2 class="sg-band__statement" id="sg-band-title" data-fade>{{ s.process_note }}</h2>
+    <div class="sg-band__actions" data-fade>
+      <a class="cta cta--light cta--bigger" href="{{ url('kontakt.html') }}">Termin vereinbaren {{ m.icon('arrow') }}</a>
+    </div>
+  </div>
+</section>
+
+{# ================================================================ MORE SMART GARDEN #}
+<section class="sg-more container" aria-labelledby="sg-more-title">
+  <header class="sg-head">
+    <div class="sg-head__title">
+      <span class="sg-eyebrow" data-fade><i aria-hidden="true"></i>Smart Garden</span>
+      <h2 class="heading" id="sg-more-title" data-scrub-reveal>Weitere Smart-Garden-<em>Lösungen</em></h2>
+    </div>
+    <a class="cta sg-more__all" href="{{ url('smart-garden.html') }}" data-fade>Alle Lösungen {{ m.icon('arrow') }}</a>
+  </header>
+  <ul class="sg-more__grid" data-fade-group>
+    {% for x in smart_all %}{% if x.slug != s.slug %}
+    <li>
+      <a class="sg-card" href="{{ url(x.url) }}" data-cta-trigger="main" data-cta-label="{{ x.name }} entdecken">
+        <div class="sg-card__media">
+          {{ pic(x.media.hero.src, alt=x.media.hero.alt, ratio='16/10', focus=x.media.hero.focus, sizes='(max-width: 800px) 100vw, 48vw', widths=(700, 1100, 1500)) }}
+          <span class="sg-card__index">{{ '%02d'|format(loop.index) }} / {{ '%02d'|format(total) }}</span>
+        </div>
+        <div class="sg-card__body">
+          <div class="sg-card__text">
+            <h3 class="title-medium">{{ x.name }}</h3>
+            <p class="p-md">{{ x.teaser }}</p>
+          </div>
+          <span class="sg-card__arrow" aria-hidden="true">{{ m.icon('arrow') }}</span>
+        </div>
+      </a>
+    </li>
+    {% endif %}{% endfor %}
+  </ul>
+</section>
+
+{# ================================================================ CTA #}
+<section class="sg-cta is-dark" aria-labelledby="sg-cta-title">
+  <svg class="sg-rings sg-cta__rings" viewBox="0 0 600 600" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1">
+    <circle cx="300" cy="300" r="80"/><circle cx="300" cy="300" r="150"/><circle cx="300" cy="300" r="220"/><circle cx="300" cy="300" r="290" stroke-dasharray="2 7"/>
+  </g></svg>
+  <div class="sg-cta__title">
+    <span class="sg-eyebrow sg-eyebrow--light" data-fade><i aria-hidden="true"></i>Beratung</span>
+    <h2 class="title" id="sg-cta-title" data-scrub-reveal>{{ s.cta_title_html|safe }}</h2>
+  </div>
+  <div class="sg-cta__text" data-fade>
+    <p class="p-lg">{{ s.cta_text }}</p>
+    <div class="sg-cta__actions">
+      <a class="cta cta--filled cta--bigger" href="{{ url('kontakt.html') }}">Kontakt aufnehmen {{ m.icon('arrow') }}</a>
+    </div>
+    <ul class="sg-cta__contact">
+      <li><a href="{{ company.phone_href }}">{{ m.icon('phone') }}<span>{{ company.phone }}</span></a></li>
+      <li><a href="mailto:{{ company.email }}">{{ m.icon('mail') }}<span>{{ company.email }}</span></a></li>
+    </ul>
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}<script src="{{ asset('js/smart.js') }}"></script>{% endblock %}

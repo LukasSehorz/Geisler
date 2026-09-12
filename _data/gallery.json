@@ -1,0 +1,2592 @@
+{
+  "images": [
+    {
+      "file": "dienstleistungen__i0b4edef148c1fb8d.jpg",
+      "path": "_research/geissler/img/dienstleistungen__i0b4edef148c1fb8d.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "bepflanzungen",
+      "services": [
+        "bepflanzungen",
+        "garten-pflege"
+      ],
+      "quality": 4,
+      "width": 3420,
+      "height": 2279,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.5,
+        "y": 0.6
+      },
+      "portrait_ok": true,
+      "alt": "Schattenbeet mit Funkien, Buchskugel und Frauenmantel vor hellem Rankgitter-Sichtschutz",
+      "tags": [
+        "Schattenbeet",
+        "Funkien",
+        "Staudenbeet",
+        "Buchs"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "dienstleistungen__i0f161061882f6885.jpg",
+      "path": "_research/geissler/img/dienstleistungen__i0f161061882f6885.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "teichanlagen",
+      "services": [
+        "teichanlagen-wasserelemente",
+        "poolbau"
+      ],
+      "quality": 2,
+      "width": 564,
+      "height": 376,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.5,
+        "y": 0.6
+      },
+      "portrait_ok": false,
+      "alt": "Naturnaher Schwimmteich mit Kieselufer, Findlingen und Schilf in hügeliger Landschaft",
+      "tags": [
+        "Schwimmteich",
+        "Naturteich",
+        "Findlinge"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "dienstleistungen__i245f443852f7d0bc.jpg",
+      "path": "_research/geissler/img/dienstleistungen__i245f443852f7d0bc.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "gaerten",
+      "services": [
+        "rasen",
+        "bepflanzungen",
+        "beton-natursteinbelaege"
+      ],
+      "quality": 3,
+      "width": 600,
+      "height": 400,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.5,
+        "y": 0.6
+      },
+      "portrait_ok": false,
+      "alt": "Gepflegter Rasen mit geschwungenem Kiesbeet, Ziergräsern und Terrasse aus Betonplatten",
+      "tags": [
+        "Rasen",
+        "Kiesbeet",
+        "Terrasse",
+        "Hausgarten"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "dienstleistungen__i395baf205ac9e914.jpg",
+      "path": "_research/geissler/img/dienstleistungen__i395baf205ac9e914.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "treppen",
+      "services": [
+        "treppenanlagen"
+      ],
+      "quality": 3,
+      "width": 587,
+      "height": 391,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.45,
+        "y": 0.55
+      },
+      "portrait_ok": true,
+      "alt": "Granit-Blockstufentreppe mit Randsteinen, gesäumt von Stauden und Findlingen",
+      "tags": [
+        "Blockstufen",
+        "Granit",
+        "Gartentreppe"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "dienstleistungen__i4e613f532fceda71.jpg",
+      "path": "_research/geissler/img/dienstleistungen__i4e613f532fceda71.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "bepflanzungen",
+      "services": [
+        "bepflanzungen",
+        "garten-pflege"
+      ],
+      "quality": 4,
+      "width": 993,
+      "height": 662,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.55,
+        "y": 0.6
+      },
+      "portrait_ok": true,
+      "alt": "Schattiger Gartenweg mit Trittplatten zwischen weißen und pinken Hortensien",
+      "tags": [
+        "Hortensien",
+        "Trittplatten",
+        "Schattengarten"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "dienstleistungen__i97caee3182645afb.jpg",
+      "path": "_research/geissler/img/dienstleistungen__i97caee3182645afb.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": false,
+      "category": "baustelle",
+      "services": [
+        "bagger-erdarbeiten"
+      ],
+      "quality": 2,
+      "width": 2048,
+      "height": 1366,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.35,
+        "y": 0.6
+      },
+      "portrait_ok": false,
+      "alt": "Minibagger beim Roden und Freimachen eines verwilderten Hanggrundstücks",
+      "tags": [
+        "Minibagger",
+        "Erdarbeiten",
+        "Rodung"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "dienstleistungen__ia7d915c82f272bf2.jpg",
+      "path": "_research/geissler/img/dienstleistungen__ia7d915c82f272bf2.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": false,
+      "category": "baustelle",
+      "services": [
+        "sichtschutz-zaeune"
+      ],
+      "quality": 2,
+      "width": 3379,
+      "height": 2253,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.5,
+        "y": 0.55
+      },
+      "portrait_ok": false,
+      "alt": "Mitarbeiter befüllen eine Gabionenwand mit Holztor auf einer Baustelle",
+      "tags": [
+        "Gabionen",
+        "Montage",
+        "Sichtschutz"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "dienstleistungen__ib7091c400d9892b3.jpg",
+      "path": "_research/geissler/img/dienstleistungen__ib7091c400d9892b3.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "baustelle",
+      "services": [
+        "beton-natursteinbelaege",
+        "bagger-erdarbeiten",
+        "hangbefestigung-mauerbau"
+      ],
+      "quality": 3,
+      "width": 3264,
+      "height": 2177,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.6,
+        "y": 0.55
+      },
+      "portrait_ok": false,
+      "alt": "Pflasterarbeiten an einer Hofeinfahrt mit Natursteinmauer, Bagger und Geißler-Lkw",
+      "tags": [
+        "Pflasterarbeiten",
+        "Baustelle",
+        "Bagger",
+        "Natursteinmauer"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "dienstleistungen__id9c52203c8cb7752.jpg",
+      "path": "_research/geissler/img/dienstleistungen__id9c52203c8cb7752.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": false,
+      "category": "baustelle",
+      "services": [
+        "hangbefestigung-mauerbau",
+        "bagger-erdarbeiten"
+      ],
+      "quality": 2,
+      "width": 3264,
+      "height": 2177,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.6,
+        "y": 0.5
+      },
+      "portrait_ok": false,
+      "alt": "Bau einer Trockenmauer aus Naturstein, im Hintergrund ein Bagger",
+      "tags": [
+        "Trockenmauer",
+        "Baustelle",
+        "Naturstein"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "dienstleistungen__iec261e977009dd4a.jpg",
+      "path": "_research/geissler/img/dienstleistungen__iec261e977009dd4a.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": false,
+      "category": "baustelle",
+      "services": [
+        "dachbegruenung-regenwassernutzung"
+      ],
+      "quality": 3,
+      "width": 3264,
+      "height": 2177,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.5,
+        "y": 0.55
+      },
+      "portrait_ok": false,
+      "alt": "Mitarbeiter verlegt Schutzvlies für eine extensive Dachbegrünung auf einem Flachdach",
+      "tags": [
+        "Dachbegrünung",
+        "Schutzvlies",
+        "Flachdach"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_belagsarbeiten__i064ba3186cf71b74.jpg",
+      "path": "_research/geissler/img/galerie_belagsarbeiten__i064ba3186cf71b74.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "belagsarbeiten",
+      "services": [
+        "beton-natursteinbelaege"
+      ],
+      "quality": 3,
+      "width": 600,
+      "height": 450,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "portrait_ok": true,
+      "alt": "Rundes Kreispflaster aus gelbem Granit-Kleinpflaster vor einer Mauer",
+      "tags": [
+        "Kreispflaster",
+        "Granit",
+        "Rondell"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_belagsarbeiten__i0e81325bc915eda8.jpg",
+      "path": "_research/geissler/img/galerie_belagsarbeiten__i0e81325bc915eda8.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "belagsarbeiten",
+      "services": [
+        "beton-natursteinbelaege",
+        "hangbefestigung-mauerbau",
+        "bepflanzungen"
+      ],
+      "quality": 3,
+      "width": 3264,
+      "height": 2448,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.55,
+        "y": 0.6
+      },
+      "portrait_ok": false,
+      "alt": "Gepflasterte Zufahrt zum Carport mit Natursteinmauer und frisch bepflanztem Vorgartenbeet",
+      "tags": [
+        "Einfahrt",
+        "Carport",
+        "Pflaster",
+        "Natursteinmauer"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_belagsarbeiten__i165b62483b5aa3b0.jpg",
+      "path": "_research/geissler/img/galerie_belagsarbeiten__i165b62483b5aa3b0.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "belagsarbeiten",
+      "services": [
+        "beton-natursteinbelaege",
+        "hangbefestigung-mauerbau",
+        "rasen"
+      ],
+      "quality": 5,
+      "width": 4032,
+      "height": 3024,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.42,
+        "y": 0.55
+      },
+      "portrait_ok": true,
+      "alt": "Langer Weg aus hellgrauem Betonpflaster mit dunklem Zierband entlang einer Palisadenwand",
+      "tags": [
+        "Gehweg",
+        "Betonpflaster",
+        "Palisaden",
+        "Sommer"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_belagsarbeiten__i1d7c1f1282f0c6be.jpg",
+      "path": "_research/geissler/img/galerie_belagsarbeiten__i1d7c1f1282f0c6be.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "baustelle",
+      "services": [
+        "beton-natursteinbelaege",
+        "bepflanzungen"
+      ],
+      "quality": 3,
+      "width": 2448,
+      "height": 3264,
+      "orientation": "portrait",
+      "focus": {
+        "x": 0.5,
+        "y": 0.55
+      },
+      "portrait_ok": true,
+      "alt": "Gartenumbau in Arbeit: Holzdeck, Plattenterrasse und vorbereitetes Pflanzbeet",
+      "tags": [
+        "Gartenumbau",
+        "Holzdeck",
+        "Terrasse",
+        "in Arbeit"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_belagsarbeiten__i3a520d91516ca788.jpg",
+      "path": "_research/geissler/img/galerie_belagsarbeiten__i3a520d91516ca788.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "belagsarbeiten",
+      "services": [
+        "beton-natursteinbelaege",
+        "rasen",
+        "bepflanzungen"
+      ],
+      "quality": 3,
+      "width": 600,
+      "height": 450,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.6,
+        "y": 0.65
+      },
+      "portrait_ok": true,
+      "alt": "Runder Sitzplatz aus Kleinpflaster mit blauen Bistromöbeln am Rasen",
+      "tags": [
+        "Sitzplatz",
+        "Kleinpflaster",
+        "Rondell"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_belagsarbeiten__i40591c33426a7660.jpg",
+      "path": "_research/geissler/img/galerie_belagsarbeiten__i40591c33426a7660.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "belagsarbeiten",
+      "services": [
+        "beton-natursteinbelaege",
+        "sichtschutz-zaeune",
+        "bepflanzungen"
+      ],
+      "quality": 3,
+      "width": 4160,
+      "height": 2336,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.6,
+        "y": 0.65
+      },
+      "portrait_ok": false,
+      "alt": "Feuerstelle aus Granitpalisaden im Kreispflaster mit Loungesesseln, Stelen und Sonnensegel",
+      "tags": [
+        "Feuerstelle",
+        "Kreispflaster",
+        "Stelen",
+        "Sonnensegel"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_belagsarbeiten__i637bbf9020cd919f.jpg",
+      "path": "_research/geissler/img/galerie_belagsarbeiten__i637bbf9020cd919f.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "belagsarbeiten",
+      "services": [
+        "beton-natursteinbelaege"
+      ],
+      "quality": 3,
+      "width": 2048,
+      "height": 1536,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.4,
+        "y": 0.55
+      },
+      "portrait_ok": false,
+      "alt": "Terrasse aus Holzdielen, eingefasst von nuanciertem Betonpflaster und Kiesfläche",
+      "tags": [
+        "Holzterrasse",
+        "Pflaster",
+        "Terrasse"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_belagsarbeiten__ic06a0c5588cbb73d.jpg",
+      "path": "_research/geissler/img/galerie_belagsarbeiten__ic06a0c5588cbb73d.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "gaerten",
+      "services": [
+        "sichtschutz-zaeune",
+        "beton-natursteinbelaege",
+        "bepflanzungen"
+      ],
+      "quality": 4,
+      "width": 4160,
+      "height": 2336,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.4,
+        "y": 0.55
+      },
+      "portrait_ok": false,
+      "alt": "Garten mit Sonnensegel, Gabionenwand, Feuerstelle und Terrasse aus großformatigen Platten",
+      "tags": [
+        "Gabionen",
+        "Sonnensegel",
+        "Feuerstelle",
+        "Terrasse"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_belagsarbeiten__iee35c77547a572f4.jpg",
+      "path": "_research/geissler/img/galerie_belagsarbeiten__iee35c77547a572f4.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "belagsarbeiten",
+      "services": [
+        "beton-natursteinbelaege",
+        "bepflanzungen"
+      ],
+      "quality": 3,
+      "width": 4194,
+      "height": 2889,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.5,
+        "y": 0.65
+      },
+      "portrait_ok": false,
+      "alt": "Großzügige gepflasterte Hoffläche vor Einfamilienhaus mit Pergola und Gabione",
+      "tags": [
+        "Hofpflaster",
+        "Einfahrt",
+        "Pergola"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_belagsarbeiten__ifc7c111135aae000.jpg",
+      "path": "_research/geissler/img/galerie_belagsarbeiten__ifc7c111135aae000.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": false,
+      "category": "belagsarbeiten",
+      "services": [
+        "beton-natursteinbelaege"
+      ],
+      "quality": 2,
+      "width": 600,
+      "height": 401,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.5,
+        "y": 0.6
+      },
+      "portrait_ok": true,
+      "alt": "Gepflasterte Garagenzufahrt aus mehrfarbigem Betonstein neben einer Hecke",
+      "tags": [
+        "Einfahrt",
+        "Betonpflaster"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_bepflanzungen__i11c082f1132de113.jpg",
+      "path": "_research/geissler/img/galerie_bepflanzungen__i11c082f1132de113.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "bepflanzungen",
+      "services": [
+        "bepflanzungen",
+        "treppenanlagen"
+      ],
+      "quality": 4,
+      "width": 4032,
+      "height": 3024,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.62,
+        "y": 0.6
+      },
+      "portrait_ok": true,
+      "alt": "Hauseingang mit weißen Tulpen, Buchskegeln und Granitstufen im Vorgarten",
+      "tags": [
+        "Vorgarten",
+        "Tulpen",
+        "Hauseingang",
+        "Buchs"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_bepflanzungen__i14e14c9835b52a25.jpg",
+      "path": "_research/geissler/img/galerie_bepflanzungen__i14e14c9835b52a25.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "gaerten",
+      "services": [
+        "bepflanzungen",
+        "beton-natursteinbelaege",
+        "sichtschutz-zaeune"
+      ],
+      "quality": 3,
+      "width": 4160,
+      "height": 2336,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.5,
+        "y": 0.55
+      },
+      "portrait_ok": false,
+      "alt": "Neu angelegter Garten mit Sonnensegeln, Feuerstelle, Gabionen und jungen Gräserbeeten",
+      "tags": [
+        "Sonnensegel",
+        "Feuerstelle",
+        "Gabionen",
+        "Neuanlage"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_bepflanzungen__i1f0405c633a45b1d.jpg",
+      "path": "_research/geissler/img/galerie_bepflanzungen__i1f0405c633a45b1d.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "gaerten",
+      "services": [
+        "rasen",
+        "bepflanzungen",
+        "hangbefestigung-mauerbau",
+        "garten-pflege"
+      ],
+      "quality": 5,
+      "width": 4032,
+      "height": 3024,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.55,
+        "y": 0.55
+      },
+      "portrait_ok": true,
+      "alt": "Sattgrüner Rasen mit Eisenkraut und Hochbeeten aus Naturstein im Abendlicht",
+      "tags": [
+        "Rasen",
+        "Eisenkraut",
+        "Naturstein",
+        "Abendlicht"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_bepflanzungen__i266c90fcb0ebdce0.jpg",
+      "path": "_research/geissler/img/galerie_bepflanzungen__i266c90fcb0ebdce0.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "bepflanzungen",
+      "services": [
+        "bepflanzungen",
+        "beton-natursteinbelaege"
+      ],
+      "quality": 4,
+      "width": 4032,
+      "height": 3024,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.4,
+        "y": 0.6
+      },
+      "portrait_ok": true,
+      "alt": "Außenanlage eines Bürogebäudes mit Cortenstahlwand, Kiesbeeten und jungen Bäumen",
+      "tags": [
+        "Gewerbe",
+        "Cortenstahl",
+        "Kiesbeet",
+        "Außenanlage"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_bepflanzungen__i40a2c7788ae4896d.jpg",
+      "path": "_research/geissler/img/galerie_bepflanzungen__i40a2c7788ae4896d.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "bepflanzungen",
+      "services": [
+        "bepflanzungen"
+      ],
+      "quality": 5,
+      "width": 4032,
+      "height": 3024,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.62,
+        "y": 0.6
+      },
+      "portrait_ok": true,
+      "alt": "Rosa und weiße Tulpen im Gegenlicht der Abendsonne vor einem Kiesbeet",
+      "tags": [
+        "Tulpen",
+        "Frühling",
+        "Gegenlicht",
+        "Beet"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_bepflanzungen__i42bf4141ecff4e35.jpg",
+      "path": "_research/geissler/img/galerie_bepflanzungen__i42bf4141ecff4e35.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "gaerten",
+      "services": [
+        "hangbefestigung-mauerbau",
+        "rasen",
+        "treppenanlagen",
+        "bepflanzungen"
+      ],
+      "quality": 5,
+      "width": 4032,
+      "height": 3024,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.42,
+        "y": 0.55
+      },
+      "portrait_ok": true,
+      "alt": "Terrassierter Garten mit Natursteinmauern, Stufen, Rasen und Feuerschale aus Cortenstahl",
+      "tags": [
+        "Natursteinmauer",
+        "Terrasse",
+        "Feuerschale",
+        "Rasen"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_bepflanzungen__i59de44877f9e306f.jpg",
+      "path": "_research/geissler/img/galerie_bepflanzungen__i59de44877f9e306f.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "bepflanzungen",
+      "services": [
+        "bepflanzungen",
+        "sichtschutz-zaeune"
+      ],
+      "quality": 4,
+      "width": 4608,
+      "height": 3456,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.5,
+        "y": 0.55
+      },
+      "portrait_ok": true,
+      "alt": "Kiesbeet mit Ziergräsern, Fächerahorn und Buchskugel vor hellem Rankgitterzaun",
+      "tags": [
+        "Kiesbeet",
+        "Ziergräser",
+        "Rankgitter"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_bepflanzungen__i6f670683356b5ac1.jpg",
+      "path": "_research/geissler/img/galerie_bepflanzungen__i6f670683356b5ac1.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "gaerten",
+      "services": [
+        "bepflanzungen",
+        "beton-natursteinbelaege",
+        "sichtschutz-zaeune"
+      ],
+      "quality": 5,
+      "width": 4032,
+      "height": 3024,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.42,
+        "y": 0.5
+      },
+      "portrait_ok": true,
+      "alt": "Lounge auf heller Plattenterrasse mit Lampenputzergras, Eisenkraut und Glas-Sichtschutz",
+      "tags": [
+        "Lounge",
+        "Ziergräser",
+        "Terrasse",
+        "Sichtschutz"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_bepflanzungen__i8a5079ae951f6f57.jpg",
+      "path": "_research/geissler/img/galerie_bepflanzungen__i8a5079ae951f6f57.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "gaerten",
+      "services": [
+        "bepflanzungen",
+        "sichtschutz-zaeune",
+        "treppenanlagen"
+      ],
+      "quality": 4,
+      "width": 4708,
+      "height": 2127,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.3,
+        "y": 0.6
+      },
+      "portrait_ok": true,
+      "alt": "Essplatz unter Sonnensegel mit Gabionen, Gräsern und Edelstahlgeländer an der Treppe",
+      "tags": [
+        "Essplatz",
+        "Gabionen",
+        "Gräser",
+        "Sonnensegel"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_bepflanzungen__i8d8f95b18b04c340.jpg",
+      "path": "_research/geissler/img/galerie_bepflanzungen__i8d8f95b18b04c340.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "bepflanzungen",
+      "services": [
+        "bepflanzungen",
+        "dachbegruenung-regenwassernutzung"
+      ],
+      "quality": 4,
+      "width": 3264,
+      "height": 2448,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.55,
+        "y": 0.5
+      },
+      "portrait_ok": true,
+      "alt": "Kiesgarten mit geschwungenen Wegen, Cortenstahl-Pflanzkübeln und begrüntem Garagendach",
+      "tags": [
+        "Cortenstahl",
+        "Kiesgarten",
+        "Dachbegrünung"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_bepflanzungen__ib5410ab21ede8b30.jpg",
+      "path": "_research/geissler/img/galerie_bepflanzungen__ib5410ab21ede8b30.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "bepflanzungen",
+      "services": [
+        "bepflanzungen",
+        "lichtdesign"
+      ],
+      "quality": 3,
+      "width": 3264,
+      "height": 2448,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.35,
+        "y": 0.5
+      },
+      "portrait_ok": true,
+      "alt": "Lila und dunkelrote Tulpen mit Ziergras und Kugelleuchten am Rasenrand",
+      "tags": [
+        "Tulpen",
+        "Kugelleuchten",
+        "Beet"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_bepflanzungen__ibd244fd6603b6391.jpg",
+      "path": "_research/geissler/img/galerie_bepflanzungen__ibd244fd6603b6391.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "bepflanzungen",
+      "services": [
+        "bepflanzungen"
+      ],
+      "quality": 3,
+      "width": 4608,
+      "height": 3456,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.55,
+        "y": 0.55
+      },
+      "portrait_ok": false,
+      "alt": "Kiesbeet mit Eibenkugeln, Gräsern, Sandsteinstele und nostalgischer Gartenlaterne",
+      "tags": [
+        "Kiesbeet",
+        "Eibe",
+        "Laterne"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_bepflanzungen__icce4663c5de3f33e.jpg",
+      "path": "_research/geissler/img/galerie_bepflanzungen__icce4663c5de3f33e.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "bepflanzungen",
+      "services": [
+        "bepflanzungen"
+      ],
+      "quality": 3,
+      "width": 3456,
+      "height": 4608,
+      "orientation": "portrait",
+      "focus": {
+        "x": 0.5,
+        "y": 0.55
+      },
+      "portrait_ok": true,
+      "alt": "Pflegeleichtes Steppenbeet mit Gräsern und Stauden in Kiesmulch neben einem Parkplatz",
+      "tags": [
+        "Kiesbeet",
+        "Steppenpflanzung",
+        "Gewerbe"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_bepflanzungen__iefe58676240357cc.jpg",
+      "path": "_research/geissler/img/galerie_bepflanzungen__iefe58676240357cc.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "bepflanzungen",
+      "services": [
+        "bepflanzungen",
+        "garten-pflege"
+      ],
+      "quality": 4,
+      "width": 3264,
+      "height": 2448,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.55,
+        "y": 0.55
+      },
+      "portrait_ok": true,
+      "alt": "Blühendes Staudenbeet mit weißen Tulpen, Katzenminze und Wolfsmilch vor Fachwerkmauer",
+      "tags": [
+        "Staudenbeet",
+        "Tulpen",
+        "Katzenminze",
+        "Fachwerk"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_dachbegruenung_wasserspeicher__i24ae49c222539795.jpg",
+      "path": "_research/geissler/img/galerie_dachbegruenung_wasserspeicher__i24ae49c222539795.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "dachbegruenung",
+      "services": [
+        "dachbegruenung-regenwassernutzung",
+        "bepflanzungen"
+      ],
+      "quality": 3,
+      "width": 600,
+      "height": 401,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.5,
+        "y": 0.6
+      },
+      "portrait_ok": false,
+      "alt": "Begrünte Dachterrasse mit Sedumteppich, Holzpflanzkästen und Ziergräsern",
+      "tags": [
+        "Dachgarten",
+        "Sedum",
+        "Pflanzkästen"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_dachbegruenung_wasserspeicher__i5998098cece7122b.jpg",
+      "path": "_research/geissler/img/galerie_dachbegruenung_wasserspeicher__i5998098cece7122b.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "dachbegruenung",
+      "services": [
+        "dachbegruenung-regenwassernutzung",
+        "rasen"
+      ],
+      "quality": 3,
+      "width": 600,
+      "height": 401,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "portrait_ok": false,
+      "alt": "Holzgartenhaus mit begrüntem Dach, Blumenkasten und gepflegtem Rasen",
+      "tags": [
+        "Gartenhaus",
+        "Gründach",
+        "Rasen"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_dachbegruenung_wasserspeicher__i7a6c9bb8e5a9b951.jpg",
+      "path": "_research/geissler/img/galerie_dachbegruenung_wasserspeicher__i7a6c9bb8e5a9b951.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "dachbegruenung",
+      "services": [
+        "dachbegruenung-regenwassernutzung"
+      ],
+      "quality": 2,
+      "width": 4160,
+      "height": 2336,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.45,
+        "y": 0.55
+      },
+      "portrait_ok": false,
+      "alt": "Frisch angelegte extensive Dachbegrünung mit jungen Sedumpflanzen und Lichtkuppeln",
+      "tags": [
+        "Extensivbegrünung",
+        "Flachdach",
+        "Sedum"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_dachbegruenung_wasserspeicher__ida048c3fb05cf1fc.jpg",
+      "path": "_research/geissler/img/galerie_dachbegruenung_wasserspeicher__ida048c3fb05cf1fc.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": false,
+      "category": "baustelle",
+      "services": [
+        "dachbegruenung-regenwassernutzung",
+        "bagger-erdarbeiten"
+      ],
+      "quality": 2,
+      "width": 600,
+      "height": 401,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.45,
+        "y": 0.55
+      },
+      "portrait_ok": false,
+      "alt": "Regenwasserzisterne wird per Bagger in die ausgehobene Baugrube eingesetzt",
+      "tags": [
+        "Zisterne",
+        "Regenwasser",
+        "Bagger"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_dachbegruenung_wasserspeicher__ide97ad46d5657034.jpg",
+      "path": "_research/geissler/img/galerie_dachbegruenung_wasserspeicher__ide97ad46d5657034.jpg",
+      "duplicate_of": "galerie_bepflanzungen__i8d8f95b18b04c340.jpg",
+      "include_in_gallery": false,
+      "category": "bepflanzungen",
+      "services": [
+        "bepflanzungen",
+        "dachbegruenung-regenwassernutzung"
+      ],
+      "quality": 4,
+      "width": 3264,
+      "height": 2448,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.55,
+        "y": 0.5
+      },
+      "portrait_ok": true,
+      "alt": "Kiesgarten mit geschwungenen Wegen, Cortenstahl-Pflanzkübeln und begrüntem Garagendach",
+      "tags": [
+        "Cortenstahl",
+        "Kiesgarten",
+        "Dachbegrünung"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_dachbegruenung_wasserspeicher__ifae412c3c809db06.jpg",
+      "path": "_research/geissler/img/galerie_dachbegruenung_wasserspeicher__ifae412c3c809db06.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "dachbegruenung",
+      "services": [
+        "dachbegruenung-regenwassernutzung",
+        "bepflanzungen"
+      ],
+      "quality": 3,
+      "width": 600,
+      "height": 401,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.5,
+        "y": 0.65
+      },
+      "portrait_ok": false,
+      "alt": "Blühende Dachbegrünung mit Sedumarten in Rot und Grün vor gelben Stauden",
+      "tags": [
+        "Dachbegrünung",
+        "Sedum",
+        "Stauden"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_hangsicherung_mauerbau__i05018fdb06a4219e.jpg",
+      "path": "_research/geissler/img/galerie_hangsicherung_mauerbau__i05018fdb06a4219e.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "mauerbau",
+      "services": [
+        "hangbefestigung-mauerbau"
+      ],
+      "quality": 3,
+      "width": 3264,
+      "height": 2448,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "portrait_ok": false,
+      "alt": "Hochbeet aus Natursteinblöcken an einer Holzterrasse mit Sonnenliege",
+      "tags": [
+        "Hochbeet",
+        "Naturstein",
+        "Holzterrasse"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_hangsicherung_mauerbau__i23ad51ba63ad576a.jpg",
+      "path": "_research/geissler/img/galerie_hangsicherung_mauerbau__i23ad51ba63ad576a.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "mauerbau",
+      "services": [
+        "hangbefestigung-mauerbau",
+        "bepflanzungen",
+        "beton-natursteinbelaege"
+      ],
+      "quality": 3,
+      "width": 2350,
+      "height": 2222,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.55,
+        "y": 0.7
+      },
+      "portrait_ok": true,
+      "alt": "Hochbeet mit Mauer aus Natursteinverblender in einem gepflasterten Innenhof",
+      "tags": [
+        "Hochbeet",
+        "Innenhof",
+        "Mauer"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_hangsicherung_mauerbau__i355a5428db175524.jpg",
+      "path": "_research/geissler/img/galerie_hangsicherung_mauerbau__i355a5428db175524.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "mauerbau",
+      "services": [
+        "hangbefestigung-mauerbau",
+        "bepflanzungen",
+        "beton-natursteinbelaege"
+      ],
+      "quality": 4,
+      "width": 4608,
+      "height": 3456,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.38,
+        "y": 0.6
+      },
+      "portrait_ok": true,
+      "alt": "Vorgarten-Hochbeet aus rötlichem Sandstein mit Glockenblumen und Buchskugeln",
+      "tags": [
+        "Sandstein",
+        "Hochbeet",
+        "Vorgarten"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_hangsicherung_mauerbau__i360c68a771d810f8.jpg",
+      "path": "_research/geissler/img/galerie_hangsicherung_mauerbau__i360c68a771d810f8.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "mauerbau",
+      "services": [
+        "hangbefestigung-mauerbau",
+        "teichanlagen-wasserelemente",
+        "beton-natursteinbelaege"
+      ],
+      "quality": 3,
+      "width": 4608,
+      "height": 3456,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "portrait_ok": false,
+      "alt": "Natursteinmauer mit Wasserbecken aus Cortenstahl und Terrasse aus Natursteinplatten",
+      "tags": [
+        "Natursteinmauer",
+        "Cortenstahl",
+        "Wasserbecken"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_hangsicherung_mauerbau__i66504980e7052caa.jpg",
+      "path": "_research/geissler/img/galerie_hangsicherung_mauerbau__i66504980e7052caa.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "baustelle",
+      "services": [
+        "poolbau",
+        "hangbefestigung-mauerbau"
+      ],
+      "quality": 3,
+      "width": 3456,
+      "height": 4608,
+      "orientation": "portrait",
+      "focus": {
+        "x": 0.45,
+        "y": 0.45
+      },
+      "portrait_ok": true,
+      "alt": "Mitarbeiter setzt Natursteinverblender an eine Poolumrandung",
+      "tags": [
+        "Poolbau",
+        "Naturstein",
+        "in Arbeit"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_hangsicherung_mauerbau__i6e0aca5c5248de17.jpg",
+      "path": "_research/geissler/img/galerie_hangsicherung_mauerbau__i6e0aca5c5248de17.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "mauerbau",
+      "services": [
+        "hangbefestigung-mauerbau",
+        "beton-natursteinbelaege"
+      ],
+      "quality": 4,
+      "width": 4032,
+      "height": 3024,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.6,
+        "y": 0.5
+      },
+      "portrait_ok": true,
+      "alt": "Stützwand aus Granitpalisaden entlang eines hellen Pflasterwegs unter blauem Himmel",
+      "tags": [
+        "Stützwand",
+        "Granit",
+        "Palisaden"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_hangsicherung_mauerbau__i832e7703525c139d.jpg",
+      "path": "_research/geissler/img/galerie_hangsicherung_mauerbau__i832e7703525c139d.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": false,
+      "category": "baustelle",
+      "services": [
+        "hangbefestigung-mauerbau"
+      ],
+      "quality": 2,
+      "width": 4608,
+      "height": 3456,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.4,
+        "y": 0.5
+      },
+      "portrait_ok": false,
+      "alt": "Im Bau befindliche Hangmauer aus großen Sandsteinblöcken",
+      "tags": [
+        "Sandstein",
+        "Hangmauer",
+        "Baustelle"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_hangsicherung_mauerbau__i84ca8c988c745380.jpg",
+      "path": "_research/geissler/img/galerie_hangsicherung_mauerbau__i84ca8c988c745380.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "baustelle",
+      "services": [
+        "hangbefestigung-mauerbau"
+      ],
+      "quality": 4,
+      "width": 4608,
+      "height": 3456,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.62,
+        "y": 0.5
+      },
+      "portrait_ok": true,
+      "alt": "Mitarbeiter mauert eine Natursteinmauer vor einer Hecke bei Sonnenschein",
+      "tags": [
+        "Mauerbau",
+        "Naturstein",
+        "Handwerk"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_hangsicherung_mauerbau__i9870264be2f2fc77.jpg",
+      "path": "_research/geissler/img/galerie_hangsicherung_mauerbau__i9870264be2f2fc77.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "mauerbau",
+      "services": [
+        "hangbefestigung-mauerbau",
+        "bepflanzungen"
+      ],
+      "quality": 5,
+      "width": 2448,
+      "height": 3264,
+      "orientation": "portrait",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "portrait_ok": true,
+      "alt": "Trockenmauer-Hochbeet mit Lampenputzergras und Rosen vor einer Sandsteinmauer",
+      "tags": [
+        "Trockenmauer",
+        "Hochbeet",
+        "Gräser",
+        "Rosen"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_hangsicherung_mauerbau__ia0e959923f49a21d.jpg",
+      "path": "_research/geissler/img/galerie_hangsicherung_mauerbau__ia0e959923f49a21d.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "mauerbau",
+      "services": [
+        "hangbefestigung-mauerbau",
+        "beton-natursteinbelaege",
+        "sichtschutz-zaeune"
+      ],
+      "quality": 3,
+      "width": 4032,
+      "height": 3024,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.35,
+        "y": 0.6
+      },
+      "portrait_ok": false,
+      "alt": "Einfriedungsmauer aus Granitsteinen mit Metallzaun entlang eines gepflasterten Gehwegs",
+      "tags": [
+        "Einfriedung",
+        "Granit",
+        "Zaun"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_hangsicherung_mauerbau__ib2a6066cd4b3d899.jpg",
+      "path": "_research/geissler/img/galerie_hangsicherung_mauerbau__ib2a6066cd4b3d899.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "treppen",
+      "services": [
+        "treppenanlagen",
+        "hangbefestigung-mauerbau",
+        "beton-natursteinbelaege",
+        "bepflanzungen"
+      ],
+      "quality": 3,
+      "width": 600,
+      "height": 401,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "portrait_ok": true,
+      "alt": "Sandsteinstufen mit geschwungenem rotem Pflasterweg, Sandsteinmauer und weißem Blütenbeet",
+      "tags": [
+        "Sandstein",
+        "Stufen",
+        "Pflasterweg"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_hangsicherung_mauerbau__idc2c502fc8494f9c.jpg",
+      "path": "_research/geissler/img/galerie_hangsicherung_mauerbau__idc2c502fc8494f9c.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "mauerbau",
+      "services": [
+        "hangbefestigung-mauerbau",
+        "rasen",
+        "bepflanzungen"
+      ],
+      "quality": 4,
+      "width": 4608,
+      "height": 3456,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.6,
+        "y": 0.55
+      },
+      "portrait_ok": true,
+      "alt": "Trockenmauer aus Naturstein vor Rasenfläche und Haus mit Holzpergola",
+      "tags": [
+        "Trockenmauer",
+        "Rasen",
+        "Pergola"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_hangsicherung_mauerbau__ie15911df066eadf1.jpg",
+      "path": "_research/geissler/img/galerie_hangsicherung_mauerbau__ie15911df066eadf1.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "mauerbau",
+      "services": [
+        "hangbefestigung-mauerbau",
+        "rasen",
+        "treppenanlagen"
+      ],
+      "quality": 3,
+      "width": 600,
+      "height": 450,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.55,
+        "y": 0.6
+      },
+      "portrait_ok": false,
+      "alt": "Terrassierter Hanggarten mit Granitblockmauern, Rasenterrassen und Holzsichtschutz",
+      "tags": [
+        "Hanggarten",
+        "Granitblöcke",
+        "Terrassierung"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_hangsicherung_mauerbau__ie9cbf7f73cd788af.jpg",
+      "path": "_research/geissler/img/galerie_hangsicherung_mauerbau__ie9cbf7f73cd788af.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": false,
+      "category": "mauerbau",
+      "services": [
+        "hangbefestigung-mauerbau"
+      ],
+      "quality": 2,
+      "width": 3264,
+      "height": 2448,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.45,
+        "y": 0.55
+      },
+      "portrait_ok": false,
+      "alt": "Zweistufiges Hochbeet aus Granitblöcken in noch unfertiger Gartenanlage",
+      "tags": [
+        "Hochbeet",
+        "Granit",
+        "Neuanlage"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_sichtschutz_zaun__i18d39194c32be562.jpg",
+      "path": "_research/geissler/img/galerie_sichtschutz_zaun__i18d39194c32be562.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "sichtschutz",
+      "services": [
+        "sichtschutz-zaeune"
+      ],
+      "quality": 3,
+      "width": 4608,
+      "height": 3456,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "portrait_ok": false,
+      "alt": "Sichtschutzwand aus Holzlatten und Gabionen mit rötlichem Bruchstein auf einer Terrasse",
+      "tags": [
+        "Gabionen",
+        "Holz",
+        "Sichtschutz"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_sichtschutz_zaun__i2bdb6a7ffdb4198a.jpg",
+      "path": "_research/geissler/img/galerie_sichtschutz_zaun__i2bdb6a7ffdb4198a.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "baustelle",
+      "services": [
+        "sichtschutz-zaeune",
+        "hangbefestigung-mauerbau"
+      ],
+      "quality": 4,
+      "width": 3456,
+      "height": 4608,
+      "orientation": "portrait",
+      "focus": {
+        "x": 0.6,
+        "y": 0.45
+      },
+      "portrait_ok": true,
+      "alt": "Mitarbeiter richtet Natursteinmauer neben Cortenstahl-Sichtschutz mit Pusteblumenmotiv aus",
+      "tags": [
+        "Sichtschutz",
+        "Cortenstahl",
+        "Handwerk"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_sichtschutz_zaun__i50fbc725907fc8c6.jpg",
+      "path": "_research/geissler/img/galerie_sichtschutz_zaun__i50fbc725907fc8c6.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "sichtschutz",
+      "services": [
+        "sichtschutz-zaeune",
+        "bepflanzungen"
+      ],
+      "quality": 4,
+      "width": 4160,
+      "height": 2336,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.45,
+        "y": 0.5
+      },
+      "portrait_ok": true,
+      "alt": "Gabionen-Sichtschutz mit Basalt und Kalkstein hinter herbstlichem Staudenbeet",
+      "tags": [
+        "Gabionen",
+        "Herbst",
+        "Staudenbeet"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_sichtschutz_zaun__i5aaad0abda77a802.jpg",
+      "path": "_research/geissler/img/galerie_sichtschutz_zaun__i5aaad0abda77a802.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "bepflanzungen",
+      "services": [
+        "bepflanzungen",
+        "sichtschutz-zaeune"
+      ],
+      "quality": 4,
+      "width": 2448,
+      "height": 3264,
+      "orientation": "portrait",
+      "focus": {
+        "x": 0.5,
+        "y": 0.55
+      },
+      "portrait_ok": true,
+      "alt": "Kiesbeet mit Buchskegeln und Fetter Henne vor grauem Holzsichtschutzzaun",
+      "tags": [
+        "Buchs",
+        "Kiesbeet",
+        "Sichtschutzzaun"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_sichtschutz_zaun__iae6b02aad88abcae.jpg",
+      "path": "_research/geissler/img/galerie_sichtschutz_zaun__iae6b02aad88abcae.jpg",
+      "duplicate_of": "galerie_belagsarbeiten__ic06a0c5588cbb73d.jpg",
+      "include_in_gallery": false,
+      "category": "gaerten",
+      "services": [
+        "sichtschutz-zaeune",
+        "beton-natursteinbelaege",
+        "bepflanzungen"
+      ],
+      "quality": 4,
+      "width": 4160,
+      "height": 2336,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.4,
+        "y": 0.55
+      },
+      "portrait_ok": false,
+      "alt": "Garten mit Sonnensegel, Gabionenwand, Feuerstelle und Terrasse aus großformatigen Platten",
+      "tags": [
+        "Gabionen",
+        "Sonnensegel",
+        "Feuerstelle",
+        "Terrasse"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_sichtschutz_zaun__ic072f72afe552dde.jpg",
+      "path": "_research/geissler/img/galerie_sichtschutz_zaun__ic072f72afe552dde.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "sichtschutz",
+      "services": [
+        "sichtschutz-zaeune",
+        "rasen"
+      ],
+      "quality": 3,
+      "width": 600,
+      "height": 450,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.55,
+        "y": 0.45
+      },
+      "portrait_ok": true,
+      "alt": "Gabionenwand mit Holzsichtschutz-Elementen, Rasen und Trittplatten im Abendlicht",
+      "tags": [
+        "Gabionen",
+        "Holzzaun",
+        "Rasen"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_teichanlagen_wasserelemente__i2c9b859df9696986.jpg",
+      "path": "_research/geissler/img/galerie_teichanlagen_wasserelemente__i2c9b859df9696986.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "teichanlagen",
+      "services": [
+        "teichanlagen-wasserelemente",
+        "bepflanzungen"
+      ],
+      "quality": 4,
+      "width": 4032,
+      "height": 3024,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.4,
+        "y": 0.55
+      },
+      "portrait_ok": true,
+      "alt": "Cortenstahl-Wandelement mit Lavendelbeet vor modernem Bürogebäude",
+      "tags": [
+        "Cortenstahl",
+        "Lavendel",
+        "Gewerbe"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_teichanlagen_wasserelemente__i323816feeb0a3a66.jpg",
+      "path": "_research/geissler/img/galerie_teichanlagen_wasserelemente__i323816feeb0a3a66.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "teichanlagen",
+      "services": [
+        "teichanlagen-wasserelemente",
+        "poolbau"
+      ],
+      "quality": 3,
+      "width": 600,
+      "height": 398,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.4,
+        "y": 0.55
+      },
+      "portrait_ok": false,
+      "alt": "Naturbadeteich mit Holzsteg und Schilfzone vor einem Hotel im Tal",
+      "tags": [
+        "Schwimmteich",
+        "Holzsteg",
+        "Schilf"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_teichanlagen_wasserelemente__i9bf1d01397aad4dd.jpg",
+      "path": "_research/geissler/img/galerie_teichanlagen_wasserelemente__i9bf1d01397aad4dd.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "teichanlagen",
+      "services": [
+        "teichanlagen-wasserelemente",
+        "bepflanzungen"
+      ],
+      "quality": 3,
+      "width": 600,
+      "height": 401,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.45,
+        "y": 0.5
+      },
+      "portrait_ok": false,
+      "alt": "Bachlauf aus Natursteinen mit Holzbrücke in einem bepflanzten Hanggarten",
+      "tags": [
+        "Bachlauf",
+        "Holzbrücke",
+        "Hanggarten"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_teichanlagen_wasserelemente__ib6a700d535657f12.jpg",
+      "path": "_research/geissler/img/galerie_teichanlagen_wasserelemente__ib6a700d535657f12.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "teichanlagen",
+      "services": [
+        "teichanlagen-wasserelemente",
+        "hangbefestigung-mauerbau",
+        "rasen"
+      ],
+      "quality": 5,
+      "width": 4032,
+      "height": 3024,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.35,
+        "y": 0.5
+      },
+      "portrait_ok": true,
+      "alt": "Wasserbecken aus Cortenstahl mit Schwallbrause vor Natursteinmauer am Rasen",
+      "tags": [
+        "Wasserbecken",
+        "Cortenstahl",
+        "Wasserfall"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_teichanlagen_wasserelemente__ic9ae52f20ee38f48.jpg",
+      "path": "_research/geissler/img/galerie_teichanlagen_wasserelemente__ic9ae52f20ee38f48.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "teichanlagen",
+      "services": [
+        "teichanlagen-wasserelemente",
+        "hangbefestigung-mauerbau"
+      ],
+      "quality": 3,
+      "width": 600,
+      "height": 450,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.5,
+        "y": 0.6
+      },
+      "portrait_ok": false,
+      "alt": "Schwallbrause in einer Mauer aus Betonsteinen über Zierkies",
+      "tags": [
+        "Wasserspiel",
+        "Mauer",
+        "Schwallbrause"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_teichanlagen_wasserelemente__ie6f8f1aededff682.jpg",
+      "path": "_research/geissler/img/galerie_teichanlagen_wasserelemente__ie6f8f1aededff682.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "teichanlagen",
+      "services": [
+        "teichanlagen-wasserelemente"
+      ],
+      "quality": 4,
+      "width": 3456,
+      "height": 4608,
+      "orientation": "portrait",
+      "focus": {
+        "x": 0.4,
+        "y": 0.6
+      },
+      "portrait_ok": true,
+      "alt": "Kleiner Bachlauf aus rotem Sandstein mit Kies und Rosmarin in der Sonne",
+      "tags": [
+        "Bachlauf",
+        "Sandstein",
+        "Wasser"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_treppenanlagen__i1ac605cfdf126cd4.jpg",
+      "path": "_research/geissler/img/galerie_treppenanlagen__i1ac605cfdf126cd4.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "treppen",
+      "services": [
+        "treppenanlagen",
+        "beton-natursteinbelaege"
+      ],
+      "quality": 3,
+      "width": 600,
+      "height": 450,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.55,
+        "y": 0.55
+      },
+      "portrait_ok": true,
+      "alt": "Flache Sandsteinstufen mit rotem Natursteinpflaster an einer Hauswand",
+      "tags": [
+        "Sandstein",
+        "Stufen",
+        "Pflaster"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_treppenanlagen__i3069aa21fa0ef2d8.jpg",
+      "path": "_research/geissler/img/galerie_treppenanlagen__i3069aa21fa0ef2d8.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "treppen",
+      "services": [
+        "treppenanlagen",
+        "beton-natursteinbelaege"
+      ],
+      "quality": 3,
+      "width": 2939,
+      "height": 1653,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.45,
+        "y": 0.6
+      },
+      "portrait_ok": false,
+      "alt": "Eingangstreppe aus grauen Blockstufen mit Granitstelen und Plattenbelag",
+      "tags": [
+        "Blockstufen",
+        "Eingang",
+        "Granit"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_treppenanlagen__i9ecbaa7f8102f178.jpg",
+      "path": "_research/geissler/img/galerie_treppenanlagen__i9ecbaa7f8102f178.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "treppen",
+      "services": [
+        "treppenanlagen",
+        "bepflanzungen",
+        "hangbefestigung-mauerbau"
+      ],
+      "quality": 5,
+      "width": 4032,
+      "height": 3024,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.45,
+        "y": 0.5
+      },
+      "portrait_ok": true,
+      "alt": "Helle Granittreppe mit Edelstahlgeländer zwischen Lavendel und Chinaschilf",
+      "tags": [
+        "Granittreppe",
+        "Geländer",
+        "Lavendel",
+        "Gräser"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_treppenanlagen__ib80e67cf27b89f23.jpg",
+      "path": "_research/geissler/img/galerie_treppenanlagen__ib80e67cf27b89f23.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "treppen",
+      "services": [
+        "treppenanlagen",
+        "beton-natursteinbelaege",
+        "hangbefestigung-mauerbau"
+      ],
+      "quality": 3,
+      "width": 600,
+      "height": 401,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.6,
+        "y": 0.5
+      },
+      "portrait_ok": true,
+      "alt": "Hauseingang mit Blockstufen, Pflasterpodest und Beeteinfassung aus Mauersteinen",
+      "tags": [
+        "Hauseingang",
+        "Blockstufen",
+        "Pflaster"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_treppenanlagen__ic82b173bba87b668.jpg",
+      "path": "_research/geissler/img/galerie_treppenanlagen__ic82b173bba87b668.jpg",
+      "duplicate_of": "galerie_hangsicherung_mauerbau__ib2a6066cd4b3d899.jpg",
+      "include_in_gallery": false,
+      "category": "treppen",
+      "services": [
+        "treppenanlagen",
+        "hangbefestigung-mauerbau",
+        "beton-natursteinbelaege",
+        "bepflanzungen"
+      ],
+      "quality": 3,
+      "width": 600,
+      "height": 401,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "portrait_ok": true,
+      "alt": "Sandsteinstufen mit geschwungenem rotem Pflasterweg, Sandsteinmauer und weißem Blütenbeet",
+      "tags": [
+        "Sandstein",
+        "Stufen",
+        "Pflasterweg"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "galerie_treppenanlagen__if92bcf4aedeb7911.jpg",
+      "path": "_research/geissler/img/galerie_treppenanlagen__if92bcf4aedeb7911.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "treppen",
+      "services": [
+        "treppenanlagen",
+        "rasen",
+        "bepflanzungen"
+      ],
+      "quality": 3,
+      "width": 600,
+      "height": 450,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.5,
+        "y": 0.45
+      },
+      "portrait_ok": true,
+      "alt": "Natursteintreppe mit Trittplatten im Rasen und bepflanzten Beeten vor dem Haus",
+      "tags": [
+        "Natursteintreppe",
+        "Trittplatten",
+        "Rasen"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "home__i6103d52cd6d40911.jpg",
+      "path": "_research/geissler/img/home__i6103d52cd6d40911.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": false,
+      "category": null,
+      "services": [],
+      "quality": 4,
+      "width": 2291,
+      "height": 1718,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.5,
+        "y": 0.35
+      },
+      "portrait_ok": true,
+      "alt": "Die beiden Inhaber von Gartengestaltung Geißler vor einer Holzwand",
+      "tags": [
+        "Team",
+        "Inhaber"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "home__i7b04b7b859fe7490.jpg",
+      "path": "_research/geissler/img/home__i7b04b7b859fe7490.jpg",
+      "duplicate_of": "galerie_bepflanzungen__ib5410ab21ede8b30.jpg",
+      "include_in_gallery": false,
+      "category": "bepflanzungen",
+      "services": [
+        "bepflanzungen",
+        "lichtdesign"
+      ],
+      "quality": 3,
+      "width": 1667,
+      "height": 1488,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "portrait_ok": true,
+      "alt": "Lila und dunkelrote Tulpen mit Ziergras und Kugelleuchten am Rasenrand",
+      "tags": [
+        "Tulpen",
+        "Kugelleuchten",
+        "Beet"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "home__ida40d4bec15e56b5.jpg",
+      "path": "_research/geissler/img/home__ida40d4bec15e56b5.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": false,
+      "category": null,
+      "services": [],
+      "quality": 3,
+      "width": 1890,
+      "height": 1063,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.5,
+        "y": 0.5
+      },
+      "portrait_ok": false,
+      "alt": "Logo Gartengestaltung Geißler, Inh. Opolka & Weis",
+      "tags": [
+        "Logo"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "kontakt_ansprechpartner__i131dd466bceb1b2e.jpg",
+      "path": "_research/geissler/img/kontakt_ansprechpartner__i131dd466bceb1b2e.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": false,
+      "category": null,
+      "services": [],
+      "quality": 4,
+      "width": 3055,
+      "height": 2291,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.5,
+        "y": 0.4
+      },
+      "portrait_ok": true,
+      "alt": "Porträt eines Inhabers von Gartengestaltung Geißler vor einer Holzwand",
+      "tags": [
+        "Team",
+        "Inhaber",
+        "Porträt"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "kontakt_ansprechpartner__i301500a0b13eef88.jpg",
+      "path": "_research/geissler/img/kontakt_ansprechpartner__i301500a0b13eef88.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": false,
+      "category": null,
+      "services": [],
+      "quality": 4,
+      "width": 3055,
+      "height": 2291,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.5,
+        "y": 0.4
+      },
+      "portrait_ok": true,
+      "alt": "Porträt eines Inhabers von Gartengestaltung Geißler vor einer Holzwand",
+      "tags": [
+        "Team",
+        "Inhaber",
+        "Porträt"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "smartgarden__i456b0624763ab737.jpg",
+      "path": "_research/geissler/img/smartgarden__i456b0624763ab737.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": false,
+      "category": "smartgarden",
+      "services": [
+        "lichtdesign"
+      ],
+      "quality": 1,
+      "width": 629,
+      "height": 629,
+      "orientation": "square",
+      "focus": {
+        "x": 0.45,
+        "y": 0.45
+      },
+      "portrait_ok": true,
+      "alt": "Nächtliche Gartenbeleuchtung mit Bodenstrahlern an Stelen und einem Gabionen-Holzlager",
+      "tags": [
+        "Lichtdesign",
+        "Beleuchtung",
+        "Nacht"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "smartgarden__i9dc49b35b656350e.jpg",
+      "path": "_research/geissler/img/smartgarden__i9dc49b35b656350e.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": false,
+      "category": "smartgarden",
+      "services": [
+        "bewaesserung",
+        "rasen"
+      ],
+      "quality": 4,
+      "width": 1400,
+      "height": 1400,
+      "orientation": "square",
+      "focus": {
+        "x": 0.5,
+        "y": 0.55
+      },
+      "portrait_ok": true,
+      "alt": "Versenkregner bewässern eine sonnige Rasenfläche unter Bäumen",
+      "tags": [
+        "Bewässerung",
+        "Versenkregner",
+        "Rasen"
+      ],
+      "stock_photo": true
+    },
+    {
+      "file": "smartgarden__iffc487272e591a22.jpg",
+      "path": "_research/geissler/img/smartgarden__iffc487272e591a22.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": false,
+      "category": "smartgarden",
+      "services": [
+        "maehroboter",
+        "rasen"
+      ],
+      "quality": 5,
+      "width": 2625,
+      "height": 2625,
+      "orientation": "square",
+      "focus": {
+        "x": 0.65,
+        "y": 0.62
+      },
+      "portrait_ok": true,
+      "alt": "Mähroboter auf sonnigem Rasen vor einer bemoosten Natursteinmauer",
+      "tags": [
+        "Mähroboter",
+        "Rasen",
+        "Automower"
+      ],
+      "stock_photo": true
+    },
+    {
+      "file": "smartgarden_bewaesserung__if65f8c3b3722089c.jpg",
+      "path": "_research/geissler/img/smartgarden_bewaesserung__if65f8c3b3722089c.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": false,
+      "category": "smartgarden",
+      "services": [
+        "bewaesserung"
+      ],
+      "quality": 2,
+      "width": 404,
+      "height": 227,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.75,
+        "y": 0.6
+      },
+      "portrait_ok": false,
+      "alt": "Versenkregner sprüht Wasser über frischen grünen Rasen",
+      "tags": [
+        "Bewässerung",
+        "Regner"
+      ],
+      "stock_photo": true
+    },
+    {
+      "file": "smartgarden_maehroboter__i18991a27d303b8f2.jpg",
+      "path": "_research/geissler/img/smartgarden_maehroboter__i18991a27d303b8f2.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": false,
+      "category": "smartgarden",
+      "services": [
+        "maehroboter"
+      ],
+      "quality": 2,
+      "width": 533,
+      "height": 300,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.35,
+        "y": 0.6
+      },
+      "portrait_ok": false,
+      "alt": "Mähroboter mäht eine Rasenböschung neben Natursteinstufen",
+      "tags": [
+        "Mähroboter",
+        "Hang"
+      ],
+      "stock_photo": true
+    },
+    {
+      "file": "stellenangebote__i16387a75cf17060a.jpg",
+      "path": "_research/geissler/img/stellenangebote__i16387a75cf17060a.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "baustelle",
+      "services": [
+        "hangbefestigung-mauerbau"
+      ],
+      "quality": 3,
+      "width": 4608,
+      "height": 2502,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.5,
+        "y": 0.6
+      },
+      "portrait_ok": false,
+      "alt": "Drei Mitarbeiter machen Pause auf einer frisch gesetzten Sandstein-Trockenmauer",
+      "tags": [
+        "Team",
+        "Trockenmauer",
+        "Sandstein"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "unsere_gaerten__i23a11165d032c737.jpg",
+      "path": "_research/geissler/img/unsere_gaerten__i23a11165d032c737.jpg",
+      "duplicate_of": "galerie_belagsarbeiten__i637bbf9020cd919f.jpg",
+      "include_in_gallery": false,
+      "category": "belagsarbeiten",
+      "services": [
+        "beton-natursteinbelaege"
+      ],
+      "quality": 3,
+      "width": 2048,
+      "height": 1152,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.4,
+        "y": 0.55
+      },
+      "portrait_ok": false,
+      "alt": "Terrasse aus Holzdielen, eingefasst von nuanciertem Betonpflaster und Kiesfläche",
+      "tags": [
+        "Holzterrasse",
+        "Pflaster",
+        "Terrasse"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "unsere_gaerten__i9661b4da2369e075.jpg",
+      "path": "_research/geissler/img/unsere_gaerten__i9661b4da2369e075.jpg",
+      "duplicate_of": "galerie_bepflanzungen__i8a5079ae951f6f57.jpg",
+      "include_in_gallery": false,
+      "category": "gaerten",
+      "services": [
+        "bepflanzungen",
+        "sichtschutz-zaeune",
+        "treppenanlagen"
+      ],
+      "quality": 4,
+      "width": 3784,
+      "height": 2129,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.45,
+        "y": 0.6
+      },
+      "portrait_ok": true,
+      "alt": "Essplatz unter Sonnensegel mit Gabionen, Gräsern und Edelstahlgeländer an der Treppe",
+      "tags": [
+        "Essplatz",
+        "Gabionen",
+        "Gräser",
+        "Sonnensegel"
+      ],
+      "stock_photo": false
+    },
+    {
+      "file": "unsere_gaerten__i99a1f086519e5b01.jpg",
+      "path": "_research/geissler/img/unsere_gaerten__i99a1f086519e5b01.jpg",
+      "duplicate_of": null,
+      "include_in_gallery": true,
+      "category": "gaerten",
+      "services": [
+        "bepflanzungen",
+        "rasen",
+        "beton-natursteinbelaege"
+      ],
+      "quality": 3,
+      "width": 4608,
+      "height": 2592,
+      "orientation": "landscape",
+      "focus": {
+        "x": 0.4,
+        "y": 0.55
+      },
+      "portrait_ok": false,
+      "alt": "Neu gestalteter Hausgarten mit Rasen, Findlingen, Trauerweide und gepflasterter Zufahrt",
+      "tags": [
+        "Hausgarten",
+        "Rasen",
+        "Neuanlage"
+      ],
+      "stock_photo": false
+    }
+  ],
+  "recommendations": {
+    "home_about_left": {
+      "file": "galerie_bepflanzungen__i40a2c7788ae4896d.jpg",
+      "reason": "Warme Abendsonne im Gegenlicht auf Tulpen – emotional, hochwertig, 3:4-Crop um die Tulpen rechts funktioniert sehr gut"
+    },
+    "home_about_right": {
+      "file": "galerie_sichtschutz_zaun__i2bdb6a7ffdb4198a.jpg",
+      "reason": "Echtes Team bei der Arbeit (Natursteinmauer + Cortenstahl-Sichtschutz), nativ 3:4 hochkant; stellenangebote-Foto schneidet im 3:4-Crop eine Person an"
+    },
+    "services": {
+      "garten-pflege": [
+        {
+          "file": "dienstleistungen__i0b4edef148c1fb8d.jpg",
+          "reason": "Üppig eingewachsenes Schattenbeet – zeigt gepflegten Bestand"
+        },
+        {
+          "file": "dienstleistungen__i4e613f532fceda71.jpg",
+          "reason": "Blühende Hortensien am Trittplattenweg, sehr lebendig"
+        },
+        {
+          "file": "galerie_bepflanzungen__iefe58676240357cc.jpg",
+          "reason": "Farbenfrohes, dicht gewachsenes Staudenbeet"
+        },
+        {
+          "file": "galerie_bepflanzungen__i1f0405c633a45b1d.jpg",
+          "reason": "Perfekter Rasen und Stauden im Abendlicht"
+        }
+      ],
+      "bepflanzungen": [
+        {
+          "file": "galerie_bepflanzungen__i40a2c7788ae4896d.jpg",
+          "reason": "Stimmungsvollstes Pflanzenfoto (Tulpen im Gegenlicht)"
+        },
+        {
+          "file": "galerie_bepflanzungen__iefe58676240357cc.jpg",
+          "reason": "Staudenbeet mit Tulpen, Katzenminze, Wolfsmilch – hochkant-tauglich"
+        },
+        {
+          "file": "galerie_bepflanzungen__i11c082f1132de113.jpg",
+          "reason": "Vorgarten mit weißen Tulpen und Formgehölzen"
+        },
+        {
+          "file": "galerie_bepflanzungen__i59de44877f9e306f.jpg",
+          "reason": "Kiesbeet mit Gräsern und Ahorn, auch 16:9 stark"
+        }
+      ],
+      "teichanlagen-wasserelemente": [
+        {
+          "file": "galerie_teichanlagen_wasserelemente__ib6a700d535657f12.jpg",
+          "reason": "Hero-Motiv: Cortenstahl-Becken mit Schwallbrause, scharf und warm"
+        },
+        {
+          "file": "galerie_teichanlagen_wasserelemente__ie6f8f1aededff682.jpg",
+          "reason": "Natürlicher Sandstein-Bachlauf, nativ hochkant"
+        },
+        {
+          "file": "galerie_teichanlagen_wasserelemente__i2c9b859df9696986.jpg",
+          "reason": "Moderne Cortenstahlwand mit Lavendel, hochauflösend"
+        },
+        {
+          "file": "galerie_teichanlagen_wasserelemente__i9bf1d01397aad4dd.jpg",
+          "reason": "Bachlauf mit Holzbrücke im Hanggarten (nur 600px)"
+        }
+      ],
+      "dachbegruenung-regenwassernutzung": [
+        {
+          "file": "galerie_dachbegruenung_wasserspeicher__i24ae49c222539795.jpg",
+          "reason": "Schönste Dachbegrünung (Dachgarten mit Sedum), aber nur 600px"
+        },
+        {
+          "file": "galerie_dachbegruenung_wasserspeicher__ifae412c3c809db06.jpg",
+          "reason": "Blühender Sedumteppich, nur 600px"
+        },
+        {
+          "file": "galerie_dachbegruenung_wasserspeicher__i7a6c9bb8e5a9b951.jpg",
+          "reason": "Einziges hochauflösendes Gründach-Foto (frisch angelegt, eher nüchtern)"
+        },
+        {
+          "file": "galerie_dachbegruenung_wasserspeicher__ida048c3fb05cf1fc.jpg",
+          "reason": "Einziges Motiv zur Regenwassernutzung (Zisterneneinbau), nur 600px"
+        }
+      ],
+      "rasen": [
+        {
+          "file": "galerie_bepflanzungen__i1f0405c633a45b1d.jpg",
+          "reason": "Sattgrüner Rasen im Abendlicht, hero-tauglich"
+        },
+        {
+          "file": "galerie_bepflanzungen__i42bf4141ecff4e35.jpg",
+          "reason": "Große Rasenfläche vor terrassiertem Garten"
+        },
+        {
+          "file": "galerie_sichtschutz_zaun__ic072f72afe552dde.jpg",
+          "reason": "Rasen mit Trittplatten vor Gabionenwand, warmes Licht (600px)"
+        },
+        {
+          "file": "dienstleistungen__i245f443852f7d0bc.jpg",
+          "reason": "Gepflegter Rasen mit Kiesbeet (600px)"
+        }
+      ],
+      "beton-natursteinbelaege": [
+        {
+          "file": "galerie_belagsarbeiten__i165b62483b5aa3b0.jpg",
+          "reason": "Hero-Motiv: langer Pflasterweg mit Zierband unter blauem Himmel"
+        },
+        {
+          "file": "galerie_belagsarbeiten__i40591c33426a7660.jpg",
+          "reason": "Kreispflaster mit Feuerstelle, gestalterisch anspruchsvoll"
+        },
+        {
+          "file": "galerie_belagsarbeiten__i0e81325bc915eda8.jpg",
+          "reason": "Einfahrt zum Carport mit Natursteinmauer"
+        },
+        {
+          "file": "galerie_belagsarbeiten__iee35c77547a572f4.jpg",
+          "reason": "Große Hofpflasterfläche vor Wohnhaus"
+        }
+      ],
+      "sichtschutz-zaeune": [
+        {
+          "file": "galerie_sichtschutz_zaun__i50fbc725907fc8c6.jpg",
+          "reason": "Gabionen-Sichtschutz mit herbstlichem Beet, hochauflösend"
+        },
+        {
+          "file": "galerie_belagsarbeiten__ic06a0c5588cbb73d.jpg",
+          "reason": "Gabionenwand im Gesamtkonzept mit Sonnensegel"
+        },
+        {
+          "file": "galerie_sichtschutz_zaun__ic072f72afe552dde.jpg",
+          "reason": "Gabionen + Holzelemente mit Rasen, warmes Licht (600px)"
+        },
+        {
+          "file": "galerie_sichtschutz_zaun__i18d39194c32be562.jpg",
+          "reason": "Holz-Gabionen-Kombination frontal"
+        }
+      ],
+      "bagger-erdarbeiten": [
+        {
+          "file": "dienstleistungen__ib7091c400d9892b3.jpg",
+          "reason": "Aufgeräumteste Baustelle mit Bagger und Geißler-Lkw"
+        },
+        {
+          "file": "dienstleistungen__i97caee3182645afb.jpg",
+          "reason": "Minibagger beim Freimachen eines Hangs (Baustellenfoto)"
+        },
+        {
+          "file": "galerie_dachbegruenung_wasserspeicher__ida048c3fb05cf1fc.jpg",
+          "reason": "Bagger setzt Zisterne ein (600px)"
+        },
+        {
+          "file": "dienstleistungen__id9c52203c8cb7752.jpg",
+          "reason": "Mauerbau mit Bagger im Hintergrund"
+        }
+      ],
+      "hangbefestigung-mauerbau": [
+        {
+          "file": "galerie_hangsicherung_mauerbau__i9870264be2f2fc77.jpg",
+          "reason": "Trockenmauer-Hochbeet mit Gräsern, nativ hochkant, sehr stimmungsvoll"
+        },
+        {
+          "file": "galerie_hangsicherung_mauerbau__idc2c502fc8494f9c.jpg",
+          "reason": "Trockenmauer vor Rasen und Pergola-Haus"
+        },
+        {
+          "file": "galerie_hangsicherung_mauerbau__i355a5428db175524.jpg",
+          "reason": "Sandstein-Hochbeet im Vorgarten"
+        },
+        {
+          "file": "galerie_hangsicherung_mauerbau__i6e0aca5c5248de17.jpg",
+          "reason": "Granit-Palisadenwand, klar und modern"
+        }
+      ],
+      "treppenanlagen": [
+        {
+          "file": "galerie_treppenanlagen__i9ecbaa7f8102f178.jpg",
+          "reason": "Hero-Motiv: Granittreppe mit Geländer zwischen Lavendel und Gräsern"
+        },
+        {
+          "file": "galerie_treppenanlagen__i3069aa21fa0ef2d8.jpg",
+          "reason": "Moderne Blockstufen-Eingangstreppe, hochauflösend"
+        },
+        {
+          "file": "dienstleistungen__i395baf205ac9e914.jpg",
+          "reason": "Granit-Blockstufen mit Stauden (587px)"
+        },
+        {
+          "file": "galerie_hangsicherung_mauerbau__ib2a6066cd4b3d899.jpg",
+          "reason": "Sandsteinstufen mit Pflasterweg und Blütenbeet (600px)"
+        }
+      ],
+      "poolbau": [
+        {
+          "file": "galerie_teichanlagen_wasserelemente__i323816feeb0a3a66.jpg",
+          "reason": "Naturbadeteich mit Steg (600px) – kein echtes Poolfoto vorhanden"
+        },
+        {
+          "file": "galerie_hangsicherung_mauerbau__i66504980e7052caa.jpg",
+          "reason": "Mitarbeiter verblendet Poolumrandung mit Naturstein (Bau-Situation)"
+        },
+        {
+          "file": "dienstleistungen__i0f161061882f6885.jpg",
+          "reason": "Schwimmteich mit Kindern, klein (564px), evtl. Fremdfoto"
+        }
+      ],
+      "maehroboter": [
+        {
+          "file": "smartgarden__iffc487272e591a22.jpg",
+          "reason": "Hersteller-/Stockfoto Mähroboter im Abendlicht, sehr hochwertig – keine eigenen Fotos vorhanden"
+        },
+        {
+          "file": "smartgarden_maehroboter__i18991a27d303b8f2.jpg",
+          "reason": "Hersteller-/Stockfoto Mähroboter am Hang, nur 533px"
+        }
+      ],
+      "bewaesserung": [
+        {
+          "file": "smartgarden__i9dc49b35b656350e.jpg",
+          "reason": "Hersteller-/Stockfoto Versenkregner im Park, 1400px – keine eigenen Fotos vorhanden"
+        },
+        {
+          "file": "smartgarden_bewaesserung__if65f8c3b3722089c.jpg",
+          "reason": "Stockfoto Regner, nur 404px"
+        }
+      ],
+      "lichtdesign": [
+        {
+          "file": "smartgarden__i456b0624763ab737.jpg",
+          "reason": "Einziges echtes Nachtfoto mit Gartenbeleuchtung, aber sehr dunkel/verrauscht (629px)"
+        },
+        {
+          "file": "galerie_bepflanzungen__ib5410ab21ede8b30.jpg",
+          "reason": "Kugelleuchten im Tulpenbeet (Tagaufnahme)"
+        },
+        {
+          "file": "galerie_sichtschutz_zaun__i5aaad0abda77a802.jpg",
+          "reason": "Pollerleuchten im Kiesbeet (Tagaufnahme)"
+        }
+      ]
+    },
+    "reviews_media": [
+      {
+        "file": "galerie_bepflanzungen__i1f0405c633a45b1d.jpg",
+        "reason": "Warmes Abendlicht, Rasen und Stauden – vermittelt Ergebnisversprechen; 3:4-Crop gut"
+      },
+      {
+        "file": "galerie_hangsicherung_mauerbau__i9870264be2f2fc77.jpg",
+        "reason": "Hochkant-Motiv mit Naturstein und Gräsern, handwerkliche Qualität sichtbar"
+      }
+    ],
+    "footer_image": {
+      "file": "galerie_bepflanzungen__i42bf4141ecff4e35.jpg",
+      "reason": "Klare, farbstarke Komposition (blauer Himmel, Rasen, Cortenstahl-Feuerschale) bleibt auch bei 360×200 lesbar"
+    }
+  }
+}

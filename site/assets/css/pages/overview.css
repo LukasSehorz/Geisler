@@ -1,0 +1,217 @@
+/* ==========================================================================
+   Overview pages – Dienstleistungen & Smart Garden
+   Builds on main.css components (.featured, .it, .paragraph-spaced, .wish …)
+   ========================================================================== */
+
+/* ---------------------------------------------------------------- intro + index */
+.ov-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 36%) minmax(0, 1fr);
+  gap: 50px min(8.3vw, 160px);
+  align-items: start;
+  padding-left: calc(var(--gutter) + clamp(20px, 3.4vw, 64px));
+  padding-right: calc(var(--gutter) + clamp(20px, 3.4vw, 64px));
+  margin-bottom: min(9vw, 170px);
+}
+.ov-intro__text { display: flex; flex-direction: column; align-items: flex-start; gap: 1.4em; max-width: 540px; }
+.ov-intro__text .p-lg { color: var(--sage-ink); }
+.ov-intro__text .cta { margin-top: 0.6em; }
+
+.ov-index__title { display: block; margin-bottom: 1.4em; }
+.ov-index__list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(var(--rows, 6), auto);
+  grid-auto-flow: column;
+  column-gap: min(3.6vw, 64px);
+  align-items: start;
+}
+.ov-index__list li { border-top: 1px solid var(--line); }
+.ov-index__list li:nth-child(6), .ov-index__list li:last-child { border-bottom: 1px solid var(--line); }
+.ov-index__link {
+  display: flex;
+  align-items: baseline;
+  gap: 0.9em;
+  padding: 0.62em 0 0.58em;
+  font-family: var(--ff-display);
+  font-size: clamp(19px, 1.5vw, 28px);
+  line-height: 1.12;
+  color: var(--sage-ink);
+  transition: color 300ms, transform 500ms var(--ease-out);
+}
+.ov-index__num {
+  flex: 0 0 1.7em;
+  font-family: var(--ff-sans);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  color: var(--sage-ink);
+  opacity: 0.8;
+  transform: translateY(-0.3em);
+}
+.ov-index__name { text-wrap: balance; }
+.ov-index__link:hover, .ov-index__link:focus-visible { color: var(--ink); transform: translate3d(8px, 0, 0); }
+
+/* ---------------------------------------------------------------- list rows */
+.ov-list .featured__item { padding: 25px 0; }
+.ov-row .it { grid-template-rows: clamp(560px, 65vh, 860px); min-height: 0; }
+.ov-row .it__media .images { background: var(--stone); }
+.ov-row .heading {
+  font-size: clamp(30px, 3.44vw, 66px);
+  line-height: 1.04;
+  hyphens: manual;
+  -webkit-hyphens: manual;
+}
+.ov-row .heading--label > div > span { text-wrap: balance; min-width: 0; }
+.ov-row .paragraph-spaced__bottom p { max-width: 460px; }
+.ov-row .chips { margin-top: 22px; }
+.ov-row__more { display: block; margin-top: 28px; }
+
+/* keep the number label beside long titles (reference: label left, title right) */
+@media (min-width: 1001px) {
+  .ov-row .heading--label > div { flex-wrap: nowrap; }
+  .ov-row .heading--label > div::before { flex-shrink: 0; }
+  .ov-row .heading--label > div > span { flex: 1 1 auto; }
+}
+
+/* Smart Garden rows: a little more room for lead + benefits */
+.ov-list--smart .ov-row .it { grid-template-rows: clamp(620px, 72vh, 900px); }
+.ov-benefits { margin-top: 26px; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 28px; max-width: 560px; }
+.ov-benefits li { font-size: 1rem; line-height: 1.3; color: var(--ink); }
+
+/* ---------------------------------------------------------------- statement band */
+.ov-list .ov-statement {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: min(9.4vw, 180px) var(--gutter);
+}
+.ov-statement .eyebrow { margin-bottom: 1.6em; }
+.ov-statement__text { max-width: 15em; margin: 0 auto; text-wrap: balance; hyphens: manual; }
+.ov-statement__sub { max-width: 420px; margin-top: 0.4em; color: var(--sage-ink); }
+
+/* ---------------------------------------------------------------- system band (smart) */
+.ov-system {
+  margin: min(9vw, 160px) var(--gutter) 0;
+  padding: min(5.2vw, 100px) 60px min(4.2vw, 80px);
+  background: var(--stone);
+  border-radius: var(--radius);
+}
+.ov-system__head { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: min(4.2vw, 80px); }
+.ov-system__head .eyebrow { margin-bottom: 1.4em; }
+.ov-system__head .heading { margin-bottom: 0; }
+.ov-system__cols { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); border-top: 1px solid var(--line); }
+.ov-system__cols > li { display: flex; }
+.ov-system__cols > li + li { border-left: 1px solid var(--line); }
+.ov-system__col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  width: 100%;
+  padding: 34px clamp(20px, 2.6vw, 50px) 10px;
+  color: inherit;
+}
+.ov-system__cols > li:first-child .ov-system__col { padding-left: 0; }
+.ov-system__cols > li:last-child .ov-system__col { padding-right: 0; }
+.ov-system__num { font-size: 13px; letter-spacing: 0.06em; color: var(--sage-ink); }
+.ov-system__col .title-medium { transition: color 300ms; }
+.ov-system__col .p-md { max-width: 380px; color: var(--ink); }
+.ov-system__col .link-more { margin-top: auto; }
+.ov-system__col:hover .title-medium { color: var(--green); }
+
+/* ---------------------------------------------------------------- wish + cross links */
+.page-overview .ov-wish { margin-top: min(9vw, 160px); }
+.page-overview .ov-wish .title { font-size: clamp(45px, 5.2vw, 100px); }
+
+.ov-cross {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas: "head cta" "links links";
+  align-items: end;
+  gap: 34px 30px;
+  margin-top: min(6vw, 100px);
+  padding-top: 34px;
+  padding-bottom: 4px;
+}
+.ov-cross__head { grid-area: head; display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+.ov-cross__head .title-medium { transition: color 300ms; }
+.ov-cross__head:hover .title-medium { color: var(--green); }
+.ov-cross > .cta { grid-area: cta; }
+.ov-cross__links { grid-area: links; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 25px; }
+.ov-cross__link {
+  display: flex;
+  align-items: baseline;
+  gap: 0.8em;
+  padding: 18px 0 16px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  color: var(--sage-ink);
+  transition: color 300ms;
+}
+.ov-cross__link .title-small { font-size: clamp(19px, 1.5vw, 28px); line-height: 1.1; }
+.ov-cross__link svg { width: 13px; height: 13px; margin-left: auto; flex-shrink: 0; align-self: center; transition: transform 400ms var(--ease-out); }
+.ov-cross__num { font-size: 12px; letter-spacing: 0.04em; transform: translateY(-0.3em); }
+.ov-cross__link:hover { color: var(--ink); }
+.ov-cross__link:hover svg { transform: translate3d(4px, 0, 0); }
+
+/* ---------------------------------------------------------------- responsive */
+@media (min-width: 1001px) and (max-width: 1440px) {
+  .ov-row .chips { gap: 6px; }
+  .ov-row .chips li { height: 29px; padding: 0 0.85em; font-size: max(0.84rem, 12px); }
+}
+/* the global type scale drops below 14px on small laptops – keep body copy readable */
+@media (min-width: 1001px) and (max-width: 1400px) {
+  .ov-benefits li,
+  .ov-row .paragraph-spaced__bottom .p-md,
+  .ov-system__col .p-md,
+  .ov-row .link-more,
+  .ov-system__col .link-more { font-size: max(0.9rem, 14px); }
+  .ov-intro__text .p-lg { font-size: max(1rem, 15px); }
+}
+
+@media (max-width: 1200px) {
+  .ov-intro { grid-template-columns: 100%; gap: 60px; }
+  .ov-intro__text { max-width: 620px; }
+  .ov-index__link { font-size: clamp(22px, 2.4vw, 26px); }
+  .ov-benefits { grid-template-columns: 100%; }
+}
+
+@media (max-width: 1000px) {
+  .ov-intro { padding-left: var(--gutter); padding-right: var(--gutter); }
+  .ov-index__link { font-size: 1.73rem; }
+
+  .ov-row .it, .ov-list--smart .ov-row .it { grid-template-rows: auto; }
+  .ov-list .it__media { height: min(80vw, 520px); max-height: none; }
+  .ov-row .heading { font-size: clamp(34px, 6vw, 52px); }
+  .ov-row .paragraph-spaced__bottom p { max-width: 560px; }
+  .ov-list .featured__item { padding: 20px 0 24px; }
+  .ov-row__more { margin-top: 22px; }
+  .ov-benefits { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 620px; }
+  .ov-benefits li { font-size: 16px; }
+
+  .ov-system { padding: 50px 24px 40px; }
+  .ov-system__cols { grid-template-columns: 100%; border-top: 0; }
+  .ov-system__cols > li { border-top: 1px solid var(--line); }
+  .ov-system__cols > li + li { border-left: 0; }
+  .ov-system__col, .ov-system__cols > li:first-child .ov-system__col, .ov-system__cols > li:last-child .ov-system__col { padding: 26px 0 30px; }
+
+  .ov-cross__links { grid-template-columns: 100%; }
+  .ov-cross__link { border-bottom: 0; }
+  .ov-cross__links li:last-child .ov-cross__link { border-bottom: 1px solid var(--line); }
+}
+
+@media (max-width: 700px) {
+  .ov-intro { margin-bottom: 90px; }
+  .ov-index__list { grid-template-columns: 100%; grid-template-rows: none; grid-auto-flow: row; }
+  .ov-index__list li:nth-child(6) { border-bottom: 0; }
+  .ov-index__link { font-size: 1.6rem; padding: 0.55em 0 0.5em; }
+  .ov-row .heading { font-size: clamp(32px, 9vw, 42px); }
+  .ov-list .it__media { height: min(78vw, 360px); }
+  .ov-benefits { grid-template-columns: 100%; gap: 8px; }
+  .ov-list .ov-statement { padding: 90px 6px; }
+  .ov-statement__text { font-size: clamp(34px, 10vw, 44px); }
+  .ov-cross { grid-template-columns: 100%; grid-template-areas: "head" "links" "cta"; gap: 26px; }
+  .ov-cross > .cta { justify-self: start; }
+  .ov-cross__link .title-small { font-size: 1.6rem; }
+}

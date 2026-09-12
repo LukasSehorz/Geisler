@@ -1,0 +1,73 @@
+{"about":{
+ "hero_title_html":"Über <em>uns</em>",
+ "hero_text":"Seit 1981 gestalten wir Gärten in Eschau und der Region – als Meister- und Ausbildungsbetrieb mit eingespieltem Team, modernem Maschinenpark und einer Leidenschaft für private Gärten.",
+ "story_title_html":"Eine Geschichte aus <em>Eschau</em>",
+ "story_paragraphs":[
+  "Wolfgang Geißler gründete den Betrieb im Jahr 1981 in Eschau. Auf die Erfahrung aus dieser langen Zeit greifen wir bis heute zurück – ebenso wie auf den Anspruch, jeden Garten mit Sorgfalt zu behandeln.",
+  "Seit 2017 führen Stefan Opolka und Stefan Weis das Unternehmen. Beide waren zuvor lange Jahre Mitarbeiter des Betriebs und kennen seine Arbeitsweise aus erster Hand. Heute sorgen sie gemeinsam mit ihrem Team für Ihren Wohlfühlgarten.",
+  "Unser Schwerpunkt liegt auf privaten Gärten: Planung, Neu- und Umgestaltung sowie Pflege. Unterstützt von einem modernen Maschinenpark setzen wir auch große, anspruchsvolle Projekte vollständig mit unserer eigenen Firma um."
+ ],
+ "timeline":[
+  {"year":"1981","title":"Die Gründung","text":"Wolfgang Geißler gründet den Betrieb für Garten- und Landschaftsbau in Eschau."},
+  {"year":"2017","title":"Neue Inhaber","text":"Die langjährigen Mitarbeiter Stefan Opolka und Stefan Weis übernehmen das Unternehmen und führen es gemeinsam weiter."},
+  {"year":"Heute","title":"Ein eingespieltes Team","text":"Meister, Vorarbeiter, Facharbeiter und Auszubildende gestalten mit modernem Maschinenpark private Gärten – geplant, gebaut und gepflegt aus einer Hand."}
+ ],
+ "values_title_html":"Wofür wir <em>stehen</em>",
+ "values":[
+  {"title":"Fachgerecht und qualitätsbewusst","text":"Wir arbeiten nach den Regeln unseres Handwerks und garantieren qualitativ hochwertige Arbeiten – vom Unterbau bis zur letzten Pflanze."},
+  {"title":"Sauber und termingerecht","text":"Eine ordentliche Baustelle und verlässliche Termine sind für uns selbstverständlich – rund um die gesamte Gestaltung Ihrer Außenanlage."},
+  {"title":"Kreative Planung","text":"Jeder Garten ist anders. Wir entwickeln Ideen, die zu Ihrem Grundstück, Ihrem Haus und Ihrer Art zu leben passen."},
+  {"title":"Individuelle Beratung","text":"Wir hören zu, beraten offen und nehmen uns Zeit für Ihre Fragen – damit am Ende ein Garten entsteht, in dem Sie sich wohlfühlen."}
+ ],
+ "owners_title_html":"Die <em>Inhaber</em>",
+ "owners":[
+  {"name":"Stefan Weis","role":"Geschäftsführer · Gärtnermeister","text":"Stefan Weis ist Gärtnermeister und führt den Betrieb seit 2017 gemeinsam mit Stefan Opolka. Zuvor war er lange Jahre Mitarbeiter des Unternehmens.","phone":"0151 / 222 68 207"},
+  {"name":"Stefan Opolka","role":"Geschäftsführer · Bauleiter","text":"Stefan Opolka ist Bauleiter und seit 2017 gemeinsam mit Stefan Weis Inhaber des Betriebs. Auch er gehörte zuvor lange Jahre zum Team.","phone":"0160 / 947 66 935"}
+ ],
+ "team_title_html":"Unser <em>Team</em>",
+ "team_intro":"Hinter jedem Garten stehen Menschen, die ihr Handwerk verstehen. Unser Team vereint Meisterwissen, die Erfahrung von Vorarbeitern und Facharbeitern und den Nachwuchs, den wir selbst ausbilden.",
+ "team":[
+  {"name":"Vorname Nachname","role":"Landschaftsgärtnermeister"},
+  {"name":"Vorname Nachname","role":"Galabau-Vorarbeiter"},
+  {"name":"Vorname Nachname","role":"Galabau-Vorarbeiter"},
+  {"name":"Vorname Nachname","role":"Galabau-Vorarbeiter"},
+  {"name":"Vorname Nachname","role":"Facharbeiter"},
+  {"name":"Vorname Nachname","role":"Facharbeiter"},
+  {"name":"Vorname Nachname","role":"Facharbeiter"},
+  {"name":"Vorname Nachname","role":"Auszubildender"},
+  {"name":"Vorname Nachname","role":"Auszubildender"},
+  {"name":"Vorname Nachname","role":"Aushilfe"}
+ ],
+ "machines_title_html":"Unser <em>Maschinenpark</em>",
+ "machines_text":"Ein moderner Maschinenpark unterstützt unser Team bei jedem Projekt. So führen wir Erd-, Aushub- und Planierarbeiten schnell und effektiv aus und können auch große, anspruchsvolle Vorhaben vollständig selbst bewältigen.",
+ "seo_title":"Über uns | Gartengestaltung Geißler Eschau",
+ "seo_description":"Seit 1981 Garten- und Landschaftsbau in Eschau: Lernen Sie die Inhaber Stefan Opolka und Stefan Weis, unser Team und unseren Maschinenpark kennen."
+},
+"career":{
+ "title_html":"Landschaftsgärtner/in <em>gesucht</em>",
+ "label":"Karriere",
+ "lead":"Wir bauen Gärten – jeden Tag. Zur Verstärkung unseres Teams suchen wir Landschaftsgärtnerinnen und Landschaftsgärtner, die Freude an ihrer Arbeit haben und abends stolz auf das Geleistete sind.",
+ "paragraphs":[
+  "Wir sind ein junges, kreatives Unternehmen mit einem großen Stammkundenkreis. Bei uns herrscht ein hervorragendes Betriebsklima, in dem jeder dem anderen zur Seite steht.",
+  "Mit übertariflicher Vergütung und einem großen Gerätepark schaffen wir die Voraussetzungen für anspruchsvolle und abwechslungsreiche Projekte. Ein kreatives, leistungsfähiges Miteinander ist uns wichtig – und wir fördern es durch weitere angenehme Vorzüge."
+ ],
+ "profile_title":"Ihr Profil",
+ "profile":[
+  "Fundiertes Fachwissen und praktische Erfahrung im Berufsalltag",
+  "Teamfähigkeit sowie eine verantwortungsbewusste, eigenständige Arbeitsweise",
+  "Ein höflicher, freundlicher Umgang mit unseren Kunden",
+  "Kreativität und Freude an Ihrer Arbeit",
+  "Mindestens Führerscheinklasse B/BE"
+ ],
+ "offer_title":"Was wir bieten",
+ "offer":[
+  "Übertarifliche Vergütung",
+  "Großer Gerätepark für anspruchsvolle Projekte",
+  "Hervorragendes Betriebsklima",
+  "Kreatives Miteinander im Team",
+  "Abwechslungsreiche Projekte für einen großen Stammkundenkreis"
+ ],
+ "apply_text":"Wenn Sie Freude an Ihrer Arbeit haben, senden Sie uns Ihre aussagekräftige Bewerbung – per E-Mail an info@gartengestaltung-geissler.de oder per Post an Gartengestaltung Geißler OHG, Elsavastraße 3, 63863 Eschau.",
+ "seo_title":"Karriere | Gartengestaltung Geißler Eschau",
+ "seo_description":"Landschaftsgärtner/in gesucht: übertarifliche Vergütung, großer Gerätepark und ein hervorragendes Betriebsklima bei Gartengestaltung Geißler in Eschau."
+}}

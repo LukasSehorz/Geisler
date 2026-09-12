@@ -1,0 +1,51 @@
+{% extends 'base.html' %}
+{% import 'partials/macros.html' as m %}
+{% block title %}{% if legal_kind == 'impressum' %}Impressum{% else %}Datenschutzerklärung{% endif %} | Gartengestaltung Geißler{% endblock %}
+{% block description %}{% if legal_kind == 'impressum' %}Impressum der Gartengestaltung Geißler OHG, Elsavastraße 3, 63863 Eschau – Angaben gemäß § 5 DDG, Kontakt und Registereintrag.{% else %}Datenschutzerklärung von Gartengestaltung Geißler: welche Daten beim Besuch dieser Website verarbeitet werden und welche Rechte Sie haben.{% endif %}{% endblock %}
+{% block body_class %}page-legal page-legal--{{ legal_kind }}{% endblock %}
+{% block styles %}<link rel="stylesheet" href="{{ asset('css/pages/legal.css') }}">{% endblock %}
+
+{% block content %}
+{% set is_imp = legal_kind == 'impressum' %}
+{% set raw = c.legal.impressum_html if is_imp else c.legal.datenschutz_html %}
+{# make contact data in the legal text actionable #}
+{% set raw = raw|replace(company.email, '<a href="mailto:' ~ company.email ~ '">' ~ company.email ~ '</a>') %}
+{% set raw = raw|replace(company.phone, '<a href="' ~ company.phone_href ~ '">' ~ company.phone ~ '</a>') %}
+{% set raw = raw|replace('www.lda.bayern.de', '<a href="https://www.lda.bayern.de" target="_blank" rel="noopener">www.lda.bayern.de</a>') %}
+
+<article class="legal-page container">
+  <header class="legal-page__head">
+    <div class="legal-page__titles">
+      <nav class="legal-page__crumbs" aria-label="Brotkrümelnavigation" data-fade>
+        <a href="{{ url('index.html') }}">Startseite</a><span aria-hidden="true">/</span>Rechtliches
+      </nav>
+      <h1 class="title" data-text-reveal>{% if is_imp %}Impressum{% else %}Datenschutz<em>erklärung</em>{% endif %}</h1>
+    </div>
+    <div class="legal-page__intro" data-fade>
+      <p class="p-lg">{% if is_imp %}Angaben zum Anbieter dieser Website, zu den vertretungsberechtigten Personen und zum Registereintrag.{% else %}Welche Daten beim Besuch dieser Website verarbeitet werden, zu welchem Zweck – und welche Rechte Sie haben.{% endif %}</p>
+      <ul class="legal-page__switch" aria-label="Rechtliche Seiten">
+        <li><a class="chip{% if is_imp %} is-current{% endif %}" href="{{ url('impressum.html') }}"{% if is_imp %} aria-current="page"{% endif %}>Impressum</a></li>
+        <li><a class="chip{% if not is_imp %} is-current{% endif %}" href="{{ url('datenschutz.html') }}"{% if not is_imp %} aria-current="page"{% endif %}>Datenschutz</a></li>
+      </ul>
+    </div>
+  </header>
+  <div class="legal-page__line" data-line aria-hidden="true"></div>
+
+  <div class="legal-page__body">
+    <aside class="legal-toc" data-legal-toc hidden>
+      <button class="legal-toc__toggle" type="button" aria-expanded="false" aria-controls="legal-toc-nav">
+        <span>Inhalt</span>{{ m.icon('chev') }}
+      </button>
+      <nav class="legal-toc__nav" id="legal-toc-nav" aria-label="Inhaltsverzeichnis">
+        <span class="eyebrow legal-toc__title">Inhalt</span>
+        <ol class="legal-toc__list" data-lenis-prevent></ol>
+      </nav>
+    </aside>
+    <div class="legal" data-legal>
+      {{ raw|safe }}
+    </div>
+  </div>
+</article>
+{% endblock %}
+
+{% block scripts %}<script src="{{ asset('js/legal.js') }}"></script>{% endblock %}

@@ -1,0 +1,75 @@
+{% macro icon(name, cls='') -%}
+{%- if name == 'arrow' -%}
+<svg class="{{ cls }}" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M1 8h13.5M9.5 3l5 5-5 5"/></svg>
+{%- elif name == 'arrow-ne' -%}
+<svg class="{{ cls }}" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M3 13L13 3M5 3h8v8"/></svg>
+{%- elif name == 'chev' -%}
+<svg class="{{ cls }}" viewBox="0 0 10 10" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true"><path d="M1.5 3.5L5 7l3.5-3.5"/></svg>
+{%- elif name == 'phone' -%}
+<svg class="{{ cls }}" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M5.2 2.5h2.6l1.3 3.6-1.8 1.2a9.6 9.6 0 004.9 4.9l1.2-1.8 3.6 1.3v2.6a1.9 1.9 0 01-2 1.9A14.5 14.5 0 013.3 4.5a1.9 1.9 0 011.9-2z"/></svg>
+{%- elif name == 'mail' -%}
+<svg class="{{ cls }}" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><rect x="2.5" y="4.5" width="15" height="11" rx="1.5"/><path d="M3 5.5l7 5.5 7-5.5"/></svg>
+{%- elif name == 'pin' -%}
+<svg class="{{ cls }}" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M10 18s-5.5-5.3-5.5-9.5a5.5 5.5 0 0111 0C15.5 12.7 10 18 10 18z"/><circle cx="10" cy="8.5" r="2"/></svg>
+{%- elif name == 'download' -%}
+<svg class="{{ cls }}" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.2" aria-hidden="true"><path d="M8 1.5v9M4 7l4 4 4-4M2 14.5h12"/></svg>
+{%- endif -%}
+{%- endmacro %}
+
+{% macro more(text='Mehr erfahren') -%}
+<span class="link-more">{{ text }} {{ icon('arrow') }}</span>
+{%- endmacro %}
+
+{% macro seal(badge, i) -%}
+<svg viewBox="0 0 260 260" role="img" aria-label="{{ badge.top }} {{ badge.main }} {{ badge.bottom }}">
+  <defs>
+    <path id="seal-top-{{ i }}" d="M 44,130 A 86,86 0 1,1 216,130"/>
+    <path id="seal-bot-{{ i }}" d="M 32,130 A 98,98 0 0,0 228,130"/>
+  </defs>
+  <g class="badge__ring">
+    <circle cx="130" cy="130" r="124" fill="none" stroke="currentColor" stroke-width="1"/>
+    <circle cx="130" cy="130" r="116" fill="none" stroke="currentColor" stroke-width="0.6" stroke-dasharray="1.5 5"/>
+    <text class="badge__arc" font-size="12.5" fill="currentColor"><textPath href="#seal-top-{{ i }}" startOffset="50%" text-anchor="middle">{{ badge.top }}</textPath></text>
+    <text class="badge__arc" font-size="11" fill="currentColor"><textPath href="#seal-bot-{{ i }}" startOffset="50%" text-anchor="middle">{{ badge.bottom }}</textPath></text>
+  </g>
+  <g transform="translate(130 92)" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round">
+    <path d="M0 22V-2"/>
+    <path d="M0 6c-7-1-12-6-12-13 7 0 12 5 12 13z"/>
+    <path d="M0 0c6-1 11-6 11-12-7 0-11 5-11 12z"/>
+  </g>
+  <text class="badge__main" x="130" y="{{ 158 if badge.main|length < 8 else 152 }}" font-size="{{ 50 if badge.main|length < 6 else (36 if badge.main|length < 10 else 27) }}" fill="currentColor" text-anchor="middle">{{ badge.main }}</text>
+  <path d="M104 178h52" stroke="currentColor" stroke-width="0.8"/>
+</svg>
+{%- endmacro %}
+
+{% macro heading_label(label, title_html, tag='h3', cls='heading', reveal=True) -%}
+<{{ tag }} class="{{ cls }} heading--label"{% if reveal %} data-scrub-reveal{% endif %}>
+  <div data-label="{{ label }}"><span>{{ title_html|safe }}</span></div>
+</{{ tag }}>
+{%- endmacro %}
+
+{% macro page_hero(src, title_html, text='', label='', crumbs=None, focus=(0.5, 0.5), cta=None, alt='', mobile_src=None, center=False) -%}
+<section class="page-hero{% if center %} page-hero--center{% endif %}" data-page-hero data-cta-trigger="light" data-cta-label="Scrollen und entdecken">
+  <div class="page-hero__media">
+    {% if mobile_src %}<picture>{{ source(mobile_src, '(max-width: 700px)', ratio='3/4', widths=(600, 900, 1200)) }}{% endif %}
+    {{ pic(src, alt=alt, ratio='16/9', focus=focus, sizes='100vw', priority=True, widths=(900, 1400, 2000, 2600)) }}
+    {% if mobile_src %}</picture>{% endif %}
+  </div>
+  <div class="page-hero__content">
+    <div class="page-hero__titles">
+      {% if crumbs or label %}
+      <span class="page-hero__label" data-hero-fade>
+        {% if crumbs %}{% for c_label, c_url in crumbs %}<a href="{{ url(c_url) }}">{{ c_label }}</a>{% if not loop.last or label %}<span>/</span>{% endif %}{% endfor %}{% endif %}{{ label }}
+      </span>
+      {% endif %}
+      <h1 class="title" data-text-reveal>{{ title_html|safe }}</h1>
+    </div>
+    {% if text %}
+    <div class="page-hero__text">
+      <p class="p-lg" data-hero-fade>{{ text }}</p>
+      {% if cta %}<a class="cta cta--light" href="{{ url(cta[1]) }}" data-hero-fade>{{ cta[0] }} {{ icon('arrow') }}</a>{% endif %}
+    </div>
+    {% endif %}
+  </div>
+</section>
+{%- endmacro %}

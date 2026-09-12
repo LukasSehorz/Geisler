@@ -1,0 +1,32 @@
+{"contact":{
+ "hero_title_html":"Ihr Gartengestalter aus <em>Eschau</em>",
+ "label":"Kontakt",
+ "hero_text":"Wir freuen uns auf Ihren Anruf oder Ihre Nachricht. Ob erste Idee oder konkretes Vorhaben – erzählen Sie uns von Ihrem Garten, wir melden uns umgehend bei Ihnen.",
+ "form_title_html":"<em>Schreiben</em> Sie uns",
+ "info_title_html":"<em>Kontakt</em> und Anfahrt",
+ "seo_title":"Kontakt | Gartengestaltung Geißler Eschau",
+ "seo_description":"Kontakt zu Gartengestaltung Geißler: Büro 09374 / 2124, E-Mail info@gartengestaltung-geissler.de – Elsavastraße 3, 63863 Eschau im Landkreis Miltenberg."
+},
+"gallery":{
+ "hero_title_html":"Einblicke in unsere <em>Arbeit</em>",
+ "label":"Galerie",
+ "hero_text":"Eine Auswahl unserer Arbeiten – von der Bepflanzung bis zur Treppenanlage, vom ersten Aushub bis zum fertigen Garten.",
+ "categories":{"bepflanzungen":"Bepflanzungen","belagsarbeiten":"Beläge & Wege","teichanlagen":"Wasser im Garten","dachbegruenung":"Dachbegrünung","mauerbau":"Hangsicherung & Mauerbau","sichtschutz":"Sichtschutz & Zäune","treppen":"Treppenanlagen","gaerten":"Unsere Gärten","smartgarden":"Smart Garden","baustelle":"Auf der Baustelle"},
+ "seo_title":"Galerie | Gartengestaltung Geißler Eschau",
+ "seo_description":"Bilder unserer Arbeiten: Bepflanzungen, Beläge, Wasser im Garten, Dachbegrünung, Mauerbau, Sichtschutz und Treppen von Gartengestaltung Geißler, Eschau."
+},
+"projects":[
+ {"slug":"schoener-naturgarten","title":"Schöner Naturgarten",
+  "text":"Das Ehepaar wünschte sich eine komplette Neugestaltung der Außenanlage. Als Farbkonzept für die Materialwahl fiel die Entscheidung auf Muschelkalk, der den Stil des Hauses wunderbar widerspiegelt. Der großzügige Eingangsbereich wurde im selben Farbton gepflastert und leitet direkt zur Terrasse hin. Vor dem Haus sind Stellplätze sowie eine schöne Bepflanzung entstanden. Rund um die Terrasse wurde ein pflegeleichtes Kiesbeet mit abgemagertem Pflanzsubstrat und Lavasplitt angelegt. Über das Pflanzbeet hinweg kann der Blick über das Grundstück schweifen: Ein Altbestand an großen Bäumen und der angrenzende Mühlbach bilden hier eine wunderbare Kulisse.",
+  "short":"Komplette Neugestaltung in Muschelkalk – mit Kiesbeet, Stellplätzen und Blick auf alte Bäume und den Mühlbach."},
+ {"slug":"moderner-garten-in-der-stadt","title":"Moderner Garten in der Stadt",
+  "text":"Hier entstand eine modern gestaltete Terrasse über zwei Ebenen, verbunden durch eine maßangefertigte Treppe in L-Form. Von hier aus fällt der Blick auf die Feuerstelle: Der Kreis wurde mit Basaltpflaster und einem Granit-Zweizeiler gepflastert, die Feuerstelle selbst ist von Granitpalisaden umgeben. Eine üppige Bepflanzung rahmt den gesamten Sitzbereich ein und sorgt das ganze Jahr über für eine abwechslungsreiche Blütenvielfalt. Zur Straße hin bilden Gabionenkörbe einen Sicht- und Windschutz. Am Abend sorgt die integrierte Beleuchtung für ein romantisches Ambiente und schöne Grillabende im eigenen Garten.",
+  "short":"Terrasse auf zwei Ebenen mit L-förmiger Treppe, Feuerstelle aus Basalt und Granit, Gabionen und integrierter Beleuchtung."},
+ {"slug":"kleiner-terrassengarten","title":"Kleiner Terrassengarten zum Entspannen",
+  "text":"Das Ehepaar wünschte sich eine pflegeleichte Außenanlage und möglichst viel Raumgewinn auf dem kleinen Grundstück. Auf Pflanzen sollte dennoch nicht verzichtet werden, und auch das Element Wasser sollte eine Rolle im Garten spielen. Um Platz zu gewinnen, wurde das Wasserspiel in die Mauer integriert, welche die Böschung dahinter abfängt. Ein Kiesbeet aus gelbem Quarzit mit immergrünen Formgehölzen und Stauden schafft einen fließenden Übergang. Ein Pflasterstreifen umrahmt das Holzdeck und sorgt für ein wunderbar stimmiges Gesamtbild der Außenanlage.",
+  "short":"Pflegeleicht und platzsparend: ein Wasserspiel in der Stützmauer, ein Kiesbeet aus gelbem Quarzit und ein gerahmtes Holzdeck."}
+],
+"home_seo":{
+ "seo_title":"Gartengestaltung Geißler – Garten- und Landschaftsbau in Eschau",
+ "seo_description":"Meister- und Ausbildungsbetrieb im Garten- und Landschaftsbau in Eschau: Planung, Neu- und Umgestaltung sowie Pflege privater Gärten – seit 1981."
+}}

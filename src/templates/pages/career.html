@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+{% import 'partials/macros.html' as m %}
+{% block title %}{{ c.career.seo_title }}{% endblock %}
+{% block description %}{{ c.career.seo_description }}{% endblock %}
+{% block body_class %}has-hero page-career{% endblock %}
+{% block styles %}<link rel="stylesheet" href="{{ asset('css/pages/about.css') }}">{% endblock %}
+
+{% block content %}
+{% set K = c.career %}
+{% set P = media.pages %}
+
+{# ================================================================ HERO #}
+{{ m.page_hero(P.career.src, K.title_html, K.lead, label=K.label, focus=P.career.focus, alt=P.career.alt) }}
+
+{# ================================================================ EXCERPT #}
+<section class="service__excerpt career__excerpt">
+  <div class="service__excerpt-content">
+    <span class="eyebrow" data-fade>{{ K.label }} · Gartengestaltung Geißler</span>
+    <p class="p-lg" data-fade>{{ K.paragraphs[0] }}</p>
+  </div>
+</section>
+
+{# ================================================================ IMAGES + STATEMENT #}
+<section class="service__images career__images">
+  <div class="images-shifted">
+    <div class="images-shifted__image" data-reveal-img>
+      {{ pic('gal:galerie_hangsicherung_mauerbau__i84ca8c988c745380.jpg', alt='Mitarbeiter mauert eine Natursteinmauer vor einer Hecke bei Sonnenschein', ratio='600/860', focus=(0.68, 0.5), sizes='(max-width: 1000px) 50vw, 31vw', widths=(640, 1000, 1400)) }}
+    </div>
+    <div class="images-shifted__image" data-reveal-img>
+      {{ pic('gal:galerie_sichtschutz_zaun__i2bdb6a7ffdb4198a.jpg', alt='Mitarbeiter richtet Natursteinmauer neben Cortenstahl-Sichtschutz mit Pusteblumenmotiv aus', ratio='450/620', focus=(0.62, 0.45), sizes='(max-width: 1000px) 50vw, 24vw', widths=(640, 1000, 1400)) }}
+    </div>
+  </div>
+  <div class="service__note" data-fade>
+    <span class="title-small">Arbeiten bei Geißler</span>
+    <p class="p-lg">{{ K.paragraphs[1] }}</p>
+    <a class="cta" href="#bewerben">Jetzt bewerben {{ m.icon('arrow') }}</a>
+  </div>
+</section>
+
+{# ================================================================ PROFILE / OFFER #}
+<section class="career-lists">
+  {% for title, items in [(K.profile_title, K.profile), (K.offer_title, K.offer)] %}
+  <div class="career-list">
+    <h2 class="heading" data-scrub-reveal>{{ title }}</h2>
+    <ul class="career-list__items" data-fade-group>
+      {% for it in items %}
+      <li><span class="career-list__num">{{ '%02d'|format(loop.index) }}</span><span>{{ it }}</span></li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endfor %}
+</section>
+
+{# ================================================================ SEALS #}
+<section class="badges career__badges" aria-label="Unser Betrieb">
+  {% for b in c.home.badges %}<div class="badge">{{ m.seal(b, 'career-' ~ loop.index) }}</div>{% endfor %}
+</section>
+
+{# ================================================================ APPLY #}
+<section class="apply" id="bewerben" aria-labelledby="apply-title">
+  <div class="apply__head">
+    <span class="eyebrow apply__eyebrow" data-fade>Bewerbung</span>
+    <h2 class="title" id="apply-title" data-scrub-reveal>Jetzt <em>bewerben</em></h2>
+  </div>
+  <div class="apply__body" data-fade>
+    <p class="p-lg">{{ K.apply_text }}</p>
+    <div class="apply__actions">
+      <a class="cta cta--filled" href="mailto:{{ company.email }}?subject=Bewerbung%20als%20Landschaftsg%C3%A4rtner%2Fin">{{ m.icon('mail') }} Bewerbung per E-Mail</a>
+      <a class="cta" href="{{ company.phone_href }}">{{ m.icon('phone') }} {{ company.phone }}</a>
+    </div>
+    <address class="apply__address">
+      <span class="eyebrow">Per Post</span>
+      <span>{{ company.legal }}<br>{{ company.street }}<br>{{ company.zip }} {{ company.city }}</span>
+      <span class="eyebrow">E-Mail</span>
+      <a class="link" href="mailto:{{ company.email }}">{{ company.email }}</a>
+    </address>
+  </div>
+</section>
+{% endblock %}

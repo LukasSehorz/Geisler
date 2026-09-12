@@ -1,0 +1,191 @@
+{
+  "center": {
+    "name": "Eschau",
+    "lat": 49.81598,
+    "lon": 9.24609
+  },
+  "radius_km": 30,
+  "towns": [
+    {
+      "name": "Mönchberg",
+      "lat": 49.79221,
+      "lon": 9.26691,
+      "distance_km": 3.0
+    },
+    {
+      "name": "Röllbach",
+      "lat": 49.7722,
+      "lon": 9.24721,
+      "distance_km": 4.9
+    },
+    {
+      "name": "Klingenberg am Main",
+      "lat": 49.78241,
+      "lon": 9.18278,
+      "distance_km": 5.9
+    },
+    {
+      "name": "Erlenbach am Main",
+      "lat": 49.80462,
+      "lon": 9.15947,
+      "distance_km": 6.3
+    },
+    {
+      "name": "Wörth am Main",
+      "lat": 49.79551,
+      "lon": 9.15746,
+      "distance_km": 6.8
+    },
+    {
+      "name": "Elsenfeld",
+      "lat": 49.84731,
+      "lon": 9.16185,
+      "distance_km": 7.0
+    },
+    {
+      "name": "Dammbach",
+      "lat": 49.86067,
+      "lon": 9.32387,
+      "distance_km": 7.5
+    },
+    {
+      "name": "Collenberg",
+      "lat": 49.7733,
+      "lon": 9.32674,
+      "distance_km": 7.5
+    },
+    {
+      "name": "Obernburg am Main",
+      "lat": 49.84223,
+      "lon": 9.14805,
+      "distance_km": 7.6
+    },
+    {
+      "name": "Heimbuchenthal",
+      "lat": 49.88353,
+      "lon": 9.29159,
+      "distance_km": 8.2
+    },
+    {
+      "name": "Kleinwallstadt",
+      "lat": 49.87277,
+      "lon": 9.16524,
+      "distance_km": 8.6
+    },
+    {
+      "name": "Großwallstadt",
+      "lat": 49.87786,
+      "lon": 9.15884,
+      "distance_km": 9.3
+    },
+    {
+      "name": "Leidersbach",
+      "lat": 49.90231,
+      "lon": 9.22086,
+      "distance_km": 9.8
+    },
+    {
+      "name": "Kleinheubach",
+      "lat": 49.72185,
+      "lon": 9.21491,
+      "distance_km": 10.7
+    },
+    {
+      "name": "Dorfprozelten",
+      "lat": 49.77871,
+      "lon": 9.3836,
+      "distance_km": 10.7
+    },
+    {
+      "name": "Bürgstadt",
+      "lat": 49.71586,
+      "lon": 9.27138,
+      "distance_km": 11.3
+    },
+    {
+      "name": "Mespelbrunn",
+      "lat": 49.91514,
+      "lon": 9.29077,
+      "distance_km": 11.5
+    },
+    {
+      "name": "Stadtprozelten",
+      "lat": 49.78093,
+      "lon": 9.40533,
+      "distance_km": 12.1
+    },
+    {
+      "name": "Sulzbach am Main",
+      "lat": 49.91025,
+      "lon": 9.15295,
+      "distance_km": 12.4
+    },
+    {
+      "name": "Mömlingen",
+      "lat": 49.85833,
+      "lon": 9.08424,
+      "distance_km": 12.5
+    },
+    {
+      "name": "Miltenberg",
+      "lat": 49.70176,
+      "lon": 9.25597,
+      "distance_km": 12.7
+    },
+    {
+      "name": "Faulbach",
+      "lat": 49.78475,
+      "lon": 9.44109,
+      "distance_km": 14.4
+    },
+    {
+      "name": "Weilbach",
+      "lat": 49.66849,
+      "lon": 9.21652,
+      "distance_km": 16.5
+    },
+    {
+      "name": "Großostheim",
+      "lat": 49.92075,
+      "lon": 9.07559,
+      "distance_km": 16.9
+    },
+    {
+      "name": "Aschaffenburg",
+      "lat": 49.97381,
+      "lon": 9.14467,
+      "distance_km": 19.0
+    },
+    {
+      "name": "Amorbach",
+      "lat": 49.64467,
+      "lon": 9.21973,
+      "distance_km": 19.1
+    },
+    {
+      "name": "Goldbach",
+      "lat": 49.99887,
+      "lon": 9.18276,
+      "distance_km": 20.8
+    },
+    {
+      "name": "Hösbach",
+      "lat": 50.00399,
+      "lon": 9.20238,
+      "distance_km": 21.1
+    },
+    {
+      "name": "Laufach",
+      "lat": 50.01275,
+      "lon": 9.29528,
+      "distance_km": 22.2
+    },
+    {
+      "name": "Alzenau",
+      "lat": 50.08632,
+      "lon": 9.07298,
+      "distance_km": 32.5
+    }
+  ],
+  "attribution": "Kartendaten © OpenStreetMap-Mitwirkende (ODbL)"
+}

@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% import 'partials/macros.html' as m %}
+{% block title %}{{ c.gallery.seo_title }}{% endblock %}
+{% block description %}{{ c.gallery.seo_description }}{% endblock %}
+{% block body_class %}has-hero page-gallery{% endblock %}
+{% block styles %}<link rel="stylesheet" href="{{ asset('css/pages/gallery.css') }}">{% endblock %}
+
+{% block content %}
+{% set G = c.gallery %}
+{% set cats = G.categories %}
+{% set imgs = gallery.images|selectattr('include_in_gallery')|rejectattr('stock_photo')|rejectattr('duplicate_of')|sort(attribute='width', reverse=True)|sort(attribute='quality', reverse=True)|list %}
+{% set GI = {} %}
+{% for im in gallery.images %}{% set _ = GI.update({im.file: im}) %}{% endfor %}
+
+{# ================================================================ HERO #}
+{{ m.page_hero(media.pages.gallery.src, G.hero_title_html, G.hero_text, label=G.label, focus=media.pages.gallery.focus, alt=media.pages.gallery.alt, center=True) }}
+
+{# ================================================================ GALERIE #}
+<section class="gallery container" data-gallery aria-label="Bildergalerie">
+  <div class="gfilter" id="bilder" data-gallery-filter>
+    <div class="gfilter__track" role="group" aria-label="Bilder nach Kategorie filtern">
+      <span class="gfilter__indicator" aria-hidden="true"></span>
+      <button class="gfilter__btn" type="button" data-filter="all" data-name="Alle" aria-pressed="true" aria-controls="gallery-grid">
+        <span class="gfilter__label">Alle</span><span class="gfilter__count">{{ imgs|length }}</span>
+      </button>
+      {% for key in cats %}
+      {% set n = imgs|selectattr('category', 'equalto', key)|list|length %}
+      {% if n %}
+      <button class="gfilter__btn" type="button" data-filter="{{ key }}" data-name="{{ cats[key] }}" aria-pressed="false" aria-controls="gallery-grid">
+        <span class="gfilter__label">{{ cats[key] }}</span><span class="gfilter__count">{{ n }}</span>
+      </button>
+      {% endif %}
+      {% endfor %}
+    </div>
+    <p class="sr-only" aria-live="polite" data-gallery-status></p>
+  </div>
+
+  <div class="gallery__grid" id="gallery-grid" data-gallery-grid>
+    {% for im in imgs %}
+    {% set big = pic('gal:' ~ im.file, alt='', widths=(1920,)) %}
+    <button class="gitem" type="button" data-cat="{{ im.category }}" data-fx="{{ im.focus.x }}" data-fy="{{ im.focus.y }}"
+      data-full="{{ big.unescape().split(' src="')[1].split('"')[0] }}"
+      style="--fx: {{ (im.focus.x * 100)|round(1) }}%; --fy: {{ (im.focus.y * 100)|round(1) }}%"
+      aria-label="{{ im.alt }}" data-cta-trigger="main" data-cta-label="Bild ansehen">
+      <span class="gitem__inner">
+        <span class="gitem__media">
+          {{ pic('gal:' ~ im.file, alt=im.alt, widths=(480, 800, 1200), sizes='(max-width: 700px) 50vw, (max-width: 1000px) 50vw, 33vw', attrs='draggable="false"') }}
+        </span>
+        <span class="gitem__caption" aria-hidden="true">
+          <span class="gitem__cat">{{ cats[im.category] }}</span>
+          <span class="gitem__alt">{{ im.alt }}</span>
+        </span>
+      </span>
+    </button>
+    {% endfor %}
+  </div>
+</section>
+
+{# ================================================================ UNSERE GÄRTEN #}
+{% set project_media = [
+  ['unsere_gaerten__i99a1f086519e5b01.jpg'],
+  ['galerie_bepflanzungen__i8a5079ae951f6f57.jpg', 'galerie_belagsarbeiten__ic06a0c5588cbb73d.jpg'],
+  ['galerie_belagsarbeiten__i637bbf9020cd919f.jpg', 'galerie_teichanlagen_wasserelemente__ic9ae52f20ee38f48.jpg']
+] %}
+<section class="gallery-refs container" id="referenzen">
+  <header class="section-head">
+    <h2 class="title" data-scrub-reveal>Unsere <em>Gärten</em></h2>
+    <p class="p-lg" data-fade>Drei Gärten, drei ganz unterschiedliche Wünsche – ein Einblick, wie aus Ideen fertige Außenanlagen werden.</p>
+  </header>
+
+  <div class="featured">
+    {% for p in c.projects %}
+    {% set files = project_media[loop.index0] if loop.index0 < project_media|length else [] %}
+    <div class="featured__item">
+      <article class="it{% if loop.index is even %} it--reversed{% endif %}">
+        <div class="it__media">
+          {% for f in files %}
+          {% set gi = GI[f] %}
+          <div class="images" data-reveal-img>
+            {{ pic('gal:' ~ f, alt=gi.alt, ratio=('505/702' if files|length > 1 else '1035/702'), focus=gi.focus, sizes=('(max-width: 1000px) 50vw, 27vw' if files|length > 1 else '(max-width: 1000px) 100vw, 55vw'), widths=((480, 800, 1200) if files|length > 1 else (640, 1000, 1400, 2000))) }}
+          </div>
+          {% endfor %}
+        </div>
+        <div class="it__content">
+          <div class="paragraph-spaced">
+            {{ m.heading_label('Referenz %02d'|format(loop.index), p.title, 'h3') }}
+            <div class="paragraph-spaced__bottom">
+              <p class="p-md" data-fade>{{ p.text }}</p>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+{# ================================================================ WUNSCHGARTEN #}
+{% set W = c.home.wish %}
+<section class="wish">
+  <h2 class="title" data-scrub-reveal>{{ W.title_html|safe }}</h2>
+  <div class="wish__text" data-fade>
+    {% for para in W.paragraphs %}<p class="p-lg">{{ para }}</p>{% endfor %}
+    <a class="cta cta--filled" href="{{ url('kontakt.html') }}">{{ W.cta }} {{ m.icon('arrow') }}</a>
+  </div>
+</section>
+
+{# ================================================================ LIGHTBOX #}
+<div class="lightbox" data-lightbox role="dialog" aria-modal="true" aria-label="Bildansicht" hidden>
+  <div class="lightbox__backdrop" aria-hidden="true"></div>
+  <div class="lightbox__bar" data-lb-chrome>
+    <span class="lightbox__count" data-lb-count>01 / {{ '%02d'|format(imgs|length) }}</span>
+    <button class="lightbox__close" type="button" data-lb-close>
+      <span>Schließen</span><span class="lightbox__x" aria-hidden="true"></span>
+    </button>
+  </div>
+  <div class="lightbox__stage" data-lb-stage>
+    <img class="lightbox__img" alt="" draggable="false" decoding="async">
+    <img class="lightbox__img" alt="" draggable="false" decoding="async">
+  </div>
+  <button class="lightbox__nav lightbox__nav--prev" type="button" data-lb-prev data-lb-chrome aria-label="Vorheriges Bild">{{ m.icon('arrow') }}</button>
+  <button class="lightbox__nav lightbox__nav--next" type="button" data-lb-next data-lb-chrome aria-label="Nächstes Bild">{{ m.icon('arrow') }}</button>
+  <div class="lightbox__caption" data-lb-chrome aria-live="polite">
+    <span class="lightbox__cat" data-lb-cat></span>
+    <p class="lightbox__alt" data-lb-alt></p>
+  </div>
+</div>
+{% endblock %}
+
+{% block scripts %}<script src="{{ asset('js/gallery.js') }}"></script>{% endblock %}

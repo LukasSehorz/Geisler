@@ -1,0 +1,64 @@
+{"home":{
+ "hero_title_html":"Ihr Garten ist unsere <em>Leidenschaft</em>.",
+ "hero_text":"Seit 1981 planen, bauen und pflegen wir private Gärten in Eschau und der Region. Mit Meisterhand, einem eingespielten Team und dem Blick für das, was bleibt – Orte im Freien, an denen Sie gerne ankommen.",
+ "about_title_html":"Über <em>uns</em>",
+ "about_paragraphs":[
+  "Als Meister- und Ausbildungsbetrieb im Garten- und Landschaftsbau widmen wir uns vor allem privaten Gärten. Planung, Neu- und Umgestaltung sowie die Pflege Ihrer Anlage liegen bei uns in einer Hand.",
+  "Wolfgang Geißler gründete den Betrieb 1981 in Eschau. Seit 2017 führen ihn Stefan Opolka und Stefan Weis, beide lange Jahre Teil des Teams – mit derselben Sorgfalt und einem modernen Maschinenpark im Rücken."
+ ],
+ "about_cta":"Mehr über uns erfahren",
+ "badges":[
+  {"top":"Gegründet","main":"1981","bottom":"in Eschau"},
+  {"top":"Meisterbetrieb","main":"GaLaBau","bottom":"Garten- und Landschaftsbau"},
+  {"top":"Ausbildungs-","main":"betrieb","bottom":"für Landschaftsgärtner"}
+ ],
+ "services_title_html":"Unsere <em>Dienstleistungen</em>",
+ "services_intro":"Vom ersten Entwurf bis zur letzten Pflanze: Wir gestalten Außenanlagen fachgerecht, sauber und termingerecht – und begleiten Ihren Garten auch in den Jahren danach.",
+ "water_title_html":"Wasser im <em>Garten</em>",
+ "water_intro":"Ein Pool neben der Terrasse, ein stiller Teich, ein leises Wasserspiel an der Mauer: Wasser verändert einen Garten. Wir planen es so, dass es sich selbstverständlich einfügt.",
+ "smart":{
+  "label":"Smart Garden",
+  "title_html":"Smarter <em>gärtnern</em>",
+  "text":"Abends nach Hause kommen und einfach auf der Terrasse Platz nehmen, statt noch zu gießen und zu mähen. Mähroboter, automatische Bewässerung und ein durchdachtes Lichtkonzept nehmen Ihnen Arbeit ab – und schenken Ihrem Garten auch nach Sonnenuntergang eine besondere Atmosphäre.",
+  "cta":"Smart Garden entdecken"
+ },
+ "career":{
+  "label":"Karriere",
+  "title_html":"Wir bauen Gärten – <em>jeden Tag</em>.",
+  "text":"Wir sind ein junges, kreatives Unternehmen mit großem Stammkundenkreis und suchen Landschaftsgärtnerinnen und Landschaftsgärtner, die Freude an ihrer Arbeit haben. Es erwarten Sie ein hervorragendes Betriebsklima, übertarifliche Vergütung und ein großer Gerätepark.",
+  "cta":"Jetzt bewerben"
+ },
+ "region":{
+  "label":"Einzugsgebiet",
+  "title_html":"Unser <em>Einzugsgebiet</em>",
+  "text":"Unser Betrieb liegt in Eschau im Spessart. Von hier aus gestalten wir private Gärten im Landkreis Miltenberg, in Stadt und Landkreis Aschaffenburg sowie am Untermain – mit kurzen Wegen, persönlicher Betreuung und einem Team, das die Region kennt.",
+  "cta":"Anfrage stellen"
+ },
+ "references_title_html":"Unsere <em>Gärten</em>",
+ "references_cta":"Alle Referenzen",
+ "wish":{
+  "title_html":"Ihr <em>Wunschgarten</em>?",
+  "paragraphs":[
+   "Jeder Garten beginnt mit einem Gespräch. Erzählen Sie uns, wie Sie Ihren Außenraum nutzen möchten – wir sehen uns das Grundstück an und entwickeln erste Ideen.",
+   "Daraus entsteht ein Konzept, das zu Ihrem Haus und Ihrem Alltag passt. Umgesetzt von unserem eigenen Team, vom ersten Spatenstich bis zur Pflege."
+  ],
+  "cta":"Kontakt aufnehmen"
+ },
+ "promise":{
+  "title_html":"Unser <em>Anspruch</em>",
+  "items":[
+   {"title":"Fachgerechte Ausführung","text":"Wir arbeiten nach den Regeln unseres Handwerks – sorgfältig im Detail, qualitätsbewusst in der Materialwahl und mit dem Ziel, dass Ihr Garten dauerhaft Freude macht."},
+   {"title":"Kreative Planung","text":"Kein Garten gleicht dem anderen. Wir entwickeln Konzepte, die Grundstück, Haus und Ihre Gewohnheiten ernst nehmen – mit Gespür für Material, Pflanze und Proportion."},
+   {"title":"Individuelle Beratung","text":"Wir nehmen uns Zeit für Ihre Fragen, beraten offen und zeigen Möglichkeiten auf – vor Ort in Ihrem Garten, bis die Lösung wirklich zu Ihnen passt."},
+   {"title":"Sauber und termingerecht","text":"Eine ordentliche Baustelle und verlässliche Absprachen sind für uns selbstverständlich. Wir halten, was wir zusagen, und übergeben Ihr Grundstück aufgeräumt."}
+  ]
+ },
+ "contact_teaser":{
+  "left_title":"Rufen Sie uns an",
+  "left_text":"Büro: 09374 / 2124. Wir freuen uns auf Ihren Anruf und nehmen uns Zeit für Ihr Anliegen.",
+  "right_title":"Schreiben Sie uns",
+  "right_text":"info@gartengestaltung-geissler.de – wir melden uns umgehend bei Ihnen."
+ },
+ "gallery_title_html":"Einblicke in unsere <em>Arbeit</em>",
+ "gallery_cta":"Zur Galerie"
+}}

@@ -1,0 +1,161 @@
+{% extends 'base.html' %}
+{% import 'partials/macros.html' as m %}
+{% set A = c.about %}
+{% block title %}{{ A.seo_title }}{% endblock %}
+{% block description %}{{ A.seo_description }}{% endblock %}
+{% block body_class %}has-hero page-about{% endblock %}
+{% block styles %}<link rel="stylesheet" href="{{ asset('css/pages/about.css') }}">{% endblock %}
+
+{% macro tel(num) -%}tel:+49{{ num|replace(' ', '')|replace('/', '')|replace('-', '') }}{%- endmacro %}
+
+{% macro team_mark() -%}
+<svg class="team-card__mark" viewBox="0 0 120 120" fill="none" stroke="currentColor" stroke-linecap="round" aria-hidden="true">
+  <circle cx="60" cy="60" r="56" stroke-width="1" vector-effect="non-scaling-stroke"/>
+  <circle cx="60" cy="60" r="50" stroke-width="1" stroke-dasharray="1.5 5" vector-effect="non-scaling-stroke"/>
+  <g transform="translate(60 58) scale(1.9)" stroke-width="1" vector-effect="non-scaling-stroke">
+    <path d="M0 16V-12" vector-effect="non-scaling-stroke"/>
+    <path d="M0 4c-8-1-13-7-13-15 8 0 13 6 13 15z" vector-effect="non-scaling-stroke"/>
+    <path d="M0-4c7-1 12-7 12-14-8 0-12 6-12 14z" vector-effect="non-scaling-stroke"/>
+    <path d="M-9 16H9" vector-effect="non-scaling-stroke"/>
+  </g>
+</svg>
+{%- endmacro %}
+
+{% block content %}
+{% set P = media.pages %}
+
+{# ================================================================ HERO #}
+{{ m.page_hero(P.about.src, A.hero_title_html, A.hero_text, label='Gartengestaltung Geißler', focus=P.about.focus, alt=P.about.alt, mobile_src=P.about_mobile.src) }}
+
+{# ================================================================ STORY (Märchen layout) #}
+<section class="story" id="geschichte" aria-labelledby="story-title">
+  <h2 class="title story__title" id="story-title" data-scrub-reveal>{{ A.story_title_html|safe }}</h2>
+  <div class="story__image" data-reveal-img>
+    {{ pic('gal:galerie_hangsicherung_mauerbau__i9870264be2f2fc77.jpg', alt='Trockenmauer-Hochbeet mit Lampenputzergras und Rosen vor einer Sandsteinmauer', ratio='588/880', focus=(0.5, 0.5), sizes='(max-width: 700px) 100vw, (max-width: 1000px) 50vw, 31vw', widths=(640, 1000, 1400)) }}
+  </div>
+  <div class="story__text" data-fade>
+    {% for p in A.story_paragraphs %}<p class="p-lg">{{ p }}</p>{% endfor %}
+  </div>
+</section>
+
+{# ================================================================ TIMELINE #}
+<section class="timeline container" aria-label="Meilensteine">
+  <ol class="timeline__list" data-fade-group>
+    {% for t in A.timeline %}
+    <li class="timeline__item">
+      <span class="timeline__line" data-line aria-hidden="true"></span>
+      <span class="timeline__index">{{ '%02d'|format(loop.index) }}</span>
+      {% if t.year|int(0) > 0 %}
+      <span class="timeline__year" data-count="{{ t.year }}">{{ t.year }}</span>
+      {% else %}
+      <span class="timeline__year timeline__year--text"><em>{{ t.year }}</em></span>
+      {% endif %}
+      <h3 class="title-small timeline__title">{{ t.title }}</h3>
+      <p class="p-md timeline__text">{{ t.text }}</p>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+
+{# ================================================================ VALUES #}
+<section class="values container" aria-labelledby="values-title">
+  <header class="section-head">
+    <h2 class="title" id="values-title" data-scrub-reveal>{{ A.values_title_html|safe }}</h2>
+  </header>
+  <ul class="values__grid" data-fade-group>
+    {% for v in A['values'] %}
+    <li class="value">
+      <span class="value__line" data-line aria-hidden="true"></span>
+      <span class="value__index">{{ '%02d'|format(loop.index) }}</span>
+      <h3 class="value__title">{{ v.title }}</h3>
+      <p class="p-md">{{ v.text }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+  <div class="badges values__badges" aria-label="Unser Betrieb">
+    {% for b in c.home.badges %}<div class="badge">{{ m.seal(b, 'about-' ~ loop.index) }}</div>{% endfor %}
+  </div>
+</section>
+
+{# ================================================================ OWNERS #}
+<section class="owners container" id="inhaber" aria-labelledby="owners-title">
+  <div class="owners__head">
+    <h2 class="title" id="owners-title" data-scrub-reveal>{{ A.owners_title_html|safe }}</h2>
+    <p class="eyebrow owners__intro" data-fade>Gemeinsam an der Spitze seit 2017</p>
+  </div>
+  <div class="owners__grid">
+    {% for o in A.owners %}
+    {% set im = (P.about_portraits|selectattr('alt', 'equalto', o.name)|list or [P.about_portraits[loop.index0]])[0] %}
+    <article class="owner">
+      <div class="owner__media images" data-reveal-img>
+        {{ pic(im.src, alt=o.name ~ ', ' ~ o.role|replace(' · ', ', '), ratio='4/5', focus=im.focus, sizes='(max-width: 700px) 100vw, 40vw', widths=(640, 1000, 1400)) }}
+      </div>
+      <div class="owner__body" data-fade>
+        <span class="eyebrow">{{ o.role }}</span>
+        <h3 class="title-medium owner__name">{{ o.name }}</h3>
+        <p class="p-md owner__text">{{ o.text }}</p>
+        <a class="cta owner__phone" href="{{ tel(o.phone[1:]) }}" aria-label="{{ o.name }} anrufen: {{ o.phone }}">{{ m.icon('phone') }} {{ o.phone }}</a>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+{# ================================================================ TEAM #}
+<section class="team container" id="team" aria-labelledby="team-title">
+  <div class="team__head">
+    <h2 class="title" id="team-title" data-scrub-reveal>{{ A.team_title_html|safe }}</h2>
+    <p class="p-lg team__intro" data-fade>{{ A.team_intro }}</p>
+  </div>
+  <ul class="team__grid" data-fade-group>
+    {% for t in A.team %}
+    <li class="team-card">
+      <figure class="team-card__media" data-photo="">
+        <!-- Foto hier einsetzen: <img src="…" alt="{{ t.name }}"> -->
+        <div class="team-card__placeholder" aria-hidden="true">
+          <span class="team-card__num">{{ '%02d'|format(loop.index) }}</span>
+          {{ team_mark() }}
+          <span class="team-card__note">Foto folgt</span>
+        </div>
+      </figure>
+      <h3 class="team-card__name">{{ t.name }}</h3>
+      <p class="eyebrow team-card__role">{{ t.role }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+{# ================================================================ CAREER #}
+<section class="about-rows container">
+  <div class="featured">
+    <div class="featured__item" id="karriere">
+      <a class="it it--reversed" href="{{ url('karriere.html') }}" data-cta-trigger="main" data-cta-label="Zur Stellenanzeige">
+        <div class="it__media">
+          <div class="images" data-reveal-img>
+            {{ pic(P.career.src, alt=P.career.alt, ratio='1035/702', focus=P.career.focus, sizes='(max-width: 1000px) 100vw, 55vw', widths=(640, 1000, 1400, 2000)) }}
+          </div>
+        </div>
+        <div class="it__content">
+          <div class="paragraph-spaced">
+            {{ m.heading_label('Karriere', c.career.title_html, 'h2') }}
+            <div class="paragraph-spaced__bottom">
+              <p class="p-md">{{ c.career.lead }}</p>
+              <div class="chips">{{ m.more('Zur Stellenanzeige') }}</div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+{# ================================================================ WUNSCHGARTEN #}
+<section class="wish">
+  <h2 class="title" data-scrub-reveal>{{ c.home.wish.title_html|safe }}</h2>
+  <div class="wish__text" data-fade>
+    {% for p in c.home.wish.paragraphs %}<p class="p-lg">{{ p }}</p>{% endfor %}
+    <a class="cta cta--filled" href="{{ url('kontakt.html') }}">{{ c.home.wish.cta }} {{ m.icon('arrow') }}</a>
+    <a class="link" href="{{ company.phone_href }}">Oder direkt anrufen: {{ company.phone }}</a>
+  </div>
+</section>
+{% endblock %}

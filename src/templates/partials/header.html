@@ -1,0 +1,135 @@
+{% import 'partials/macros.html' as m %}
+{% set on_services = page.out.startswith('dienstleistungen') %}
+{% set on_smart = page.out.startswith('smart-garden') %}
+{% set on_about = page.out in ('ueber-uns.html', 'karriere.html') %}
+{% set about_links = [
+  ('Unsere Geschichte', 'ueber-uns.html#geschichte', 'gal:galerie_hangsicherung_mauerbau__i9870264be2f2fc77.jpg', (0.5, 0.5)),
+  ('Die Inhaber', 'ueber-uns.html#inhaber', 'gen:owners_composite_portrait.png', (0.5, 0.45)),
+  ('Unser Team', 'ueber-uns.html#team', 'gal:stellenangebote__i16387a75cf17060a.jpg', (0.55, 0.6)),
+  ('Karriere', 'ueber-uns.html#karriere', 'gal:galerie_hangsicherung_mauerbau__i84ca8c988c745380.jpg', (0.5, 0.5)),
+] %}
+<header class="header" data-header>
+  <div class="header__inner">
+    <a class="header__logo" href="{{ url('index.html') }}" aria-label="Gartengestaltung Geißler – zur Startseite">
+      <img class="header__logo-img header__logo-img--light" src="{{ asset('img/brand/logo-light-840.png') }}" alt="" width="840" height="468" aria-hidden="true">
+      <img class="header__logo-img header__logo-img--dark" src="{{ asset('img/brand/logo-color-840.png') }}" alt="Gartengestaltung Geißler – Inh. Opolka &amp; Weis" width="840" height="468">
+    </a>
+
+    <nav class="header__nav" aria-label="Hauptnavigation">
+      <ul class="nav">
+        <li class="nav__item"><a class="nav__link{% if page.out == 'index.html' %} is-current{% endif %}" href="{{ url('index.html') }}">Home</a></li>
+
+        <li class="nav__item" data-mega>
+          <a class="nav__link{% if on_about %} is-current{% endif %}" href="{{ url('ueber-uns.html') }}" data-mega-toggle aria-haspopup="true" aria-expanded="false">Über uns {{ m.icon('chev', 'nav__chev') }}</a>
+          <div class="mega">
+            <div class="mega__inner mega__inner--compact">
+              <div class="mega__intro">
+                <span class="eyebrow mega__anim">Seit 1981 in Eschau</span>
+                <a class="mega__title mega__anim" href="{{ url('ueber-uns.html') }}">Über <em>uns</em></a>
+                <p class="p-md mega__text mega__anim">{{ c.about.hero_text }}</p>
+                <a class="cta mega__anim" href="{{ url('ueber-uns.html') }}">Mehr über uns {{ m.icon('arrow') }}</a>
+              </div>
+              <ul class="mega__list">
+                {% for label, href, src, focus in about_links %}
+                <li class="mega__anim"><a class="mega__link{% if loop.first %} is-active{% endif %}" href="{{ url(href) }}" data-mega-img="{{ loop.index0 }}"><span class="mega__num">{{ '%02d'|format(loop.index) }}</span>{{ label }}</a></li>
+                {% endfor %}
+              </ul>
+              <div class="mega__media mega__anim" aria-hidden="true">
+                {% for label, href, src, focus in about_links %}
+                <div class="mega__img{% if loop.first %} is-active{% endif %}">{{ pic(src, alt='', ratio='16/10', focus=focus, widths=(520, 820), sizes='30vw', defer=True) }}</div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav__item" data-mega>
+          <a class="nav__link{% if on_services %} is-current{% endif %}" href="{{ url('dienstleistungen.html') }}" data-mega-toggle aria-haspopup="true" aria-expanded="false">Dienstleistungen {{ m.icon('chev', 'nav__chev') }}</a>
+          <div class="mega">
+            <div class="mega__inner">
+              <div class="mega__intro">
+                <span class="eyebrow mega__anim">{{ services|length }} Leistungen aus einer Hand</span>
+                <a class="mega__title mega__anim" href="{{ url('dienstleistungen.html') }}">Unsere <em>Dienstleistungen</em></a>
+                <p class="p-md mega__text mega__anim">{{ c.services_overview.lead }}</p>
+                <a class="cta mega__anim" href="{{ url('dienstleistungen.html') }}">Alle Leistungen {{ m.icon('arrow') }}</a>
+              </div>
+              <ul class="mega__list mega__list--2col">
+                {% for s in services %}
+                <li class="mega__anim"><a class="mega__link{% if loop.first %} is-active{% endif %}" href="{{ url(s.url) }}" data-mega-img="{{ loop.index0 }}"><span class="mega__num">{{ '%02d'|format(loop.index) }}</span>{{ s.nav_name }}</a></li>
+                {% endfor %}
+              </ul>
+              <div class="mega__media mega__anim" aria-hidden="true">
+                {% for s in services %}
+                <div class="mega__img{% if loop.first %} is-active{% endif %}">{{ pic(s.media.tile.src, alt='', ratio='4/5', focus=s.media.tile.focus, widths=(520, 820), sizes='26vw', defer=True) }}</div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav__item" data-mega>
+          <a class="nav__link{% if on_smart %} is-current{% endif %}" href="{{ url('smart-garden.html') }}" data-mega-toggle aria-haspopup="true" aria-expanded="false">Smart Garden {{ m.icon('chev', 'nav__chev') }}</a>
+          <div class="mega">
+            <div class="mega__inner mega__inner--compact">
+              <div class="mega__intro">
+                <span class="eyebrow mega__anim">Komfort &amp; Atmosphäre</span>
+                <a class="mega__title mega__anim" href="{{ url('smart-garden.html') }}">Smart <em>Garden</em></a>
+                <p class="p-md mega__text mega__anim">{{ smart.overview.lead }}</p>
+                <a class="cta mega__anim" href="{{ url('smart-garden.html') }}">Zur Übersicht {{ m.icon('arrow') }}</a>
+              </div>
+              <ul class="mega__list">
+                {% for s in smart_pages %}
+                <li class="mega__anim"><a class="mega__link{% if loop.first %} is-active{% endif %}" href="{{ url(s.url) }}" data-mega-img="{{ loop.index0 }}"><span class="mega__num">{{ '%02d'|format(loop.index) }}</span>{{ s.nav_name or s.name }}</a></li>
+                {% endfor %}
+              </ul>
+              <div class="mega__media mega__anim" aria-hidden="true">
+                {% for s in smart_pages %}
+                <div class="mega__img{% if loop.first %} is-active{% endif %}">{{ pic(s.media.tile.src, alt='', ratio='4/5', focus=s.media.tile.focus, widths=(520, 820), sizes='30vw', defer=True) }}</div>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="nav__item"><a class="nav__link{% if page.out == 'galerie.html' %} is-current{% endif %}" href="{{ url('galerie.html') }}">Galerie</a></li>
+        <li class="nav__item"><a class="nav__link{% if page.out == 'kontakt.html' %} is-current{% endif %}" href="{{ url('kontakt.html') }}">Kontakt</a></li>
+      </ul>
+    </nav>
+
+    <button class="hamburger" type="button" data-menu-toggle aria-label="Menü öffnen" aria-expanded="false" aria-controls="mobile-menu"><span></span><span></span><span></span></button>
+  </div>
+</header>
+<div class="mega-backdrop" aria-hidden="true"></div>
+
+<div class="mobile-menu" id="mobile-menu" data-mobile-menu data-lenis-prevent>
+  <ul class="mobile-menu__list">
+    <li class="mobile-menu__item"><a class="mobile-menu__link" href="{{ url('index.html') }}">Home</a></li>
+    <li class="mobile-menu__item">
+      <a class="mobile-menu__link" href="{{ url('ueber-uns.html') }}">Über uns</a>
+      <button class="mobile-menu__toggle" type="button" data-sub-toggle aria-expanded="false" aria-label="Über uns aufklappen"></button>
+      <div class="mobile-menu__sub"><ul>
+        {% for label, href, src, focus in about_links %}<li><a href="{{ url(href) }}">{{ label }}</a></li>{% endfor %}
+      </ul></div>
+    </li>
+    <li class="mobile-menu__item">
+      <a class="mobile-menu__link" href="{{ url('dienstleistungen.html') }}">Dienstleistungen</a>
+      <button class="mobile-menu__toggle" type="button" data-sub-toggle aria-expanded="false" aria-label="Dienstleistungen aufklappen"></button>
+      <div class="mobile-menu__sub"><ul>
+        {% for s in services %}<li><a href="{{ url(s.url) }}">{{ s.nav_name }}</a></li>{% endfor %}
+      </ul></div>
+    </li>
+    <li class="mobile-menu__item">
+      <a class="mobile-menu__link" href="{{ url('smart-garden.html') }}">Smart Garden</a>
+      <button class="mobile-menu__toggle" type="button" data-sub-toggle aria-expanded="false" aria-label="Smart Garden aufklappen"></button>
+      <div class="mobile-menu__sub"><ul>
+        {% for s in smart_pages %}<li><a href="{{ url(s.url) }}">{{ s.nav_name or s.name }}</a></li>{% endfor %}
+      </ul></div>
+    </li>
+    <li class="mobile-menu__item"><a class="mobile-menu__link" href="{{ url('galerie.html') }}">Galerie</a></li>
+    <li class="mobile-menu__item"><a class="mobile-menu__link" href="{{ url('kontakt.html') }}">Kontakt</a></li>
+  </ul>
+  <div class="mobile-menu__contact p-md">
+    <a href="{{ company.phone_href }}">{{ company.phone }}</a>
+    <a href="mailto:{{ company.email }}">{{ company.email }}</a>
+  </div>
+</div>

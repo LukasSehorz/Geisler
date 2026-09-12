@@ -1,0 +1,341 @@
+/* ==========================================================================
+   Über uns + Karriere
+   Extends main.css (do not duplicate global components here).
+   ========================================================================== */
+
+/* ==========================================================================
+   ÜBER UNS
+   ========================================================================== */
+
+/* ---------------------------------------------------------------- hero: owners stand right, copy stacked left */
+.page-about .page-hero__media img {
+  filter: brightness(0.74);
+  object-position: 88% 0%;
+}
+.page-about .page-hero__media::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  background: linear-gradient(90deg, rgba(8, 16, 8, 0.62) 0%, rgba(8, 16, 8, 0.44) 24%, rgba(8, 16, 8, 0.14) 44%, rgba(8, 16, 8, 0) 58%);
+}
+.page-about .page-hero__media::after { z-index: 1; }
+.page-about .page-hero__content {
+  grid-template-columns: minmax(0, min(45%, 780px));
+  gap: 26px;
+}
+.page-about .page-hero__label { margin-bottom: 1.5em; }
+.page-about .page-hero__text { padding-bottom: 0; }
+.page-about .page-hero__text p { max-width: 440px; }
+
+@media (max-width: 1000px) {
+  .page-about .page-hero__content { grid-template-columns: minmax(0, 560px); gap: 16px; }
+}
+@media (max-width: 700px) {
+  /* portrait phones: keep both faces in frame, let the photo dissolve into a dark ground for the copy */
+  .page-about .page-hero__media img { height: 72%; object-position: 89% 0%; }
+  .page-about .page-hero__media::before {
+    background: linear-gradient(180deg, rgba(34, 48, 31, 0) 44%, rgba(34, 48, 31, 0.85) 64%, #22301f 72%);
+  }
+  .page-about .page-hero__content { grid-template-columns: 100%; }
+}
+
+/* ---------------------------------------------------------------- story (reference "Unsere Märchen") */
+.story {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) min(30.625vw, 588px) minmax(0, 1fr);
+  align-items: end;
+  gap: 0 min(3.2vw, 60px);
+  padding: 0 var(--gutter);
+  margin-bottom: min(10.416vw, 200px);
+}
+.story__title {
+  color: var(--sage-ink);
+  font-size: clamp(56px, 6.8vw, 130px);
+  line-height: 0.96;
+  margin: 0 0 -0.08em;
+  hyphens: manual;
+}
+.story__image {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius);
+  aspect-ratio: 588 / 880;
+  max-height: 92vh;
+  width: 100%;
+}
+.story__image img { width: 100%; height: 100%; object-fit: cover; }
+.story__text { justify-self: center; max-width: 390px; }
+
+@media (max-width: 1000px) {
+  .story { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 30px; }
+  .story__title { grid-column: 1 / -1; margin-bottom: 40px; font-size: clamp(52px, 10vw, 90px); }
+  .story__image { max-height: 70vh; }
+  .story__text { justify-self: start; }
+}
+@media (max-width: 700px) {
+  .story { grid-template-columns: 100%; margin-bottom: 90px; }
+  .story__title { margin-bottom: 30px; font-size: clamp(46px, 13vw, 64px); }
+  .story__image { aspect-ratio: 4 / 5; max-height: 76vh; }
+  .story__text { margin-top: 28px; max-width: 100%; }
+}
+
+/* ---------------------------------------------------------------- timeline */
+.timeline { margin-bottom: min(10.416vw, 200px); }
+.timeline__list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 56px 20px; }
+.timeline__item { position: relative; display: flex; flex-direction: column; align-items: flex-start; padding: 22px 8% 0 0; }
+.timeline__line { position: absolute; top: 0; left: 0; right: 0; height: 1px; background: var(--line-strong); transform-origin: left; }
+.timeline__index { font-size: 13px; letter-spacing: 0.06em; color: var(--sage-ink); }
+.timeline__year {
+  display: block;
+  font-family: var(--ff-display);
+  font-weight: 300;
+  font-size: clamp(72px, 8.33vw, 160px);
+  line-height: 0.9;
+  letter-spacing: -0.035em;
+  margin: 0.22em 0 0.2em;
+  color: var(--ink);
+  white-space: nowrap;
+}
+.timeline__year--text em { color: var(--sage-ink); padding-right: 0.06em; }
+.timeline__title { margin-bottom: 0.55em; }
+.timeline__text { max-width: 370px; }
+@media (max-width: 1000px) {
+  .timeline__item { padding-right: 4%; }
+  .timeline__year { font-size: clamp(56px, 9vw, 90px); }
+}
+@media (max-width: 700px) {
+  .timeline { margin-bottom: 90px; }
+  .timeline__list { grid-template-columns: 100%; gap: 44px; }
+  .timeline__year { font-size: 72px; }
+}
+
+/* ---------------------------------------------------------------- values */
+.values { margin-bottom: min(9vw, 170px); }
+.values__grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 50px 20px; }
+.value { position: relative; display: flex; flex-direction: column; align-items: flex-start; gap: 16px; padding: 22px 9% 0 0; }
+.value__line { position: absolute; top: 0; left: 0; right: 0; height: 1px; background: var(--line-strong); transform-origin: left; }
+.value__index { font-size: 13px; letter-spacing: 0.06em; color: var(--sage-ink); }
+.value__title {
+  font-family: var(--ff-display);
+  font-size: clamp(22px, 1.66656vw, 32px);
+  font-weight: 400;
+  line-height: 1.08;
+  min-height: 2.16em;
+  margin-top: 18px;
+  text-wrap: balance;
+}
+.value .p-md { max-width: 380px; }
+.values__badges.badges { margin: min(10vw, 170px) auto 0; }
+.values__badges .badge { width: clamp(110px, 9.4vw, 180px); }
+@media (max-width: 1000px) {
+  .values__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 44px 20px; }
+}
+@media (max-width: 700px) { .values { margin-bottom: 100px; } }
+@media (max-width: 600px) {
+  .values__grid { grid-template-columns: 100%; gap: 36px; }
+  .value__title { min-height: 0; margin-top: 8px; }
+  .values__badges.badges { margin-top: 80px; gap: 16px; }
+  .values__badges .badge { width: 96px; }
+}
+
+/* ---------------------------------------------------------------- owners */
+.owners__head {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 20px 40px;
+  padding: 0 min(10.4vw, 200px);
+  margin-bottom: min(4.2vw, 70px);
+}
+.owners__head .title { margin: 0; }
+.owners__grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 60px min(8.3vw, 160px);
+  padding: 0 min(10.4vw, 200px);
+  align-items: start;
+}
+.owner { display: flex; flex-direction: column; min-width: 0; }
+.owner:nth-child(2) { margin-top: min(9vw, 170px); }
+.owner__media { aspect-ratio: 4 / 5; background: var(--stone); }
+.owner__body { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; padding-top: 28px; }
+.owner__name { margin-bottom: 6px; }
+.owner__text { max-width: 440px; }
+.owner__phone { margin-top: 14px; }
+.owner__phone svg { width: 17px; height: 17px; max-height: 17px; }
+.owner__phone:hover svg { transform: none; }
+@media (max-width: 1200px) {
+  .owners__head, .owners__grid { padding: 0; }
+  .owners__grid { gap: 50px 20px; }
+}
+@media (max-width: 700px) {
+  .owners__grid { grid-template-columns: 100%; gap: 56px; }
+  .owner:nth-child(2) { margin-top: 0; }
+  .owners__head { flex-direction: column; align-items: flex-start; }
+}
+
+/* ---------------------------------------------------------------- team */
+.team { margin-top: min(10.416vw, 200px); }
+.team__head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 430px);
+  align-items: end;
+  gap: 24px min(6vw, 120px);
+  margin-bottom: min(4.2vw, 70px);
+}
+.team__head .title { margin: 0; }
+.team__intro { padding-bottom: 0.4em; }
+.team__grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 46px 20px; }
+.team-card { display: flex; flex-direction: column; min-width: 0; }
+.team-card__media {
+  position: relative;
+  aspect-ratio: 3 / 4;
+  margin: 0 0 18px;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--stone);
+  box-shadow: inset 0 0 0 1px rgba(91, 122, 80, 0.07);
+  transition: background-color 700ms var(--ease);
+}
+.team-card__media img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.team-card__media:has(img) .team-card__placeholder { display: none; }
+.team-card__placeholder {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--sage-ink);
+}
+.team-card__mark {
+  width: 36%;
+  max-width: 116px;
+  height: auto;
+  opacity: 0.3;
+  transition: transform 1100ms var(--ease-out), opacity 700ms var(--ease);
+}
+.team-card__num { position: absolute; top: 14px; left: 16px; font-size: 12px; letter-spacing: 0.06em; opacity: 0.75; }
+.team-card__note { position: absolute; left: 0; right: 0; bottom: 16px; text-align: center; font-size: 12px; letter-spacing: 0.04em; opacity: 0.8; }
+.team-card:hover .team-card__media { background-color: var(--stone-2); }
+.team-card:hover .team-card__mark { transform: scale(1.08); opacity: 0.42; }
+.team-card__name {
+  font-family: var(--ff-display);
+  font-size: clamp(20px, 1.46vw, 28px);
+  font-weight: 400;
+  line-height: 1.1;
+}
+.team-card__role { margin-top: 6px; }
+@media (max-width: 1199px) {
+  .team__grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 1000px) {
+  .team__head { grid-template-columns: 100%; }
+}
+@media (max-width: 700px) {
+  .team { margin-top: 100px; }
+  .team__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 34px 20px; }
+  .team-card__media { margin-bottom: 14px; }
+  .team-card__note { bottom: 12px; }
+  .team-card__num { top: 10px; left: 12px; }
+}
+@media (max-width: 400px) {
+  .team__grid { gap: 30px 12px; }
+  .team-card__name { font-size: 18px; }
+}
+
+/* ---------------------------------------------------------------- machines + career rows */
+.about-rows { margin-top: min(10.416vw, 200px); }
+.about-rows .heading { margin-bottom: 0; font-size: clamp(30px, 3.4vw, 64px); hyphens: manual; }
+
+/* ---------------------------------------------------------------- wish */
+.page-about .wish .title,
+.page-career .apply .title { font-size: clamp(45px, 5.2vw, 100px); }
+
+/* ==========================================================================
+   KARRIERE
+   ========================================================================== */
+.career__images .service__note .title-small { font-style: italic; }
+
+/* the long compound "Landschaftsgärtner/in" must never split inside the word */
+@media (max-width: 700px) {
+  .page-career .page-hero .title { font-size: clamp(30px, 9vw, 46px); letter-spacing: -0.02em; }
+}
+
+.career-lists {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 60px min(7vw, 140px);
+  margin-top: min(9vw, 170px);
+  padding: 0 calc(var(--gutter) + 4%);
+  align-items: start;
+}
+.career-list .heading { margin-bottom: 0.55em; }
+.career-list__items { border-bottom: 1px solid var(--line); }
+.career-list__items li {
+  display: flex;
+  align-items: baseline;
+  gap: 1em;
+  border-top: 1px solid var(--line);
+  padding: 1.2rem 0.5rem;
+  font-size: 1.33rem;
+  line-height: 1.45;
+  font-weight: 300;
+}
+.career-list__num { flex-shrink: 0; min-width: 2em; font-size: 13px; letter-spacing: 0.04em; color: var(--sage-ink); }
+@media (max-width: 1000px) {
+  .career-lists { grid-template-columns: 100%; padding: 0 var(--gutter); margin-top: 90px; }
+  .career-list__items li { font-size: 18px; padding: 1rem 0.25rem; }
+}
+
+.career__badges.badges { margin: min(12vw, 200px) auto 0; }
+.career__badges .badge { width: clamp(110px, 9.4vw, 180px); }
+@media (max-width: 700px) {
+  .career__badges.badges { margin-top: 90px; gap: 16px; }
+  .career__badges .badge { width: 96px; }
+}
+
+.apply {
+  margin: min(10vw, 170px) var(--gutter) 0;
+  background: var(--stone);
+  border-radius: var(--radius);
+  padding: min(5.2vw, 100px) 60px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 440px);
+  gap: 40px min(6vw, 120px);
+  align-items: end;
+}
+.apply .title { margin: 0; }
+.apply__eyebrow { display: block; margin-bottom: 1.2em; }
+.apply__body { display: flex; flex-direction: column; align-items: flex-start; gap: 1em; }
+.apply__actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+.apply__actions svg { width: 17px; height: 17px; max-height: 17px; }
+.apply__address {
+  width: 100%;
+  margin-top: 22px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px 26px;
+  font-style: normal;
+  font-size: 1.07rem;
+  line-height: 1.4;
+  font-weight: 300;
+}
+.apply__address .eyebrow { padding-top: 0.15em; }
+@media (max-width: 1400px) { .apply__address { font-size: 0.9rem; } }
+@media (max-width: 1000px) {
+  .apply { grid-template-columns: 100%; padding: 50px 24px; }
+  .apply__address { font-size: 16px; }
+}
+@media (max-width: 400px) {
+  .apply__actions .cta { width: 100%; }
+}
+
+/* ---------------------------------------------------------------- round 3 adjustments */
+@media (min-width: 1001px) {
+  .story__title { font-size: clamp(44px, 5vw, 96px); }
+}
+#geschichte, #inhaber, #team, #karriere { scroll-margin-top: calc(var(--header-h) + 30px); }

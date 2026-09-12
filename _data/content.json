@@ -1,0 +1,874 @@
+{
+ "home": {
+  "hero_title_html": "Ihr Garten ist unsere <em>Leidenschaft</em>.",
+  "hero_text": "Seit 1981 planen, bauen und pflegen wir private Gärten in Eschau und der Region. Mit Meisterhand, einem eingespielten Team und dem Blick für das, was bleibt – Orte im Freien, an denen Sie gerne ankommen.",
+  "about_title_html": "Über<br><em>uns</em>",
+  "about_paragraphs": [
+   "Als Meister- und Ausbildungsbetrieb im Garten- und Landschaftsbau widmen wir uns vor allem privaten Gärten. Planung, Neu- und Umgestaltung sowie die Pflege Ihrer Anlage liegen bei uns in einer Hand.",
+   "Wolfgang Geißler gründete den Betrieb 1981 in Eschau. Seit 2017 führen ihn Stefan Opolka und Stefan Weis, beide lange Jahre Teil des Teams – mit derselben Sorgfalt und einem modernen Maschinenpark im Rücken."
+  ],
+  "about_cta": "Mehr über uns erfahren",
+  "badges": [
+   {
+    "top": "Gegründet",
+    "main": "1981",
+    "bottom": "in Eschau"
+   },
+   {
+    "top": "Meisterbetrieb",
+    "main": "GaLaBau",
+    "bottom": "und Ausbildungsbetrieb"
+   },
+   {
+    "top": "Inhabergeführt seit",
+    "main": "2017",
+    "bottom": "Opolka & Weis"
+   }
+  ],
+  "services_title_html": "Unsere <em>Dienstleistungen</em>",
+  "services_intro": "Vom ersten Entwurf bis zur letzten Pflanze: Wir gestalten Außenanlagen fachgerecht, sauber und termingerecht – und begleiten Ihren Garten auch in den Jahren danach.",
+  "water_title_html": "Wasser im <em>Garten</em>",
+  "water_intro": "Ein Pool neben der Terrasse, ein stiller Teich, ein leises Wasserspiel an der Mauer: Wasser verändert einen Garten. Wir planen es so, dass es sich selbstverständlich einfügt.",
+  "smart": {
+   "label": "Smart Garden",
+   "title_html": "Smarter <em>gärtnern</em>",
+   "text": "Abends nach Hause kommen und einfach auf der Terrasse Platz nehmen, statt noch zu gießen und zu mähen. Mähroboter, automatische Bewässerung und ein durchdachtes Lichtkonzept nehmen Ihnen Arbeit ab – und schenken Ihrem Garten auch nach Sonnenuntergang eine besondere Atmosphäre.",
+   "cta": "Smart Garden entdecken"
+  },
+  "career": {
+   "label": "Karriere",
+   "title_html": "Deine Karriere bei <em>Geißler</em>",
+   "text": "Wir sind ein junges, kreatives Team mit großem Stammkundenkreis und suchen Landschaftsgärtnerinnen und Landschaftsgärtner, die Freude an ihrer Arbeit haben. Es erwarten Sie ein hervorragendes Betriebsklima, übertarifliche Vergütung und ein großer Gerätepark.",
+   "cta": "Jetzt bewerben"
+  },
+  "region": {
+   "label": "Einzugsgebiet",
+   "title_html": "Unser <em>Einzugsgebiet</em>",
+   "text": "Unser Betrieb liegt in Eschau im Spessart. Von hier aus gestalten wir private Gärten im Landkreis Miltenberg, in Stadt und Landkreis Aschaffenburg sowie am Untermain – mit kurzen Wegen, persönlicher Betreuung und einem Team, das die Region kennt.",
+   "cta": "Anfrage stellen"
+  },
+  "references_title_html": "Unsere <em>Gärten</em>",
+  "references_cta": "Alle Referenzen",
+  "wish": {
+   "title_html": "Ihr<br><em>Wunschgarten</em>?",
+   "paragraphs": [
+    "Jeder Garten beginnt mit einem Gespräch. Erzählen Sie uns, wie Sie Ihren Außenraum nutzen möchten – wir sehen uns das Grundstück an und entwickeln erste Ideen.",
+    "Daraus entsteht ein Konzept, das zu Ihrem Haus und Ihrem Alltag passt. Umgesetzt von unserem eigenen Team, vom ersten Spatenstich bis zur Pflege."
+   ],
+   "cta": "Kontakt aufnehmen"
+  },
+  "promise": {
+   "title_html": "Unser <em>Anspruch</em>",
+   "items": [
+    {
+     "title": "Fachgerechte Ausführung",
+     "text": "Wir arbeiten nach den Regeln unseres Handwerks – sorgfältig im Detail, qualitätsbewusst in der Materialwahl und mit dem Ziel, dass Ihr Garten dauerhaft Freude macht."
+    },
+    {
+     "title": "Kreative Planung",
+     "text": "Kein Garten gleicht dem anderen. Wir entwickeln Konzepte, die Grundstück, Haus und Ihre Gewohnheiten ernst nehmen – mit Gespür für Material, Pflanze und Proportion."
+    },
+    {
+     "title": "Individuelle Beratung",
+     "text": "Wir nehmen uns Zeit für Ihre Fragen, beraten offen und zeigen Möglichkeiten auf – vor Ort in Ihrem Garten, bis die Lösung wirklich zu Ihnen passt."
+    },
+    {
+     "title": "Sauber und termingerecht",
+     "text": "Eine ordentliche Baustelle und verlässliche Absprachen sind für uns selbstverständlich. Wir halten, was wir zusagen, und übergeben Ihr Grundstück aufgeräumt."
+    }
+   ]
+  },
+  "contact_teaser": {
+   "left_title": "Rufen Sie uns an",
+   "left_text": "Büro: 09374 / 2124. Wir freuen uns auf Ihren Anruf und nehmen uns Zeit für Ihr Anliegen.",
+   "right_title": "Schreiben Sie uns",
+   "right_text": "info@gartengestaltung-geissler.de – wir melden uns umgehend bei Ihnen."
+  },
+  "gallery_title_html": "Einblicke in unsere <em>Arbeit</em>",
+  "gallery_cta": "Zur Galerie"
+ },
+ "services": [
+  {
+   "slug": "garten-pflege",
+   "name": "Garten- & Anlagenpflege",
+   "nav_name": "Garten- & Anlagenpflege",
+   "title_html": "Garten- &amp; <em>Anlagenpflege</em>",
+   "label": "Dienstleistung",
+   "teaser": "Rund ums Jahr kümmern wir uns individuell um Ihre komplette Außenanlage – damit Ihr Garten in neuem Glanz erscheint.",
+   "lead": "Ein Garten lebt und verändert sich mit jeder Jahreszeit. Unsere Fachleute pflegen Ihre Außenanlage das ganze Jahr über – ganz nach Ihren Wünschen und mit Blick für das Wesentliche.",
+   "excerpt": "Ob Gehölzschnitt, Staudenpflege oder der erste Rundgang nach dem Winter: Gute Pflege bewahrt, was einmal angelegt wurde, und lässt es mit den Jahren schöner werden. Wir übernehmen einzelne Arbeiten ebenso wie die Betreuung der gesamten Außenanlage – verlässlich, sauber und abgestimmt auf Pflanzen, Beläge und Ihre Gewohnheiten. Sie genießen Ihren Garten, wir kümmern uns um den Rest.",
+   "features_title_html": "Was unsere <em>Pflege</em> umfasst",
+   "features": [
+    {
+     "title": "Pflege rund ums Jahr",
+     "text": "Vom Frühjahr bis in den Winter behalten wir Ihren Garten im Blick und erledigen die Arbeiten dann, wenn sie für Pflanzen und Flächen sinnvoll sind."
+    },
+    {
+     "title": "Gehölz- und Heckenschnitt",
+     "text": "Ein fachgerechter Schnitt erhält die Form, fördert gesundes Wachstum und sorgt dafür, dass Sträucher und Hecken ihren Charakter bewahren."
+    },
+    {
+     "title": "Beete und Stauden",
+     "text": "Wir halten Pflanzflächen in Ordnung, schneiden zurück, wo es nötig ist, und ergänzen auf Wunsch – damit Ihre Beete lebendig und stimmig bleiben."
+    },
+    {
+     "title": "Rasen und Flächen",
+     "text": "Ein gleichmäßiger Rasen und saubere Wege prägen den Gesamteindruck. Wir kümmern uns um die Rasenpflege ebenso wie um Beläge, Fugen und Ränder."
+    },
+    {
+     "title": "Individuell vereinbart",
+     "text": "Ob einzelne Einsätze oder regelmäßige Betreuung: Der Umfang richtet sich ganz nach Ihrem Garten, nach der Jahreszeit und nach Ihren Wünschen."
+    }
+   ],
+   "process_note": "Zu Beginn gehen wir gemeinsam durch Ihren Garten, besprechen Ihre Wünsche und legen fest, welche Arbeiten wann sinnvoll sind. Danach dürfen Sie sich zurücklehnen.",
+   "cta_title_html": "Ihr Garten in <em>guten Händen</em>",
+   "cta_text": "Erzählen Sie uns, wie wir Sie unterstützen können. Wir sehen uns Ihre Außenanlage an und schlagen Ihnen eine Pflege vor, die zu Ihrem Garten passt.",
+   "seo_title": "Gartenpflege | Gartengestaltung Geißler Eschau",
+   "seo_description": "Pflege von Garten und Außenanlage rund ums Jahr – individuell nach Ihren Wünschen. Ihr Meisterbetrieb für Garten- und Landschaftsbau aus Eschau.",
+   "claim_html": "Gepflegt durch das <em>Jahr</em>"
+  },
+  {
+   "slug": "bepflanzungen",
+   "name": "Bepflanzungen",
+   "nav_name": "Bepflanzungen",
+   "title_html": "<em>Bepflanzungen</em>",
+   "label": "Dienstleistung",
+   "teaser": "Für jeden Bereich Ihres Gartens entwickeln wir ein standortgerechtes und individuelles Pflanzkonzept.",
+   "lead": "Pflanzen geben einem Garten Struktur, Farbe und Tiefe. Wir wählen sie nach Standort, Boden und Licht aus – und nach dem Bild, das Sie sich von Ihrem Garten machen.",
+   "excerpt": "Eine gelungene Bepflanzung wirkt selbstverständlich, ist aber das Ergebnis sorgfältiger Planung. Wir berücksichtigen Sonne und Schatten, die Beschaffenheit des Bodens und den Pflegeaufwand, den Sie sich wünschen. So entstehen üppige Staudenbeete, pflegeleichte Kiesbeete mit Formgehölzen oder ruhige, immergrüne Rahmen für Terrasse und Eingang – Pflanzungen, die sich über das Jahr wandeln und mit der Zeit an Charakter gewinnen.",
+   "features_title_html": "Unsere <em>Pflanzkonzepte</em>",
+   "features": [
+    {
+     "title": "Standortgerechte Auswahl",
+     "text": "Wir wählen Pflanzen, die zu Licht, Boden und Klima Ihres Gartens passen. Das macht sie widerstandsfähig und reduziert den Pflegeaufwand spürbar."
+    },
+    {
+     "title": "Blüte über das Jahr",
+     "text": "Durchdachte Kombinationen von Stauden und Gehölzen sorgen dafür, dass Ihr Garten vom Frühjahr bis in den Herbst immer neue Akzente setzt."
+    },
+    {
+     "title": "Pflegeleichte Kiesbeete",
+     "text": "Mit mineralischem Substrat, Splitt und passenden Stauden entstehen Beete, die wenig Arbeit machen und dennoch lebendig und abwechslungsreich wirken."
+    },
+    {
+     "title": "Hecken und Formgehölze",
+     "text": "Hecken schaffen Räume und Rückzugsorte, Formgehölze geben Struktur. Beides verleiht Ihrem Garten auch im Winter eine klare Gestalt."
+    },
+    {
+     "title": "Persönliche Beratung",
+     "text": "Welche Pflanzen passen zu Ihnen und Ihrem Garten? Wir beraten Sie ausführlich und entwickeln das Pflanzkonzept gemeinsam mit Ihnen."
+    }
+   ],
+   "process_note": "Wir beginnen mit einem Blick auf Ihren Standort und Ihre Wünsche, erstellen ein Pflanzkonzept und setzen es fachgerecht um – von der Bodenvorbereitung bis zur letzten Pflanze.",
+   "cta_title_html": "Lassen Sie sich <em>beraten</em>",
+   "cta_text": "Ob einzelnes Beet oder ganzer Garten: Wir entwickeln ein Pflanzkonzept, das zu Ihrem Standort und Ihren Vorstellungen passt. Sprechen Sie uns an.",
+   "seo_title": "Bepflanzungen | Gartengestaltung Geißler Eschau",
+   "seo_description": "Standortgerechte, individuelle Pflanzkonzepte für Ihren Garten – geplant und gepflanzt vom Meisterbetrieb Gartengestaltung Geißler aus Eschau.",
+   "claim_html": "Pflanzen mit <em>Konzept</em>"
+  },
+  {
+   "slug": "teichanlagen-wasserelemente",
+   "name": "Teichanlagen & Wasserelemente",
+   "nav_name": "Teichanlagen & Wasserelemente",
+   "title_html": "Teichanlagen &amp; <em>Wasserelemente</em>",
+   "label": "Dienstleistung",
+   "teaser": "Ob Teich zur Abkühlung oder Wasserelement an der Terrasse – wir finden für jede Situation die passende Lösung.",
+   "lead": "Wasser bringt Bewegung, Klang und Kühle in den Garten. Vom naturnahen Teich bis zum Wasserspiel, das sich in eine Mauer fügt, planen wir Wasserelemente, die zu Ihrem Grundstück passen.",
+   "excerpt": "Schon ein kleines Wasserspiel verändert die Stimmung eines Gartens: Das leise Plätschern überdeckt Alltagsgeräusche, die Oberfläche spiegelt Himmel und Pflanzen. Auf größeren Grundstücken wird ein Teich zum ruhigen Mittelpunkt, auf kleinen Flächen lässt sich Wasser platzsparend in Mauern oder Terrassen integrieren. Wir planen Form, Material und Bepflanzung so, dass sich das Element ganz natürlich in seine Umgebung einfügt.",
+   "features_title_html": "Wasser in <em>vielen Formen</em>",
+   "features": [
+    {
+     "title": "Teichanlagen",
+     "text": "Ein Teich wird zum ruhigen Mittelpunkt des Gartens. Wir planen Größe, Form und Uferbereiche passend zum Grundstück und zur umgebenden Bepflanzung."
+    },
+    {
+     "title": "Wasserspiele und Brunnen",
+     "text": "Quellsteine, Brunnen oder ein Wasserlauf setzen Akzente an Terrasse und Sitzplatz – und bringen einen angenehmen Klang in den Garten."
+    },
+    {
+     "title": "Integriert in die Architektur",
+     "text": "Auf kleinen Grundstücken lässt sich Wasser in Mauern oder Stufen einbinden. So gewinnen Sie Atmosphäre, ohne auf wertvolle Fläche zu verzichten."
+    },
+    {
+     "title": "Stimmige Bepflanzung",
+     "text": "Pflanzen am Ufer und rund um das Wasserelement verbinden es mit dem Garten und lassen es wirken, als wäre es schon immer da gewesen."
+    },
+    {
+     "title": "Licht am Wasser",
+     "text": "Gezielt gesetzte Beleuchtung lässt Wasserflächen und Fontänen am Abend lebendig erscheinen und schafft eine ganz besondere Atmosphäre."
+    }
+   ],
+   "process_note": "Wir sehen uns die Gegebenheiten vor Ort an, besprechen mit Ihnen Art und Größe des Wasserelements und stimmen Planung, Bau und Bepflanzung sorgfältig aufeinander ab.",
+   "cta_title_html": "Wasser für Ihren <em>Garten</em>",
+   "cta_text": "Ob Teich, Wasserspiel oder Brunnen – wir beraten Sie gern zu den Möglichkeiten auf Ihrem Grundstück und finden gemeinsam die passende Lösung.",
+   "seo_title": "Teichanlagen & Wasserelemente | Gartengestaltung Geißler Eschau",
+   "seo_description": "Teichanlagen, Wasserspiele und Brunnen – individuell geplant und fachgerecht gebaut vom Garten- und Landschaftsbau-Meisterbetrieb Geißler in Eschau.",
+   "claim_html": "Die Ruhe des <em>Wassers</em>"
+  },
+  {
+   "slug": "dachbegruenung-regenwassernutzung",
+   "name": "Dachbegrünung & Regenwasser",
+   "nav_name": "Dachbegrünung & Regenwasser",
+   "title_html": "Dachbegrünung &amp; <em>Regenwasser</em>",
+   "label": "Dienstleistung",
+   "teaser": "Regenwasser sinnvoll nutzen und Flachdächer in blühende, artenreiche Lebensräume verwandeln – durchdacht geplant.",
+   "lead": "Nutzen Sie Regenwasser für die Bewässerung Ihres Gartens, etwa mit einer Zisterne. Und verwandeln Sie ein tristes Flachdach mit dem passenden Begrünungssystem in einen blühenden Lebensraum.",
+   "excerpt": "Ein begrüntes Dach ist mehr als ein schöner Anblick vom Fenster aus. Es bietet Insekten und Pflanzen Lebensraum, hält Regenwasser zurück und fügt Garage, Carport oder Gartenhaus harmonisch in die Umgebung ein. Auch das Wasser, das vom Dach abläuft, lässt sich sinnvoll nutzen: In einer Zisterne gespeichert, steht es für die Bewässerung Ihres Gartens bereit – gerade in trockenen Sommern ein spürbarer Vorteil.",
+   "features_title_html": "Natürlich <em>nachhaltig</em>",
+   "features": [
+    {
+     "title": "Begrünte Flachdächer",
+     "text": "Mit dem passenden Begrünungssystem wird aus einer grauen Dachfläche ein blühender, artenreicher Lebensraum – auf Garage, Carport oder Nebengebäude."
+    },
+    {
+     "title": "Lebensraum für Insekten",
+     "text": "Kräuter, Gräser und Sedum bieten Bienen und Schmetterlingen Nahrung und schaffen auch auf kleinen Dachflächen ein wertvolles Stück Natur."
+    },
+    {
+     "title": "Zisternen",
+     "text": "Eine Zisterne speichert Regenwasser, das Sie später für die Gartenbewässerung nutzen können – und schont so kostbares Trinkwasser."
+    },
+    {
+     "title": "Bewässern mit Regenwasser",
+     "text": "Auf Wunsch verbinden wir den Regenwasserspeicher mit einer Bewässerung, damit das gesammelte Wasser genau dort ankommt, wo es gebraucht wird."
+    },
+    {
+     "title": "Durchdachte Planung",
+     "text": "Wir stimmen Aufbau, Pflanzenauswahl und Wasserführung auf Ihr Gebäude und Ihren Garten ab – für eine Lösung, die dauerhaft funktioniert."
+    }
+   ],
+   "process_note": "Nach einer Besichtigung prüfen wir die Voraussetzungen vor Ort, schlagen Ihnen ein passendes System vor und übernehmen die fachgerechte Ausführung.",
+   "cta_title_html": "Regenwasser <em>sinnvoll</em> nutzen",
+   "cta_text": "Sie möchten ein Dach begrünen oder Regenwasser für Ihren Garten speichern? Wir beraten Sie zu den Möglichkeiten und planen die passende Lösung.",
+   "seo_title": "Dachbegrünung & Regenwassernutzung | Gartengestaltung Geißler Eschau",
+   "seo_description": "Dachbegrünung für Flachdach, Garage und Carport sowie Zisternen zur Regenwassernutzung – geplant und umgesetzt von Gartengestaltung Geißler, Eschau.",
+   "claim_html": "Grüne Dächer, kostbares <em>Wasser</em>"
+  },
+  {
+   "slug": "rasen",
+   "name": "Rasenansaat & Fertigrasen",
+   "nav_name": "Rasenansaat & Fertigrasen",
+   "title_html": "Rasenansaat &amp; <em>Fertigrasen</em>",
+   "label": "Dienstleistung",
+   "teaser": "Ob durch Ansaat oder Rollrasen: Eine saftig grüne Rasenfläche ist in jedem Garten ein schöner Anblick.",
+   "lead": "Ein gepflegter Rasen ist die ruhige Mitte vieler Gärten. Ob klassisch angesät oder als Fertigrasen verlegt – entscheidend ist ein gut vorbereiteter Boden, auf dem das Grün dauerhaft gedeiht.",
+   "excerpt": "Die Qualität eines Rasens entscheidet sich, bevor die erste Saat ausgebracht wird. Wir bereiten den Untergrund sorgfältig vor, planieren die Fläche und schaffen so die Grundlage für ein gleichmäßiges Wachstum. Die Ansaat ist die natürliche Wahl für alle, die ein wenig Geduld mitbringen. Fertigrasen dagegen verwandelt eine Baustelle in kurzer Zeit in eine grüne Fläche. Gerne beraten wir Sie, welche Variante für Ihren Garten die richtige ist.",
+   "features_title_html": "Vom Boden zum <em>Rasen</em>",
+   "features": [
+    {
+     "title": "Bodenvorbereitung",
+     "text": "Lockern, Planieren und das Einarbeiten eines geeigneten Substrats schaffen die Voraussetzung für einen dichten, gesunden und gleichmäßigen Rasen."
+    },
+    {
+     "title": "Rasenansaat",
+     "text": "Die klassische Ansaat mit einer auf Standort und Nutzung abgestimmten Mischung – für einen Rasen, der von Beginn an an seinem Platz verwurzelt ist."
+    },
+    {
+     "title": "Fertigrasen",
+     "text": "Als Rollrasen verlegt, ist die Fläche schon am selben Tag grün und nach kurzer Anwachszeit belastbar – ideal, wenn es schnell gehen soll."
+    },
+    {
+     "title": "Klare Kanten",
+     "text": "Saubere Rasenkanten zu Beeten und Wegen geben dem Garten Ruhe und Struktur und erleichtern die spätere Pflege der Fläche spürbar."
+    },
+    {
+     "title": "Mähroboterfreundlich",
+     "text": "Auf Wunsch gestalten wir die Rasenfläche so, dass ein Mähroboter sie später zuverlässig und ohne Hindernisse bearbeiten kann."
+    }
+   ],
+   "process_note": "Nach einer Besichtigung empfehlen wir Ihnen Ansaat oder Fertigrasen, bereiten den Boden fachgerecht vor und geben Ihnen Hinweise für die ersten Wochen der Pflege.",
+   "cta_title_html": "Ihr neuer <em>Rasen</em>",
+   "cta_text": "Sie wünschen sich eine neue Rasenfläche oder möchten einen in die Jahre gekommenen Rasen erneuern? Wir beraten Sie gern und finden die passende Lösung.",
+   "seo_title": "Rasenansaat & Fertigrasen | Gartengestaltung Geißler Eschau",
+   "seo_description": "Neue Rasenflächen durch Ansaat oder Fertigrasen – mit sorgfältiger Bodenvorbereitung vom Garten- und Landschaftsbau-Meisterbetrieb Geißler, Eschau.",
+   "claim_html": "Sattes <em>Grün</em>"
+  },
+  {
+   "slug": "beton-natursteinbelaege",
+   "name": "Beton- & Natursteinbeläge",
+   "nav_name": "Beton- & Natursteinbeläge",
+   "title_html": "Beton- &amp; <em>Natursteinbeläge</em>",
+   "label": "Dienstleistung",
+   "teaser": "Hofeinfahrt, Terrasse oder Gartenweg – gefertigt nach gemeinsamer Material- und Farbauswahl, ganz nach Ihren Wünschen.",
+   "lead": "Beläge prägen das Gesicht eines Grundstücks. Ihre neue Hofeinfahrt, Terrasse oder Ihren Gartenweg fertigen wir nach vorheriger Material- und Farbauswahl – passend zu Haus und Garten.",
+   "excerpt": "Ob heller Muschelkalk, dunkler Basalt, Granit oder moderne Betonsteine: Das Material bestimmt, wie ein Außenraum wirkt. Gemeinsam mit Ihnen wählen wir Oberflächen, Formate und Farbtöne, die den Stil Ihres Hauses aufnehmen. Die eigentliche Qualität liegt jedoch unter der Oberfläche – in einem tragfähigen Unterbau und einer sauberen Entwässerung. Darauf legen wir ebenso viel Wert wie auf das fertige Bild.",
+   "features_title_html": "Flächen, die <em>tragen</em>",
+   "features": [
+    {
+     "title": "Terrassen",
+     "text": "Ein Belag, auf dem man gern barfuß steht: Wir gestalten Terrassen aus Naturstein oder Beton, die sich harmonisch an Haus und Garten anschließen."
+    },
+    {
+     "title": "Hofeinfahrten und Stellplätze",
+     "text": "Befahrbare Flächen brauchen einen belastbaren Aufbau. Wir legen Einfahrten und Stellplätze an, die dauerhaft stabil und gepflegt wirken."
+    },
+    {
+     "title": "Gartenwege",
+     "text": "Wege führen durch den Garten und verbinden seine Räume. Mit Pflaster, Platten oder Trittsteinen geben wir ihnen die passende Form."
+    },
+    {
+     "title": "Material- und Farbauswahl",
+     "text": "Vor Beginn wählen wir gemeinsam Material, Format und Farbton aus – damit das Ergebnis genau Ihren Vorstellungen entspricht."
+    },
+    {
+     "title": "Fachgerechter Unterbau",
+     "text": "Tragschicht, Gefälle und Entwässerung entscheiden über die Haltbarkeit eines Belags. Hier arbeiten wir mit besonderer Sorgfalt."
+    }
+   ],
+   "process_note": "Nach dem Aufmaß und der gemeinsamen Materialauswahl planen wir Aufbau und Verlegemuster. Anschließend setzen wir die Fläche sauber und termingerecht um.",
+   "cta_title_html": "Ihre neue <em>Terrasse</em>",
+   "cta_text": "Sie planen eine neue Terrasse, eine Einfahrt oder einen Gartenweg? Wir beraten Sie zu Materialien und Farben und erstellen Ihnen ein passendes Angebot.",
+   "seo_title": "Beton- & Natursteinbeläge | Gartengestaltung Geißler Eschau",
+   "seo_description": "Terrassen, Hofeinfahrten und Gartenwege aus Naturstein oder Beton – nach individueller Material- und Farbauswahl gefertigt von Geißler aus Eschau.",
+   "claim_html": "Wege mit <em>Charakter</em>"
+  },
+  {
+   "slug": "sichtschutz-zaeune",
+   "name": "Sichtschutz & Zäune",
+   "nav_name": "Sichtschutz & Zäune",
+   "title_html": "Sichtschutz &amp; <em>Zäune</em>",
+   "label": "Dienstleistung",
+   "teaser": "Sichtschutz aus Holz, WPC, Aluminium oder Gabionen sowie Zaun- und Toranlagen in verschiedenen Ausführungen.",
+   "lead": "Ein Garten wird erst zum Rückzugsort, wenn man sich darin ungestört fühlt. Gegen unerwünschte Blicke bieten wir verschiedene Lösungen – aus Holz, WPC, Aluminium oder als Gabionenwand.",
+   "excerpt": "Sichtschutz schafft Privatsphäre und gliedert den Garten zugleich in Räume. Holz wirkt warm und natürlich, WPC ist pflegeleicht, Aluminium setzt klare, moderne Linien. Gabionen aus Naturstein bieten zusätzlich Schutz vor Wind. Möchten Sie Ihr Grundstück mit einer Zaun- und Toranlage einfassen, stehen auch hierfür verschiedene Ausführungen zur Wahl – stets abgestimmt auf die Architektur Ihres Hauses und die Umgebung.",
+   "features_title_html": "Materialien und <em>Lösungen</em>",
+   "features": [
+    {
+     "title": "Holz",
+     "text": "Natürlich und warm in der Anmutung: Sichtschutzelemente aus Holz fügen sich harmonisch in grüne Gärten ein und altern mit Charakter."
+    },
+    {
+     "title": "WPC",
+     "text": "Der Verbundwerkstoff verbindet die Optik von Holz mit geringem Pflegeaufwand – eine gute Wahl für alle, die es unkompliziert mögen."
+    },
+    {
+     "title": "Aluminium",
+     "text": "Klare Linien und eine langlebige Oberfläche machen Aluminium zum passenden Material für moderne Architektur und reduzierte Gärten."
+    },
+    {
+     "title": "Gabionen",
+     "text": "Mit Naturstein gefüllte Drahtkörbe schützen vor Blicken und Wind und setzen ein markantes und zugleich natürliches Gestaltungselement."
+    },
+    {
+     "title": "Zaun- und Toranlagen",
+     "text": "Für die Einfriedung Ihres Grundstücks bieten wir verschiedene Ausführungen an – von der schlichten Einfassung bis zur repräsentativen Toranlage."
+    }
+   ],
+   "process_note": "Wir besprechen mit Ihnen Höhe, Verlauf und Material, prüfen die Gegebenheiten vor Ort und setzen Sichtschutz, Zaun oder Tor fachgerecht und standfest.",
+   "cta_title_html": "Mehr <em>Privatsphäre</em>",
+   "cta_text": "Welcher Sichtschutz passt zu Ihrem Garten? Wir zeigen Ihnen die Möglichkeiten vor Ort, beraten Sie zu Materialien und planen eine stimmige Lösung.",
+   "seo_title": "Sichtschutz & Zäune | Gartengestaltung Geißler Eschau",
+   "seo_description": "Sichtschutz aus Holz, WPC, Aluminium oder Gabionen sowie Zaun- und Toranlagen – individuell geplant und montiert von Gartengestaltung Geißler, Eschau.",
+   "claim_html": "Geschützt und <em>geborgen</em>"
+  },
+  {
+   "slug": "bagger-erdarbeiten",
+   "name": "Bagger- & Erdarbeiten",
+   "nav_name": "Bagger- & Erdarbeiten",
+   "title_html": "Bagger- &amp; <em>Erdarbeiten</em>",
+   "label": "Dienstleistung",
+   "teaser": "Erd-, Aushub- und Planierarbeiten sowie Rodungen von Baugrundstücken – schnell und effektiv mit modernem Maschinenpark.",
+   "lead": "Jeder Garten beginnt mit dem Boden. Mit unserem modernen Maschinenpark führen wir sämtliche Erd-, Aushub- und Planierarbeiten sowie Rodungen von Baugrundstücken schnell und effektiv aus.",
+   "excerpt": "Bevor Terrassen, Wege und Beete entstehen können, muss das Gelände vorbereitet sein. Wir heben aus, modellieren, planieren und roden – präzise und mit Rücksicht auf das Grundstück und seine Umgebung. Weil wir mit eigenen Maschinen arbeiten, liegen Erdarbeiten und Gartenbau bei uns in einer Hand. Das spart Abstimmungsaufwand und sorgt dafür, dass auch große, anspruchsvolle Projekte vollständig durch unsere Firma umgesetzt werden können.",
+   "features_title_html": "Arbeiten mit <em>Maschine</em>",
+   "features": [
+    {
+     "title": "Erd- und Aushubarbeiten",
+     "text": "Ob Fundament, Teich oder Leitungsgraben: Wir heben präzise aus und bereiten den Untergrund sorgfältig für alle weiteren Arbeiten vor."
+    },
+    {
+     "title": "Planierarbeiten",
+     "text": "Ein sauber planiertes Gelände ist die Basis für Rasen, Beläge und Pflanzflächen. Wir modellieren Höhen und Gefälle genau nach Plan."
+    },
+    {
+     "title": "Rodungen",
+     "text": "Wir befreien Baugrundstücke von Bewuchs und Wurzelwerk und schaffen so die Voraussetzung für einen reibungslosen Baubeginn."
+    },
+    {
+     "title": "Moderner Maschinenpark",
+     "text": "Unsere eigenen Maschinen ermöglichen es uns, auch umfangreiche Erdarbeiten schnell, effektiv und in gleichbleibender Qualität auszuführen."
+    },
+    {
+     "title": "Alles aus einer Hand",
+     "text": "Erdarbeiten und Gartengestaltung liegen bei uns zusammen. So greifen die einzelnen Bauabschnitte nahtlos ineinander – ohne unnötige Wartezeiten."
+    }
+   ],
+   "process_note": "Nach einer Besichtigung klären wir Zufahrt, Umfang und Ablauf. Anschließend führen wir die Arbeiten zügig aus und hinterlassen die Baustelle ordentlich.",
+   "cta_title_html": "Ihr Grundstück <em>vorbereiten</em>",
+   "cta_text": "Sie planen einen Neubau, eine Umgestaltung oder möchten ein Grundstück roden lassen? Sprechen Sie uns an – wir besprechen gern Umfang und Ablauf.",
+   "seo_title": "Bagger- & Erdarbeiten | Gartengestaltung Geißler Eschau",
+   "seo_description": "Erd-, Aushub- und Planierarbeiten sowie Rodungen von Baugrundstücken – schnell und effektiv mit modernem Maschinenpark. Gartengestaltung Geißler, Eschau.",
+   "claim_html": "Solide <em>Grundlagen</em>"
+  },
+  {
+   "slug": "hangbefestigung-mauerbau",
+   "name": "Hangbefestigung & Mauerbau",
+   "nav_name": "Hangbefestigung & Mauerbau",
+   "title_html": "Hangbefestigung &amp; <em>Mauerbau</em>",
+   "label": "Dienstleistung",
+   "teaser": "Romantische Trockenmauer oder architektonische Betonwand – am Hang entstehen mit dem richtigen Material besondere Gärten.",
+   "lead": "Sie besitzen ein Hanggrundstück? Umso schöner. Mit verschiedensten Materialien lassen sich hier eindrucksvolle Effekte erzielen – von der romantischen Trockenmauer bis zur architektonischen Betonwand.",
+   "excerpt": "Ein Hang ist keine Einschränkung, sondern eine Chance. Mauern fangen Böschungen sicher ab und schaffen ebene Flächen für Terrassen, Beete oder Sitzplätze. Zugleich prägen sie das Bild des Gartens: Eine Trockenmauer aus Naturstein wirkt gewachsen und bietet Pflanzen und Tieren Lebensraum, eine glatte Betonwand setzt klare, moderne Akzente. Wir planen Höhen, Material und Aufbau so, dass Stabilität und Gestaltung zusammenfinden.",
+   "features_title_html": "Mauern mit <em>Haltung</em>",
+   "features": [
+    {
+     "title": "Hangbefestigung",
+     "text": "Wir sichern Böschungen dauerhaft und schaffen nutzbare Ebenen – mit einer Konstruktion, die auf Gelände und Bodenverhältnisse abgestimmt ist."
+    },
+    {
+     "title": "Trockenmauern",
+     "text": "Naturstein, ohne Mörtel geschichtet: Trockenmauern wirken romantisch und gewachsen und bieten in ihren Fugen Raum für Pflanzen."
+    },
+    {
+     "title": "Betonwände",
+     "text": "Glatter Sichtbeton oder Betonelemente geben dem Garten eine klare, architektonische Linie und passen besonders gut zu moderner Bauweise."
+    },
+    {
+     "title": "Natursteinmauern",
+     "text": "Gemauerte Wände aus Naturstein verbinden Stabilität mit einer lebendigen Oberfläche und nehmen die Materialien von Haus und Belägen auf."
+    },
+    {
+     "title": "Integrierte Elemente",
+     "text": "Sitzstufen, Pflanzbeete oder ein Wasserspiel lassen sich direkt in die Mauer einbinden – das spart Platz und schafft besondere Details."
+    }
+   ],
+   "process_note": "Wir sehen uns Gelände und Höhenverhältnisse vor Ort an, entwickeln einen Vorschlag für Material und Aufbau und setzen die Mauer fachgerecht und standsicher um.",
+   "cta_title_html": "Ihr <em>Hanggrundstück</em>",
+   "cta_text": "Sie möchten einen Hang befestigen oder eine Mauer errichten lassen? Wir beraten Sie zu Material und Gestaltung und finden die passende Lösung.",
+   "seo_title": "Hangbefestigung & Mauerbau | Gartengestaltung Geißler Eschau",
+   "seo_description": "Hangbefestigung, Trockenmauern, Natursteinmauern und Betonwände – fachgerecht geplant und gebaut vom Garten- und Landschaftsbau-Meisterbetrieb in Eschau.",
+   "claim_html": "Gestaltung am <em>Hang</em>"
+  },
+  {
+   "slug": "treppenanlagen",
+   "name": "Treppenanlagen",
+   "nav_name": "Treppenanlagen",
+   "title_html": "<em>Treppenanlagen</em>",
+   "label": "Dienstleistung",
+   "teaser": "Treppen sind ein entscheidendes Gestaltungselement Ihrer Außenanlage – aus stilvollem Naturstein oder klarem Sichtbeton.",
+   "lead": "Treppen verbinden Ebenen und führen den Blick. Als entscheidendes Gestaltungselement Ihrer Außenanlage verdienen sie besondere Aufmerksamkeit: stilvoller Naturstein oder klarer Sichtbeton – Sie haben die Wahl.",
+   "excerpt": "Eine gute Treppe fällt zunächst gar nicht auf – man geht sie einfach gern. Dahinter stehen ein angenehmes Steigungsverhältnis, eine sichere Trittfläche und ein Material, das zum übrigen Garten passt. Wir fertigen Treppenanlagen vom Hauseingang bis zur Verbindung zweier Terrassenebenen, auf Wunsch maßgefertigt, etwa in L-Form. Blockstufen aus Naturstein wirken massiv und zeitlos, Sichtbeton setzt ruhige, moderne Akzente.",
+   "features_title_html": "Treppen für <em>jeden Garten</em>",
+   "features": [
+    {
+     "title": "Naturstein",
+     "text": "Blockstufen oder Plattenbeläge aus Naturstein verleihen Treppen eine zeitlose Wertigkeit und fügen sich harmonisch in gewachsene Gärten ein."
+    },
+    {
+     "title": "Sichtbeton",
+     "text": "Klare Kanten und ruhige Flächen machen Sichtbeton zum passenden Material für moderne Architektur und reduzierte Gestaltungen."
+    },
+    {
+     "title": "Maßanfertigung",
+     "text": "Jedes Gelände ist anders. Wir planen Treppen passgenau für Ihre Situation – ob gerade Stufenfolge oder maßgefertigte Anlage in L-Form."
+    },
+    {
+     "title": "Sicher begehbar",
+     "text": "Ein angenehmes Steigungsverhältnis und rutschhemmende Oberflächen sorgen dafür, dass Ihre Treppe bei jedem Wetter sicher begehbar bleibt."
+    },
+    {
+     "title": "Licht auf den Stufen",
+     "text": "In Stufen oder Wangen integrierte Leuchten erhöhen die Sicherheit am Abend und setzen die Treppe zugleich stimmungsvoll in Szene."
+    }
+   ],
+   "process_note": "Wir nehmen die Höhen vor Ort auf, besprechen Material und Form mit Ihnen und bauen die Treppe so, dass sie sich selbstverständlich in die Außenanlage einfügt.",
+   "cta_title_html": "Ihre neue <em>Treppe</em>",
+   "cta_text": "Ob Eingangstreppe oder Verbindung zweier Gartenebenen – wir beraten Sie zu Material, Form und Beleuchtung und planen gemeinsam Ihre neue Treppenanlage.",
+   "seo_title": "Treppenanlagen | Gartengestaltung Geißler Eschau",
+   "seo_description": "Treppenanlagen aus Naturstein oder Sichtbeton, maßgefertigt für Ihre Außenanlage – geplant und gebaut von Gartengestaltung Geißler aus Eschau.",
+   "claim_html": "Stufen mit <em>Stil</em>"
+  },
+  {
+   "slug": "poolbau",
+   "name": "Poolbau",
+   "nav_name": "Poolbau",
+   "title_html": "<em>Poolbau</em>",
+   "label": "Dienstleistung",
+   "teaser": "Ein Pool, der Teil des Gartens wird: geplant zusammen mit Terrasse, Natursteinumrandung, Bepflanzung und Licht.",
+   "lead": "Ein Pool ist mehr als ein Becken. Damit er sich wie selbstverständlich in Ihren Garten einfügt, planen wir ihn gemeinsam mit Terrasse, Umrandung, Bepflanzung und Beleuchtung – als stimmiges Ganzes.",
+   "excerpt": "Ein Sommerabend am eigenen Wasser beginnt lange vor dem ersten Sprung – mit einer Planung, die das ganze Grundstück betrachtet. Wo liegt die Sonne am Nachmittag? Wie gelangt man vom Haus zur Liegefläche? Welche Pflanzen schaffen Privatsphäre? Wir verbinden den Pool mit Terrasse und Wegen, fassen ihn mit Naturstein ein und rahmen ihn mit einer passenden Bepflanzung. So entsteht ein Ort, der zum Garten gehört, statt nur in ihm zu stehen.",
+   "features_title_html": "Rund um den <em>Pool</em>",
+   "features": [
+    {
+     "title": "Ganzheitliche Planung",
+     "text": "Lage, Größe und Ausrichtung des Pools stimmen wir auf Grundstück, Sonnenverlauf und Ihre Nutzung ab – als Teil des gesamten Gartenkonzepts."
+    },
+    {
+     "title": "Terrasse und Liegeflächen",
+     "text": "Großzügige Flächen am Wasser laden zum Verweilen ein. Wir verbinden Pool und Terrasse zu einem zusammenhängenden Aufenthaltsbereich."
+    },
+    {
+     "title": "Natursteinumrandung",
+     "text": "Eine Einfassung aus Naturstein gibt dem Becken einen hochwertigen Rahmen und verbindet es mit den Belägen im übrigen Garten."
+    },
+    {
+     "title": "Bepflanzung",
+     "text": "Gräser, Stauden und Gehölze schaffen einen natürlichen Rahmen, spenden Schatten und schützen den Badebereich vor neugierigen Blicken."
+    },
+    {
+     "title": "Beleuchtung",
+     "text": "Licht im Wasser und am Beckenrand lässt den Pool am Abend leuchten, betont Wege und sorgt für mehr Sicherheit rund um das Becken."
+    }
+   ],
+   "process_note": "Am Anfang steht ein Gespräch in Ihrem Garten. Wir klären Wünsche und Gegebenheiten, entwickeln ein Konzept für Pool und Umgebung und besprechen mit Ihnen die nächsten Schritte.",
+   "cta_title_html": "Sprechen wir über Ihren <em>Pool</em>",
+   "cta_text": "Sie wünschen sich einen Pool im eigenen Garten? Erzählen Sie uns von Ihren Vorstellungen – wir beraten Sie gern zur Planung und zur Gestaltung rund um den Pool.",
+   "seo_title": "Poolbau | Gartengestaltung Geißler Eschau",
+   "seo_description": "Poolbau als Teil des Gartens: geplant mit Terrasse, Natursteinumrandung, Bepflanzung und Beleuchtung – von Gartengestaltung Geißler aus Eschau.",
+   "claim_html": "Ihr Pool im <em>Garten</em>"
+  }
+ ],
+ "smartgarden": {
+  "overview": {
+   "title_html": "Smart <em>Garden</em>",
+   "label": "Smart Garden",
+   "lead": "Abends nach Hause kommen, auf der Terrasse Platz nehmen und bei einem Glas Wein den gepflegten Garten genießen – statt noch zu gießen, zu mähen und Grünschnitt wegzufahren.",
+   "excerpt": "Kennen Sie das? Kaum zu Hause, geht es noch einmal hinaus: die Pflanzen gießen, den Rasen mähen, den Grünschnitt wegbringen. Mit einem Mähroboter und einer automatischen Bewässerung erledigt sich vieles davon wie von selbst. Und wenn die Sonne untergeht, müssen Sie nicht im Dunkeln sitzen: Ein passendes Lichtkonzept lässt Ihren Garten auch bei Nacht wirken. Lassen Sie uns gemeinsam die passende Lösung für Ihren Wohlfühlgarten finden.",
+   "seo_title": "Smart Garden | Gartengestaltung Geißler Eschau",
+   "seo_description": "Mähroboter, automatische Bewässerung und Lichtdesign: smarte Lösungen für mehr Zeit im eigenen Garten – geplant von Gartengestaltung Geißler, Eschau."
+  },
+  "pages": [
+   {
+    "slug": "maehroboter",
+    "name": "Mähroboter",
+    "nav_name": "Mähroboter",
+    "label": "Smart Garden",
+    "title_html": "<em>Mähroboter</em>",
+    "teaser": "Leise, sparsam und zuverlässig: Ein Mähroboter hält Ihren Rasen stets gepflegt – ganz ohne Rasenschnitt und Fahrspuren.",
+    "lead": "Was vor zehn Jahren noch in den Kinderschuhen steckte, ist heute ausgereifte und bewährte Technik. Viele unserer Kunden können sich ihren Garten ohne diesen kleinen Helfer nicht mehr vorstellen.",
+    "excerpt": "Ein Mähroboter arbeitet leise und unauffällig, während Sie Ihren Tag verbringen. Er schneidet den Rasen regelmäßig, sodass kein Rasenschnitt entsorgt werden muss, und hinterlässt auch bei nasser Witterung keine Fahrspuren. Entscheidend ist eine gute Planung: Bei einem Besichtigungstermin in Ihrem Garten finden wir das passende Modell für Ihre Rasenfläche und geben Ihnen Tipps, wie sich Ihr Garten mähroboterfreundlich gestalten lässt.",
+    "features_title_html": "Gut geplant, <em>zuverlässig</em> gemäht",
+    "features": [
+     {
+      "title": "Besichtigung vor Ort",
+      "text": "Bei einem Termin in Ihrem Garten sehen wir uns Größe, Form und Gefälle der Rasenfläche an und wählen gemeinsam das passende Modell aus."
+     },
+     {
+      "title": "Das passende Modell",
+      "text": "Nicht jeder Mähroboter passt zu jedem Garten. Wir empfehlen ein Gerät, das zu Ihrer Fläche, zum Gelände und zu Ihren Ansprüchen passt."
+     },
+     {
+      "title": "Mähroboterfreundlich gestalten",
+      "text": "Wir geben Ihnen Tipps, wie Sie Ihren Garten rasenmäherfreundlich gestalten – etwa mit klaren Rasenkanten und durchdachten Übergängen."
+     },
+     {
+      "title": "Zuverlässig im Alltag",
+      "text": "Eine durchdachte Planung ist die Grundlage: Dann läuft der Mähroboter absolut zuverlässig und beschert Ihnen eine stets gepflegte Rasenfläche."
+     },
+     {
+      "title": "Bedienung per App",
+      "text": "Auf Wunsch lässt sich Ihr Mähroboter bequem per Handy-App bedienen – so haben Sie Ihren Rasen auch unterwegs jederzeit im Blick."
+     }
+    ],
+    "benefits": [
+     "Immer ein perfekt geschnittener Rasen",
+     "Nahezu geräuschlos – keine Lärmbelästigung",
+     "Keine Fahrspuren, auch bei nasser Witterung",
+     "Kein Rasenschnitt zu entsorgen",
+     "Auf Wunsch per Handy-App bedienbar",
+     "Sehr sparsam: rund 20 € Stromkosten im Jahr"
+    ],
+    "process_note": "Alles beginnt mit einem Besichtigungstermin in Ihrem Garten. Dort finden wir das passende Modell und besprechen, wie Ihre Rasenfläche optimal vorbereitet wird.",
+    "cta_title_html": "Ihr Rasen, <em>mühelos</em> gepflegt",
+    "cta_text": "Vereinbaren Sie einen Besichtigungstermin. Wir sehen uns Ihre Rasenfläche an, empfehlen Ihnen das passende Modell und beraten Sie zur Gestaltung.",
+    "seo_title": "Mähroboter | Gartengestaltung Geißler Eschau",
+    "seo_description": "Mähroboter mit Beratung vor Ort: das passende Modell, Tipps für einen mähroboterfreundlichen Garten und stets gepflegter Rasen. Geißler aus Eschau.",
+    "claim_html": "Ein Elektroschaf im <em>Garten</em>"
+   },
+   {
+    "slug": "bewaesserung",
+    "name": "Bewässerung",
+    "nav_name": "Bewässerung",
+    "label": "Smart Garden",
+    "title_html": "<em>Bewässerung</em>",
+    "teaser": "Ein automatisches Bewässerungssystem versorgt Pflanzen und Rasen zuverlässig – auch in heißen Sommern und langen Trockenperioden.",
+    "lead": "Damit Pflanzen und Rasen gesund bleiben, ist eine optimale Wasserversorgung wichtig. Bei immer heißeren Sommern und Trockenperioden schon im Frühjahr lohnt sich ein automatisches Bewässerungssystem.",
+    "excerpt": "Wir entwickeln für Ihren Garten ein Bewässerungskonzept, das genau auf Pflanzen, Rasen und Standort abgestimmt ist. Von der richtigen Wassereinspeisung über das Verlegen der Rohrleitungen bis zur Positionierung der einzelnen Regner planen und installieren wir Ihr Beregnungssystem. So kommt das Wasser dort an, wo es gebraucht wird – und Sie genießen den Sommer ganz entspannt, statt abends mit dem Schlauch durch den Garten zu gehen.",
+    "features_title_html": "Vom Konzept zur <em>Beregnung</em>",
+    "features": [
+     {
+      "title": "Individuelles Konzept",
+      "text": "Wir sehen uns Ihren Garten genau an und entwickeln ein Bewässerungskonzept, das auf Pflanzen, Rasenflächen und die Gegebenheiten vor Ort abgestimmt ist."
+     },
+     {
+      "title": "Wassereinspeisung",
+      "text": "Die richtige Einspeisung ist die Grundlage für ein zuverlässiges System. Wir planen den Anschluss passend zu Ihrer Wasserversorgung – auf Wunsch mit Zisterne."
+     },
+     {
+      "title": "Verlegung der Rohrleitungen",
+      "text": "Wir verlegen die Leitungen sauber und unauffällig im Boden, sodass Ihr Garten nach der Installation wieder ganz wie gewohnt aussieht."
+     },
+     {
+      "title": "Positionierung der Regner",
+      "text": "Jeder Regner wird so gesetzt, dass die Flächen gleichmäßig versorgt werden – ohne trockene Stellen und ohne Wasser auf Wegen und Terrassen."
+     },
+     {
+      "title": "Entspannt durch den Sommer",
+      "text": "Einmal eingerichtet, arbeitet die Bewässerung automatisch. So bleiben Pflanzen und Rasen auch dann gut versorgt, wenn Sie nicht zu Hause sind."
+     }
+    ],
+    "benefits": [
+     "Gesunde Pflanzen und ein grüner Rasen",
+     "Zuverlässig auch in Trockenperioden",
+     "Kein abendliches Gießen mehr",
+     "Wasser genau dort, wo es gebraucht wird",
+     "Unsichtbar im Boden verlegt",
+     "Planung und Installation aus einer Hand"
+    ],
+    "process_note": "Wir sehen uns Ihren Garten an, planen Einspeisung, Leitungsverlauf und Regnerpositionen und installieren das System fachgerecht – für einen entspannten Sommer.",
+    "cta_title_html": "Entspannt durch den <em>Sommer</em>",
+    "cta_text": "Sie möchten Ihren Garten automatisch bewässern? Wir entwickeln ein Bewässerungskonzept, das genau zu Ihren Pflanzen und Ihrem Grundstück passt.",
+    "seo_title": "Bewässerung | Gartengestaltung Geißler Eschau",
+    "seo_description": "Automatische Gartenbewässerung: Konzept, Wassereinspeisung, Rohrleitungen und Regner – geplant und installiert von Gartengestaltung Geißler aus Eschau.",
+    "claim_html": "Ohne Wasser kein <em>Leben</em>"
+   },
+   {
+    "slug": "lichtdesign",
+    "name": "Lichtdesign",
+    "nav_name": "Lichtdesign",
+    "label": "Smart Garden",
+    "title_html": "<em>Lichtdesign</em>",
+    "teaser": "Mit dem passenden Lichtkonzept macht Ihr Garten auch bei Nacht eine gute Figur – stimmungsvoll, sicher und effizient.",
+    "lead": "Wenn abends die Sonne untergeht, müssen Sie nicht im Dunkeln sitzen. Licht verlängert den Tag im Garten, schafft Atmosphäre und macht jeden Grillabend zu einem besonderen Erlebnis.",
+    "excerpt": "Gutes Licht zeigt nicht alles, sondern das Richtige. Ein angestrahlter Baum wird zur Skulptur, eine beleuchtete Wasserfläche beginnt zu schimmern, sanft erhellte Wege und Stufen führen sicher durch den Garten. Am besten planen wir die Beleuchtung gemeinsam mit der Gestaltung Ihres Gartens, damit Leitungen und Leuchten von Anfang an ihren Platz finden. Effiziente LED-Technik sorgt dabei für stimmungsvolles Licht bei geringem Verbrauch.",
+    "features_title_html": "Ein Konzept für <em>Licht</em>",
+    "features": [
+     {
+      "title": "Atmosphäre",
+      "text": "Warmes, gezielt gesetztes Licht verwandelt Terrasse und Sitzplätze am Abend in Räume, in denen man gern noch ein wenig länger bleibt."
+     },
+     {
+      "title": "Sicherheit auf Wegen und Stufen",
+      "text": "Dezente Leuchten an Wegen, Treppen und Eingängen sorgen für Orientierung und machen den Garten auch im Dunkeln sicher begehbar."
+     },
+     {
+      "title": "Bäume und Gehölze betonen",
+      "text": "Von unten angestrahlt, entfalten Bäume und markante Gehölze nachts eine ganz eigene Wirkung und geben dem Garten räumliche Tiefe."
+     },
+     {
+      "title": "Licht am Wasser",
+      "text": "Beleuchtete Teiche, Wasserspiele oder Pools setzen stimmungsvolle Akzente und lassen das Wasser am Abend lebendig schimmern."
+     },
+     {
+      "title": "Effiziente LED-Technik",
+      "text": "Moderne LED-Leuchten verbrauchen wenig Energie, sind langlebig und ermöglichen fein abgestimmte Lichtstimmungen im gesamten Garten."
+     }
+    ],
+    "benefits": [
+     "Stimmungsvolle Atmosphäre am Abend",
+     "Mehr Sicherheit auf Wegen und Stufen",
+     "Bäume und Wasser wirkungsvoll in Szene gesetzt",
+     "Energieeffiziente LED-Technik",
+     "Geplant zusammen mit Ihrem Garten"
+    ],
+    "process_note": "Idealerweise planen wir das Licht gemeinsam mit der Gestaltung Ihres Gartens. So werden Leitungen frühzeitig verlegt und Leuchten genau dort gesetzt, wo sie wirken.",
+    "cta_title_html": "Ihr Garten in neuem <em>Licht</em>",
+    "cta_text": "Sie möchten Ihren Garten auch am Abend genießen? Wir beraten Sie gern und entwickeln ein Lichtkonzept, das zu Ihrem Garten und Ihrem Alltag passt.",
+    "seo_title": "Lichtdesign | Gartengestaltung Geißler Eschau",
+    "seo_description": "Lichtdesign für Ihren Garten: stimmungsvolle Atmosphäre, sichere Wege und Stufen, betonte Bäume und Wasser mit effizienter LED-Technik – aus Eschau.",
+    "claim_html": "Der Garten bei <em>Nacht</em>"
+   }
+  ]
+ },
+ "services_overview": {
+  "title_html": "Unsere <em>Dienstleistungen</em>",
+  "label": "Leistungen",
+  "lead": "Als Meisterbetrieb im Garten- und Landschaftsbau begleiten wir Ihr Projekt von der ersten Idee bis zur Pflege – mit eigenem Team, modernem Maschinenpark und Sorgfalt im Detail.",
+  "excerpt": "Ob Sie einen neuen Garten anlegen, eine bestehende Anlage umgestalten oder Unterstützung bei der Pflege wünschen: Bei uns erhalten Sie alle Leistungen aus einer Hand. Wir planen und bauen Terrassen, Wege und Treppen, sichern Hänge mit Mauern, gestalten Pflanzungen, Teiche und Pools und kümmern uns um Sichtschutz, Rasen und Erdarbeiten. Eine fachgerechte, saubere und termingerechte Ausführung ist für uns dabei selbstverständlich.",
+  "seo_title": "Dienstleistungen | Gartengestaltung Geißler Eschau",
+  "seo_description": "Gartenpflege, Bepflanzung, Beläge, Mauerbau, Treppen, Teiche, Poolbau und mehr: Garten- und Landschaftsbau aus einer Hand vom Meisterbetrieb in Eschau."
+ },
+ "about": {
+  "hero_title_html": "Über <em>uns</em>",
+  "hero_text": "Seit 1981 gestalten wir Gärten in Eschau und der Region – als Meister- und Ausbildungsbetrieb mit eingespieltem Team, modernem Maschinenpark und einer Leidenschaft für private Gärten.",
+  "story_title_html": "Eine Geschichte aus <em>Eschau</em>",
+  "story_paragraphs": [
+   "Wolfgang Geißler gründete den Betrieb im Jahr 1981 in Eschau. Auf die Erfahrung aus dieser langen Zeit greifen wir bis heute zurück – ebenso wie auf den Anspruch, jeden Garten mit Sorgfalt zu behandeln.",
+   "Seit 2017 führen Stefan Opolka und Stefan Weis das Unternehmen. Beide waren zuvor lange Jahre Mitarbeiter des Betriebs und kennen seine Arbeitsweise aus erster Hand. Heute sorgen sie gemeinsam mit ihrem Team für Ihren Wohlfühlgarten.",
+   "Unser Schwerpunkt liegt auf privaten Gärten: Planung, Neu- und Umgestaltung sowie Pflege. Unterstützt von einem modernen Maschinenpark setzen wir auch große, anspruchsvolle Projekte vollständig mit unserer eigenen Firma um."
+  ],
+  "timeline": [
+   {
+    "year": "1981",
+    "title": "Die Gründung",
+    "text": "Wolfgang Geißler gründet den Betrieb für Garten- und Landschaftsbau in Eschau."
+   },
+   {
+    "year": "2017",
+    "title": "Neue Inhaber",
+    "text": "Die langjährigen Mitarbeiter Stefan Opolka und Stefan Weis übernehmen das Unternehmen und führen es gemeinsam weiter."
+   },
+   {
+    "year": "Heute",
+    "title": "Ein eingespieltes Team",
+    "text": "Meister, Vorarbeiter, Facharbeiter und Auszubildende gestalten mit modernem Maschinenpark private Gärten – geplant, gebaut und gepflegt aus einer Hand."
+   }
+  ],
+  "values_title_html": "Wofür wir <em>stehen</em>",
+  "values": [
+   {
+    "title": "Fachgerecht und qualitätsbewusst",
+    "text": "Wir arbeiten nach den Regeln unseres Handwerks und garantieren qualitativ hochwertige Arbeiten – vom Unterbau bis zur letzten Pflanze."
+   },
+   {
+    "title": "Sauber und termingerecht",
+    "text": "Eine ordentliche Baustelle und verlässliche Termine sind für uns selbstverständlich – rund um die gesamte Gestaltung Ihrer Außenanlage."
+   },
+   {
+    "title": "Kreative Planung",
+    "text": "Jeder Garten ist anders. Wir entwickeln Ideen, die zu Ihrem Grundstück, Ihrem Haus und Ihrer Art zu leben passen."
+   },
+   {
+    "title": "Individuelle Beratung",
+    "text": "Wir hören zu, beraten offen und nehmen uns Zeit für Ihre Fragen – damit am Ende ein Garten entsteht, in dem Sie sich wohlfühlen."
+   }
+  ],
+  "owners_title_html": "Die <em>Inhaber</em>",
+  "owners": [
+   {
+    "name": "Stefan Weis",
+    "role": "Geschäftsführer · Gärtnermeister",
+    "text": "Stefan Weis ist Gärtnermeister und führt den Betrieb seit 2017 gemeinsam mit Stefan Opolka. Zuvor war er lange Jahre Mitarbeiter des Unternehmens.",
+    "phone": "0151 / 222 68 207"
+   },
+   {
+    "name": "Stefan Opolka",
+    "role": "Geschäftsführer · Bauleiter",
+    "text": "Stefan Opolka ist Bauleiter und seit 2017 gemeinsam mit Stefan Weis Inhaber des Betriebs. Auch er gehörte zuvor lange Jahre zum Team.",
+    "phone": "0160 / 947 66 935"
+   }
+  ],
+  "team_title_html": "Unser <em>Team</em>",
+  "team_intro": "Hinter jedem Garten stehen Menschen, die ihr Handwerk verstehen. Unser Team vereint Meisterwissen, die Erfahrung von Vorarbeitern und Facharbeitern und den Nachwuchs, den wir selbst ausbilden.",
+  "team": [
+   {
+    "name": "Vorname Nachname",
+    "role": "Landschaftsgärtnermeister"
+   },
+   {
+    "name": "Vorname Nachname",
+    "role": "Galabau-Vorarbeiter"
+   },
+   {
+    "name": "Vorname Nachname",
+    "role": "Galabau-Vorarbeiter"
+   },
+   {
+    "name": "Vorname Nachname",
+    "role": "Galabau-Vorarbeiter"
+   },
+   {
+    "name": "Vorname Nachname",
+    "role": "Facharbeiter"
+   },
+   {
+    "name": "Vorname Nachname",
+    "role": "Facharbeiter"
+   },
+   {
+    "name": "Vorname Nachname",
+    "role": "Facharbeiter"
+   },
+   {
+    "name": "Vorname Nachname",
+    "role": "Auszubildender"
+   },
+   {
+    "name": "Vorname Nachname",
+    "role": "Auszubildender"
+   },
+   {
+    "name": "Vorname Nachname",
+    "role": "Aushilfe"
+   }
+  ],
+  "machines_title_html": "Unser <em>Maschinenpark</em>",
+  "machines_text": "Ein moderner Maschinenpark unterstützt unser Team bei jedem Projekt. So führen wir Erd-, Aushub- und Planierarbeiten schnell und effektiv aus und können auch große, anspruchsvolle Vorhaben vollständig selbst bewältigen.",
+  "seo_title": "Über uns | Gartengestaltung Geißler Eschau",
+  "seo_description": "Seit 1981 Garten- und Landschaftsbau in Eschau: Lernen Sie die Inhaber Stefan Opolka und Stefan Weis, unser Team und unseren Maschinenpark kennen."
+ },
+ "career": {
+  "title_html": "Landschaftsgärtner/in<br><em>gesucht</em>",
+  "label": "Karriere",
+  "lead": "Wir bauen Gärten – jeden Tag. Zur Verstärkung unseres Teams suchen wir Landschaftsgärtnerinnen und Landschaftsgärtner, die Freude an ihrer Arbeit haben und abends stolz auf das Geleistete sind.",
+  "paragraphs": [
+   "Wir sind ein junges, kreatives Team mit einem großen Stammkundenkreis. Bei uns herrscht ein hervorragendes Betriebsklima, in dem jeder dem anderen zur Seite steht.",
+   "Mit übertariflicher Vergütung und einem großen Gerätepark schaffen wir die Voraussetzungen für anspruchsvolle und abwechslungsreiche Projekte. Ein kreatives, leistungsfähiges Miteinander ist uns wichtig – und wir fördern es durch weitere angenehme Vorzüge."
+  ],
+  "profile_title": "Ihr Profil",
+  "profile": [
+   "Fundiertes Fachwissen und praktische Erfahrung im Berufsalltag",
+   "Teamfähigkeit sowie eine verantwortungsbewusste, eigenständige Arbeitsweise",
+   "Ein höflicher, freundlicher Umgang mit unseren Kunden",
+   "Kreativität und Freude an Ihrer Arbeit",
+   "Mindestens Führerscheinklasse B/BE"
+  ],
+  "offer_title": "Was wir bieten",
+  "offer": [
+   "Übertarifliche Vergütung",
+   "Großer Gerätepark für anspruchsvolle Projekte",
+   "Hervorragendes Betriebsklima",
+   "Kreatives Miteinander im Team",
+   "Abwechslungsreiche Projekte für einen großen Stammkundenkreis"
+  ],
+  "apply_text": "Wenn Sie Freude an Ihrer Arbeit haben, senden Sie uns Ihre aussagekräftige Bewerbung – per E-Mail an info@gartengestaltung-geissler.de oder per Post an Gartengestaltung Geißler OHG, Elsavastraße 3, 63863 Eschau.",
+  "seo_title": "Karriere | Gartengestaltung Geißler Eschau",
+  "seo_description": "Landschaftsgärtner/in gesucht: übertarifliche Vergütung, großer Gerätepark und ein hervorragendes Betriebsklima bei Gartengestaltung Geißler in Eschau."
+ },
+ "contact": {
+  "hero_title_html": "Ihr Gartengestalter aus <em>Eschau</em>",
+  "label": "Kontakt",
+  "hero_text": "Wir freuen uns auf Ihren Anruf oder Ihre Nachricht. Ob erste Idee oder konkretes Vorhaben – erzählen Sie uns von Ihrem Garten, wir melden uns umgehend bei Ihnen.",
+  "form_title_html": "<em>Schreiben</em> Sie uns",
+  "info_title_html": "<em>Kontakt</em> und Anfahrt",
+  "seo_title": "Kontakt | Gartengestaltung Geißler Eschau",
+  "seo_description": "Kontakt zu Gartengestaltung Geißler: Büro 09374 / 2124, E-Mail info@gartengestaltung-geissler.de – Elsavastraße 3, 63863 Eschau im Landkreis Miltenberg."
+ },
+ "gallery": {
+  "hero_title_html": "Einblicke in unsere <em>Arbeit</em>",
+  "label": "Galerie",
+  "hero_text": "Eine Auswahl unserer Arbeiten – von der Bepflanzung bis zur Treppenanlage, vom ersten Aushub bis zum fertigen Garten.",
+  "categories": {
+   "bepflanzungen": "Bepflanzungen",
+   "belagsarbeiten": "Beläge & Wege",
+   "teichanlagen": "Wasser im Garten",
+   "dachbegruenung": "Dachbegrünung",
+   "mauerbau": "Hangbefestigung & Mauerbau",
+   "sichtschutz": "Sichtschutz & Zäune",
+   "treppen": "Treppenanlagen",
+   "gaerten": "Unsere Gärten",
+   "smartgarden": "Smart Garden",
+   "baustelle": "Auf der Baustelle"
+  },
+  "seo_title": "Galerie | Gartengestaltung Geißler Eschau",
+  "seo_description": "Bilder unserer Arbeiten: Bepflanzungen, Beläge, Wasser im Garten, Dachbegrünung, Mauerbau, Sichtschutz und Treppen von Gartengestaltung Geißler, Eschau."
+ },
+ "projects": [
+  {
+   "slug": "schoener-naturgarten",
+   "title": "Schöner Naturgarten",
+   "text": "Das Ehepaar wünschte sich eine komplette Neugestaltung der Außenanlage. Als Farbkonzept für die Materialwahl fiel die Entscheidung auf Muschelkalk, der den Stil des Hauses wunderbar widerspiegelt. Der großzügige Eingangsbereich wurde im selben Farbton gepflastert und leitet direkt zur Terrasse hin. Vor dem Haus sind Stellplätze sowie eine schöne Bepflanzung entstanden. Rund um die Terrasse wurde ein pflegeleichtes Kiesbeet mit abgemagertem Pflanzsubstrat und Lavasplitt angelegt. Über das Pflanzbeet hinweg kann der Blick über das Grundstück schweifen: Ein Altbestand an großen Bäumen und der angrenzende Mühlbach bilden hier eine wunderbare Kulisse.",
+   "short": "Komplette Neugestaltung in Muschelkalk – mit Kiesbeet, Stellplätzen und Blick auf alte Bäume und den Mühlbach."
+  },
+  {
+   "slug": "moderner-garten-in-der-stadt",
+   "title": "Moderner Garten in der Stadt",
+   "text": "Hier entstand eine modern gestaltete Terrasse über zwei Ebenen, verbunden durch eine maßangefertigte Treppe in L-Form. Von hier aus fällt der Blick auf die Feuerstelle: Der Kreis wurde mit Basaltpflaster und einem Granit-Zweizeiler gepflastert, die Feuerstelle selbst ist von Granitpalisaden umgeben. Eine üppige Bepflanzung rahmt den gesamten Sitzbereich ein und sorgt das ganze Jahr über für eine abwechslungsreiche Blütenvielfalt. Zur Straße hin bilden Gabionenkörbe einen Sicht- und Windschutz. Am Abend sorgt die integrierte Beleuchtung für ein romantisches Ambiente und schöne Grillabende im eigenen Garten.",
+   "short": "Terrasse auf zwei Ebenen mit L-förmiger Treppe, Feuerstelle aus Basalt und Granit, Gabionen und integrierter Beleuchtung."
+  },
+  {
+   "slug": "kleiner-terrassengarten",
+   "title": "Kleiner Terrassengarten zum Entspannen",
+   "text": "Das Ehepaar wünschte sich eine pflegeleichte Außenanlage und möglichst viel Raumgewinn auf dem kleinen Grundstück. Auf Pflanzen sollte dennoch nicht verzichtet werden, und auch das Element Wasser sollte eine Rolle im Garten spielen. Um Platz zu gewinnen, wurde das Wasserspiel in die Mauer integriert, welche die Böschung dahinter abfängt. Ein Kiesbeet aus gelbem Quarzit mit immergrünen Formgehölzen und Stauden schafft einen fließenden Übergang. Ein Pflasterstreifen umrahmt das Holzdeck und sorgt für ein wunderbar stimmiges Gesamtbild der Außenanlage.",
+   "short": "Pflegeleicht und platzsparend: ein Wasserspiel in der Stützmauer, ein Kiesbeet aus gelbem Quarzit und ein gerahmtes Holzdeck."
+  }
+ ],
+ "home_seo": {
+  "seo_title": "Gartengestaltung Geißler – Garten- und Landschaftsbau in Eschau",
+  "seo_description": "Meister- und Ausbildungsbetrieb im Garten- und Landschaftsbau in Eschau: Planung, Neu- und Umgestaltung sowie Pflege privater Gärten – seit 1981."
+ },
+ "legal": {
+  "impressum_html": "<h2>Angaben gemäß § 5 DDG</h2><p>Gartengestaltung Geißler OHG<br>Elsavastraße 3<br>63863 Eschau</p><h2>Vertreten durch</h2><p>Stefan Opolka und Stefan Weis</p><h2>Kontakt</h2><p>Telefon: 09374 / 2124<br>Telefax: 09374 / 7309<br>E-Mail: info@gartengestaltung-geissler.de</p><h2>Registereintrag</h2><p>Eingetragen im Handelsregister.<br>Registergericht: Aschaffenburg<br>Registernummer: HRA 5753</p><!-- USt-IdNr. ergänzen, falls vorhanden --><h2>Verantwortlich für den Inhalt nach § 18 Abs. 2 MStV</h2><p>Stefan Opolka und Stefan Weis<br>Elsavastraße 3<br>63863 Eschau</p><h2>EU-Streitschlichtung</h2><p>Die Plattform der Europäischen Kommission zur Online-Streitbeilegung (OS-Plattform) wurde zum 20. Juli 2025 eingestellt. Unsere E-Mail-Adresse finden Sie oben im Impressum.</p><h2>Verbraucherstreitbeilegung / Universalschlichtungsstelle</h2><p>Wir sind nicht bereit oder verpflichtet, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.</p>",
+  "datenschutz_html": "<h2>1. Verantwortlicher</h2><p>Verantwortlich für die Datenverarbeitung auf dieser Website ist:</p><p>Gartengestaltung Geißler OHG<br>vertreten durch Stefan Opolka und Stefan Weis<br>Elsavastraße 3<br>63863 Eschau<br>Telefon: 09374 / 2124<br>E-Mail: info@gartengestaltung-geissler.de</p><h2>2. Allgemeines</h2><p>Der Schutz Ihrer persönlichen Daten ist uns wichtig. Wir verarbeiten personenbezogene Daten ausschließlich im Rahmen der gesetzlichen Bestimmungen, insbesondere der Datenschutz-Grundverordnung (DSGVO) und des Bundesdatenschutzgesetzes (BDSG). Nachfolgend informieren wir Sie darüber, welche Daten beim Besuch dieser Website verarbeitet werden, zu welchem Zweck und auf welcher Rechtsgrundlage.</p><h2>3. Hosting</h2><p>Diese Website wird bei einem externen Dienstleister gehostet:</p><p>[Name und Anschrift des Hosting-Anbieters ergänzen]</p><!-- Hosting-Anbieter eintragen und Hinweis auf den Auftragsverarbeitungsvertrag prüfen --><p>Der Hosting-Anbieter verarbeitet Ihre Daten ausschließlich in unserem Auftrag und nach unseren Weisungen. Mit ihm besteht ein Vertrag über die Auftragsverarbeitung gemäß Art. 28 DSGVO. Rechtsgrundlage ist unser berechtigtes Interesse an einer sicheren und zuverlässigen Bereitstellung unserer Website (Art. 6 Abs. 1 lit. f DSGVO).</p><h2>4. Server-Logfiles</h2><p>Beim Aufruf dieser Website werden durch den Server automatisch Informationen erfasst, die Ihr Browser übermittelt. Dies sind insbesondere:</p><ul><li>IP-Adresse des anfragenden Geräts</li><li>Datum und Uhrzeit des Zugriffs</li><li>aufgerufene Seite bzw. Datei</li><li>Referrer-URL (zuvor besuchte Seite)</li><li>verwendeter Browser und Betriebssystem</li><li>übertragene Datenmenge und Statuscode</li></ul><p>Diese Daten werden nicht mit anderen Datenquellen zusammengeführt. Die Verarbeitung dient der Auslieferung der Website, der Gewährleistung von Stabilität und Sicherheit sowie der Fehleranalyse. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Die Logfiles werden nach kurzer Zeit, spätestens nach [Anzahl] Tagen, gelöscht, sofern keine längere Aufbewahrung zu Beweiszwecken erforderlich ist.</p><h2>5. SSL- bzw. TLS-Verschlüsselung</h2><p>Diese Website nutzt aus Sicherheitsgründen eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie am Schloss-Symbol und an „https://“ in der Adresszeile Ihres Browsers. Bei aktiver Verschlüsselung können die Daten, die Sie an uns übermitteln, nicht von Dritten mitgelesen werden.</p><h2>6. Keine Cookies, kein Tracking</h2><p>Diese Website verwendet keine Cookies und setzt keine Analyse-, Tracking- oder Marketingdienste ein. Es findet keine Auswertung Ihres Nutzungsverhaltens und keine Weitergabe an Werbenetzwerke statt.</p><h2>7. Schriftarten</h2><p>Die auf dieser Website verwendeten Schriftarten sind lokal auf unserem Server eingebunden. Beim Aufruf der Seiten wird keine Verbindung zu Servern Dritter, etwa von Google, hergestellt.</p><h2>8. Kontaktformular und E-Mail</h2><p>Wenn Sie uns über das Kontaktformular oder per E-Mail kontaktieren, verarbeiten wir die von Ihnen angegebenen Daten (zum Beispiel Name, E-Mail-Adresse und Ihre Nachricht), um Ihre Anfrage zu bearbeiten und mögliche Anschlussfragen zu beantworten. Die Angaben aus dem Kontaktformular werden per E-Mail an uns übermittelt.</p><!-- Falls ein externer Formular-Dienst genutzt wird, diesen hier benennen --><p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, sofern Ihre Anfrage mit einem Vertrag oder vorvertraglichen Maßnahmen zusammenhängt, im Übrigen unser berechtigtes Interesse an der Beantwortung von Anfragen (Art. 6 Abs. 1 lit. f DSGVO). Wir geben diese Daten nicht ohne Ihre Einwilligung weiter. Die Daten werden gelöscht, sobald Ihre Anfrage abschließend bearbeitet ist und keine gesetzlichen Aufbewahrungspflichten entgegenstehen.</p><h2>9. Links zu Google Maps</h2><p>Auf unserer Website ist keine Karte von Google Maps direkt eingebunden. Wir stellen lediglich einen Link bereit, über den Sie unsere Anfahrt bei Google Maps aufrufen können. Erst wenn Sie diesen Link anklicken, werden Sie auf die Website der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland, weitergeleitet. Für die dortige Datenverarbeitung ist Google verantwortlich; es gilt deren Datenschutzerklärung.</p><h2>10. Ihre Rechte</h2><p>Sie haben im Rahmen der gesetzlichen Bestimmungen jederzeit das Recht auf:</p><ul><li>Auskunft über Ihre gespeicherten Daten (Art. 15 DSGVO)</li><li>Berichtigung unrichtiger Daten (Art. 16 DSGVO)</li><li>Löschung Ihrer Daten (Art. 17 DSGVO)</li><li>Einschränkung der Verarbeitung (Art. 18 DSGVO)</li><li>Datenübertragbarkeit (Art. 20 DSGVO)</li><li>Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)</li><li>Widerruf einer erteilten Einwilligung mit Wirkung für die Zukunft (Art. 7 Abs. 3 DSGVO)</li></ul><p>Soweit wir Daten auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO verarbeiten, können Sie aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit Widerspruch einlegen. Zur Ausübung Ihrer Rechte genügt eine formlose Nachricht an die oben genannten Kontaktdaten.</p><h2>11. Beschwerderecht bei der Aufsichtsbehörde</h2><p>Sie haben das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren. Für uns zuständig ist:</p><p>Bayerisches Landesamt für Datenschutzaufsicht (BayLDA)<br>Promenade 18<br>91522 Ansbach<br>www.lda.bayern.de</p><h2>12. Aktualität dieser Datenschutzerklärung</h2><p>Wir passen diese Datenschutzerklärung an, sobald sich die Website oder die rechtlichen Vorgaben ändern.</p><p>Stand: September 2026</p>"
+ }
+}

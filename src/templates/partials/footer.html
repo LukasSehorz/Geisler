@@ -1,0 +1,55 @@
+{% import 'partials/macros.html' as m %}
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__top">
+      <div class="footer__menus">
+        <div class="footer__col">
+          <a class="footer__col-title" href="{{ url('dienstleistungen.html') }}">Dienstleistungen</a>
+          <ul>{% for s in services[:6] %}<li><a href="{{ url(s.url) }}">{{ s.nav_name }}</a></li>{% endfor %}</ul>
+        </div>
+        <div class="footer__col">
+          <span class="footer__col-title" aria-hidden="true">&nbsp;</span>
+          <ul>{% for s in services[6:] %}<li><a href="{{ url(s.url) }}">{{ s.nav_name }}</a></li>{% endfor %}</ul>
+        </div>
+        <div class="footer__col">
+          <a class="footer__col-title" href="{{ url('smart-garden.html') }}">Smart Garden</a>
+          <ul>{% for s in smart_pages %}<li><a href="{{ url(s.url) }}">{{ s.nav_name or s.name }}</a></li>{% endfor %}</ul>
+        </div>
+        <div class="footer__col">
+          <span class="footer__col-title">Unternehmen</span>
+          <ul>
+            <li><a href="{{ url('ueber-uns.html') }}">Über uns</a></li>
+            <li><a href="{{ url('galerie.html') }}">Galerie</a></li>
+            <li><a href="{{ url('karriere.html') }}">Karriere</a></li>
+            <li><a href="{{ url('kontakt.html') }}">Kontakt</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer__center">
+        <a class="images" href="{{ company.maps }}" target="_blank" rel="noopener" aria-label="Standort in Google Maps öffnen">
+          {{ pic(media.home.footer_image.src, alt=media.home.footer_image.alt, ratio='16/9', focus=media.home.footer_image.focus, widths=(480, 760), sizes='360px') }}
+        </a>
+        <div class="footer__address">
+          <p>{{ company.name }}<br>{{ company.street }}<br>{{ company.zip }} {{ company.city }}</p>
+          <a href="{{ company.maps }}" target="_blank" rel="noopener">Karte anzeigen</a>
+        </div>
+      </div>
+
+      <div class="footer__contact">
+        <a href="{{ company.phone_href }}">{{ m.icon('phone') }}<span>{{ company.phone }}</span></a>
+        <a href="mailto:{{ company.email }}">{{ m.icon('mail') }}<span>{{ company.email }}</span></a>
+        <a href="{{ company.maps }}" target="_blank" rel="noopener">{{ m.icon('pin') }}<span>Anfahrt planen</span></a>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="footer__legal">
+        <a href="{{ url('impressum.html') }}">Impressum</a>
+        <a href="{{ url('datenschutz.html') }}">Datenschutz</a>
+      </div>
+      <div class="footer__copy">{{ company.legal }} © {{ year }} · {{ company.owners }}</div>
+      <div class="footer__up"><a href="#main">Nach oben</a></div>
+    </div>
+  </div>
+</footer>

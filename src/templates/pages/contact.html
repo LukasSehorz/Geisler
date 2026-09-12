@@ -1,0 +1,265 @@
+{% extends 'base.html' %}
+{% import 'partials/macros.html' as m %}
+{% block title %}{{ c.contact.seo_title }}{% endblock %}
+{% block description %}{{ c.contact.seo_description }}{% endblock %}
+{% block body_class %}has-hero page-contact{% endblock %}
+{% block styles %}<link rel="stylesheet" href="{{ asset('css/pages/contact.css') }}">{% endblock %}
+
+{% block content %}
+{% set C = c.contact %}
+{% set P = media.pages.contact %}
+{% set R = c.home.region %}
+{% set mail_wbr = company.email|replace('@', '@<wbr>') %}
+
+{# ================================================================ HERO #}
+{{ m.page_hero(P.src, C.hero_title_html, C.hero_text, label=C.label, focus=P.focus, alt=P.alt) }}
+
+{# ================================================================ QUICK CONTACT STRIP #}
+<section class="quick container contact-section" aria-label="Direkter Kontakt">
+  <div class="quick__list" data-fade-group>
+    <a class="quick__item" href="{{ company.phone_href }}">
+      <span class="quick__label eyebrow">{{ m.icon('phone') }}Telefon</span>
+      <span class="quick__value">{{ company.phone }}</span>
+      {{ m.more('Jetzt anrufen') }}
+    </a>
+    <a class="quick__item" href="mailto:{{ company.email }}">
+      <span class="quick__label eyebrow">{{ m.icon('mail') }}E-Mail</span>
+      <span class="quick__value">{{ mail_wbr|safe }}</span>
+      {{ m.more('E-Mail schreiben') }}
+    </a>
+    <a class="quick__item" href="{{ company.maps }}" target="_blank" rel="noopener">
+      <span class="quick__label eyebrow">{{ m.icon('pin') }}Adresse</span>
+      <span class="quick__value">{{ company.street }}, {{ company.zip }}&nbsp;{{ company.city }}</span>
+      <span class="link-more">Route planen {{ m.icon('arrow-ne') }}</span>
+      <span class="sr-only">(öffnet Google Maps in einem neuen Fenster)</span>
+    </a>
+  </div>
+</section>
+
+{# ================================================================ FORM #}
+<section class="contacts contacts--form container contact-section" id="anfrage" aria-labelledby="anfrage-title">
+  <h2 class="contacts__header" id="anfrage-title" data-scrub-reveal>{{ C.form_title_html|safe }}</h2>
+
+  <div class="contacts__form">
+    <!--
+      FORMULAR-VERSAND
+      Aktuell gibt es kein Backend: contact.js prüft die Eingaben und öffnet das E-Mail-Programm
+      der Besucher (mailto:) mit einer vorbereiteten Nachricht an {{ company.email }}.
+      Ohne JavaScript greift das action="mailto:…"-Attribut als einfacher Fallback.
+
+      Anbindung eines echten Backends (z. B. PHP-Mailer beim Hoster, Formspree, Web3Forms o. Ä.):
+        1. action="…" auf den Endpunkt setzen und method="post" belassen, enctype-Attribut entfernen.
+        2. In assets/js/contact.js in submit() statt window.location.href = mail.href
+           ein fetch(form.action, { method: "POST", body: new FormData(form) }) ausführen
+           und erst nach erfolgreicher Antwort showSuccess() aufrufen (Text im Erfolgs-Panel anpassen).
+        3. Spam-Schutz (Honeypot-Feld oder Captcha) ergänzen und Abschnitt 8 der Datenschutzerklärung prüfen.
+    -->
+    <form class="contact-form" action="mailto:{{ company.email }}" method="post" enctype="text/plain"
+      data-contact-form data-email="{{ company.email }}" aria-describedby="cf-required-note">
+      <div class="contact-form__inputs">
+        <div class="field field--text">
+          <div class="field__control">
+            <input class="field__input" id="cf-name" name="Name" type="text" autocomplete="name" maxlength="120" placeholder=" " required aria-describedby="cf-name-error">
+            <label class="field__label" for="cf-name">Vor- und Nachname<span class="field__req" aria-hidden="true"> *</span></label>
+          </div>
+          <p class="field__error" id="cf-name-error"></p>
+        </div>
+
+        <div class="field field--text">
+          <div class="field__control">
+            <input class="field__input" id="cf-phone" name="Telefon" type="tel" inputmode="tel" autocomplete="tel" maxlength="40" placeholder=" " required aria-describedby="cf-phone-error">
+            <label class="field__label" for="cf-phone">Telefon<span class="field__req" aria-hidden="true"> *</span></label>
+          </div>
+          <p class="field__error" id="cf-phone-error"></p>
+        </div>
+
+        <div class="field field--text">
+          <div class="field__control">
+            <input class="field__input" id="cf-email" name="E-Mail" type="email" inputmode="email" autocomplete="email" spellcheck="false" maxlength="160" placeholder=" " required aria-describedby="cf-email-error">
+            <label class="field__label" for="cf-email">E-Mail<span class="field__req" aria-hidden="true"> *</span></label>
+          </div>
+          <p class="field__error" id="cf-email-error"></p>
+        </div>
+
+        <div class="field field--text">
+          <div class="field__control">
+            <input class="field__input" id="cf-place" name="PLZ-Ort" type="text" maxlength="80" placeholder=" ">
+            <label class="field__label" for="cf-place">PLZ / Ort</label>
+          </div>
+        </div>
+
+        <div class="field field--select field--wide">
+          <div class="field__control">
+            <select class="field__input field__input--select" id="cf-topic" name="Anliegen">
+              <option value="" selected disabled hidden></option>
+              <optgroup label="Dienstleistungen">
+                {% for s in services %}<option value="{{ s.name }}" data-slug="{{ s.slug }}">{{ s.name }}</option>{% endfor %}
+              </optgroup>
+              <optgroup label="Smart Garden">
+                {% for s in smart_pages %}<option value="{{ s.name }}" data-slug="{{ s.slug }}">{{ s.name }}</option>{% endfor %}
+              </optgroup>
+              <optgroup label="Weitere Anliegen">
+                <option value="Pflege-Anfrage" data-slug="pflege">Pflege-Anfrage</option>
+                <option value="Sonstiges" data-slug="sonstiges">Sonstiges</option>
+              </optgroup>
+            </select>
+            <label class="field__label" for="cf-topic">Anliegen</label>
+            {{ m.icon('chev', 'field__chev') }}
+          </div>
+        </div>
+
+        <div class="field field--textarea field--wide">
+          <div class="field__control">
+            <textarea class="field__input field__input--textarea" id="cf-message" name="Nachricht" rows="6" maxlength="4000" placeholder=" " required aria-describedby="cf-message-error" data-lenis-prevent></textarea>
+            <label class="field__label" for="cf-message">Nachricht<span class="field__req" aria-hidden="true"> *</span></label>
+          </div>
+          <p class="field__error" id="cf-message-error"></p>
+        </div>
+      </div>
+
+      <div class="contact-form__footer">
+        <div class="contact-form__consent">
+          <div class="checkbox">
+            <label class="checkbox__label" for="cf-privacy">
+              <input class="checkbox__input" id="cf-privacy" name="Datenschutz" type="checkbox" value="gelesen und akzeptiert" required aria-describedby="cf-privacy-error">
+              <span class="checkbox__box" aria-hidden="true"></span>
+              <span class="checkbox__text">Ich habe die <a href="{{ url('datenschutz.html') }}" target="_blank" rel="noopener">Datenschutzerklärung</a> gelesen und bin mit der Verarbeitung meiner Angaben zur Beantwortung meiner Anfrage einverstanden.<span aria-hidden="true">*</span></span>
+            </label>
+            <p class="field__error" id="cf-privacy-error"></p>
+          </div>
+          <p class="contact-form__note" id="cf-required-note">Mit * gekennzeichnete Felder sind Pflichtfelder.</p>
+        </div>
+        <div class="contact-form__actions">
+          <button class="cta cta--filled cta--bigger contact-form__submit" type="submit">Nachricht senden {{ m.icon('arrow') }}</button>
+          <p class="contact-form__status" data-form-status role="status" aria-live="polite"></p>
+        </div>
+      </div>
+    </form>
+
+    <div class="contact-success" data-contact-success tabindex="-1" aria-labelledby="cf-success-title" hidden>
+      <div class="contact-success__head">
+        <svg class="contact-success__check" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.1" aria-hidden="true">
+          <circle cx="32" cy="32" r="31" pathLength="1"/>
+          <path d="M20.5 33.2l7.6 7.3 15.4-16.2" pathLength="1"/>
+        </svg>
+        <h3 class="contact-success__title" id="cf-success-title" data-success-anim>Vielen <em>Dank</em>, <span data-success-name></span>!</h3>
+      </div>
+      <div class="contact-success__body">
+        <p class="p-lg" data-success-anim>Ihr E-Mail-Programm wurde mit Ihrer Anfrage geöffnet. Bitte senden Sie die vorbereitete Nachricht dort ab – wir melden uns anschließend umgehend bei Ihnen.</p>
+        <p class="p-md contact-success__fallback" data-success-anim>Sollte es sich nicht geöffnet haben, erreichen Sie uns telefonisch unter <a href="{{ company.phone_href }}">{{ company.phone }}</a> oder per E-Mail an <a href="mailto:{{ company.email }}">{{ company.email }}</a>.</p>
+        <div class="contact-success__actions" data-success-anim>
+          <a class="cta cta--filled" href="mailto:{{ company.email }}" data-success-mailto>E-Mail erneut öffnen {{ m.icon('arrow') }}</a>
+          <button class="cta" type="button" data-success-copy><span aria-live="polite">Anfrage kopieren</span></button>
+          <button class="link contact-success__reset" type="button" data-success-reset>Neue Anfrage stellen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ================================================================ KONTAKT UND ANFAHRT #}
+<section class="contacts contacts--info container contact-section" id="anfahrt" aria-labelledby="anfahrt-title">
+  <h2 class="contacts__header" id="anfahrt-title" data-scrub-reveal>{{ C.info_title_html|safe }}</h2>
+  <div class="contacts__body">
+    <div class="contacts__body-left">
+      <div class="contacts__img contacts__img--a images" data-reveal-img>
+        {{ pic('gal:galerie_bepflanzungen__i42bf4141ecff4e35.jpg', alt='Große Rasenfläche vor einem terrassierten Garten mit Feuerschale aus Cortenstahl', ratio='600/620', sizes='(max-width: 1000px) 57vw, 33vw', widths=(640, 1000, 1400)) }}
+      </div>
+      <div class="contacts__img contacts__img--b images" data-reveal-img>
+        {{ pic('gal:galerie_teichanlagen_wasserelemente__ib6a700d535657f12.jpg', alt='Wasserbecken aus Cortenstahl mit Schwallbrause', ratio='450/620', sizes='(max-width: 1000px) 43vw, 25vw', widths=(480, 800, 1100)) }}
+      </div>
+    </div>
+
+    <div class="contacts__body-right" data-fade-group>
+      <div class="contacts__body-item">
+        <div class="contacts__body-label">Wo Sie uns finden</div>
+        <address>{{ company.name }}<br>{{ company.street }}<br>{{ company.zip }} {{ company.city }}</address>
+        <a class="link-more contacts__route" href="{{ company.maps }}" target="_blank" rel="noopener">Route planen {{ m.icon('arrow-ne') }}<span class="sr-only"> (öffnet Google Maps in einem neuen Fenster)</span></a>
+      </div>
+
+      <div class="contacts__body-item">
+        <div class="contacts__body-label">Büro</div>
+        <dl class="contacts__dl">
+          <dt>Telefon</dt><dd><a class="u-link" href="{{ company.phone_href }}">{{ company.phone }}</a></dd>
+          <dt>Fax</dt><dd>{{ company.fax }}</dd>
+          <dt>E-Mail</dt><dd><a class="u-link" href="mailto:{{ company.email }}">{{ mail_wbr|safe }}</a></dd>
+        </dl>
+      </div>
+
+      <div class="contacts__body-item">
+        <div class="contacts__body-label">Ansprechpartner</div>
+        <ul class="contacts__people">
+          {% for o in c.about.owners|sort(attribute='name') %}
+          <li class="contacts__person">
+            <span class="contacts__person-name">{{ o.name }}</span>
+            <span class="contacts__person-role">{{ o.role }}</span>
+            <a class="u-link" href="tel:+49{{ (o.phone|replace(' ', '')|replace('/', ''))[1:] }}">{{ o.phone }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ================================================================ ANSPRECHPARTNER #}
+<section class="owners container contact-section" id="ansprechpartner" aria-labelledby="owners-title">
+  <header class="section-head">
+    <h2 class="title" id="owners-title" data-scrub-reveal>Ihre <em>Ansprechpartner</em></h2>
+    <p class="p-lg" data-fade>Stefan Weis und Stefan Opolka führen den Betrieb seit 2017 gemeinsam – und sind für Sie persönlich erreichbar.</p>
+  </header>
+  <div class="owners__grid">
+    {% for o in c.about.owners %}
+    {% set im = media.pages.about_portraits|selectattr('alt', 'equalto', o.name)|first %}
+    {% if not im %}{% set im = media.pages.about_portraits[loop.index0] %}{% endif %}
+    <article class="owner" data-fade>
+      <div class="owner__image images" data-reveal-img>
+        {{ pic(im.src, alt=o.name ~ ', ' ~ o.role|replace(' · ', ' und '), ratio='4/5', focus=im.focus, sizes='(max-width: 700px) 100vw, (max-width: 1200px) 50vw, 20vw', widths=(480, 800, 1200)) }}
+      </div>
+      <div class="owner__content">
+        <div class="card__content-top"><span class="card__label">Inhaber</span><span class="card__meta">{{ '%02d'|format(loop.index) }}</span></div>
+        <div class="owner__titles">
+          <span class="eyebrow owner__role">{{ o.role }}</span>
+          <h3 class="title-medium owner__name">{{ o.name }}</h3>
+        </div>
+        <p class="p-md owner__text">{{ o.text }}</p>
+        <div class="owner__links">
+          <a class="cta" href="tel:+49{{ (o.phone|replace(' ', '')|replace('/', ''))[1:] }}">{{ m.icon('phone') }} {{ o.phone }}<span class="sr-only"> ({{ o.name }} anrufen)</span></a>
+          <a class="cta" href="mailto:{{ company.email }}?subject={{ ('z. Hd. ' ~ o.name)|urlencode }}">{{ m.icon('mail') }} E-Mail<span class="sr-only"> an {{ o.name }}</span></a>
+        </div>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+
+{# ================================================================ EINZUGSGEBIET #}
+{% set towns = region.towns|rejectattr('name', 'equalto', 'Eschau')|sort(attribute='distance_km')|list %}
+<section class="contact-region container" id="einzugsgebiet" aria-label="{{ R.label }}">
+  <div class="featured">
+    <div class="featured__item">
+      <div class="it">
+        <div class="it__media">
+          <div class="images images--map" data-reveal-img>
+            {{ pic('site:map/einzugsgebiet-2400.webp', alt='Karte des Einzugsgebiets rund um Eschau im Landkreis Miltenberg', ratio='1035/702', focus=(0.55, 0.5), sizes='(max-width: 1000px) 100vw, 55vw', widths=(640, 1000, 1400, 2000)) }}
+          </div>
+        </div>
+        <div class="it__content">
+          <div class="paragraph-spaced">
+            {{ m.heading_label(R.label, R.title_html, 'h2') }}
+            <div class="paragraph-spaced__bottom" data-fade>
+              <p class="p-md">{{ R.text }}</p>
+              <ul class="town-list">
+                {% for t in towns[:16] %}<li>{{ t.name }}</li>{% endfor %}
+              </ul>
+              <a class="link-more contact-region__cta" href="#anfrage">{{ R.cta }} {{ m.icon('arrow') }}</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+{% block scripts %}<script src="{{ asset('js/contact.js') }}"></script>{% endblock %}

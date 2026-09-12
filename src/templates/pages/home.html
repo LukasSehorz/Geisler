@@ -1,0 +1,343 @@
+{% extends 'base.html' %}
+{% import 'partials/macros.html' as m %}
+{% block title %}{{ c.home_seo.seo_title }}{% endblock %}
+{% block description %}{{ c.home_seo.seo_description }}{% endblock %}
+{% block body_class %}has-hero page-home{% endblock %}
+{% block head %}
+  <link rel="preload" as="image" href="{{ url(media.home.hero_video.poster) }}">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LandscapeArchitect",
+    "name": "{{ company.legal }}",
+    "alternateName": "{{ company.name }}",
+    "description": "{{ c.home_seo.seo_description }}",
+    "url": "https://www.gartengestaltung-geissler.de/",
+    "telephone": "+49 9374 2124",
+    "faxNumber": "+49 9374 7309",
+    "email": "{{ company.email }}",
+    "foundingDate": "1981",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "{{ company.street }}",
+      "postalCode": "{{ company.zip }}",
+      "addressLocality": "{{ company.city }}",
+      "addressRegion": "Bayern",
+      "addressCountry": "DE"
+    },
+    "areaServed": [{% for t in media.home.towns %}"{{ t }}"{% if not loop.last %}, {% endif %}{% endfor %}],
+    "founder": {"@type": "Person", "name": "Wolfgang Geißler"},
+    "employee": [
+      {"@type": "Person", "name": "Stefan Opolka", "jobTitle": "Geschäftsführer"},
+      {"@type": "Person", "name": "Stefan Weis", "jobTitle": "Geschäftsführer"}
+    ]
+  }
+  </script>
+{% endblock %}
+
+{% block content %}
+{% set H = c.home %}
+{% set M = media.home %}
+{% set S = {} %}
+{% for s in services %}{% set _ = S.update({s.slug: s}) %}{% endfor %}
+
+{# ================================================================ HERO #}
+<section class="hero" data-hero data-cta-trigger="light" data-cta-label="Scrollen und entdecken">
+  <div class="hero__media">
+    <video class="hero__video" data-hero-video muted playsinline loop autoplay preload="auto"
+      poster="{{ url(M.hero_video.poster) }}"
+      data-src-desktop="{{ url(M.hero_video.desktop) }}"
+      data-src-tablet="{{ url(M.hero_video.tablet) }}"
+      data-src-mobile="{{ url(M.hero_video.mobile) }}"></video>
+    <script>(function(v){var w=window.innerWidth;v.src=w<700?v.getAttribute('data-src-mobile'):(w<1300?v.getAttribute('data-src-tablet'):v.getAttribute('data-src-desktop'));})(document.currentScript.previousElementSibling);</script>
+  </div>
+  <div class="hero__content">
+    <h1 class="title" data-text-reveal>{{ H.hero_title_html|safe }}</h1>
+    <p class="p-lg" data-hero-fade>{{ H.hero_text }}</p>
+  </div>
+  <a class="hero__scroll" href="#ueber-uns" aria-label="Zum Inhalt scrollen" data-hero-fade><span></span></a>
+</section>
+
+{# ================================================================ ÜBER UNS #}
+<section class="about-intro container" id="ueber-uns">
+  <a class="idt" href="{{ url('ueber-uns.html') }}" data-cta-trigger data-cta-label="{{ H.about_cta }}" data-scrub-reveal>
+    <div class="idt__image idt__image--a" data-reveal-img>
+      {{ pic(M.about_left.src, alt=M.about_left.alt, ratio='448/620', focus=M.about_left.focus, sizes='(max-width: 1000px) 50vw, 448px', widths=(480, 760, 1100)) }}
+    </div>
+    <div class="idt__content">
+      <h2 class="heading">{{ H.about_title_html|safe }}</h2>
+      {% for p in H.about_paragraphs %}<p class="p-lg">{{ p }}</p>{% endfor %}
+    </div>
+    <div class="idt__image idt__image--b" data-reveal-img>
+      {{ pic(M.about_right.src, alt=M.about_right.alt, ratio='398/620', focus=M.about_right.focus, sizes='(max-width: 1000px) 50vw, 398px', widths=(480, 760, 1100)) }}
+    </div>
+  </a>
+  <a class="cta cta--mobile" href="{{ url('ueber-uns.html') }}">{{ H.about_cta }} {{ m.icon('arrow') }}</a>
+</section>
+
+{# ================================================================ BADGES #}
+<section class="badges" aria-label="Unser Betrieb in Zahlen">
+  {% for b in H.badges %}<div class="badge">{{ m.seal(b, loop.index) }}</div>{% endfor %}
+</section>
+
+{# ================================================================ DIENSTLEISTUNGEN #}
+<section class="services-home container" id="leistungen">
+  <header class="section-head">
+    <h2 class="title" data-scrub-reveal>{{ H.services_title_html|safe }}</h2>
+    <p class="p-lg" data-fade>{{ H.services_intro }}</p>
+  </header>
+  <div class="svc-grid" data-fade-group>
+    {% set n = namespace(i=0) %}
+    {% for row in M.services_rows %}{% for slug in row %}{% set s = S[slug] %}{% set n.i = n.i + 1 %}
+    <a class="svc-card" href="{{ url(s.url) }}" data-cta-trigger="main" data-cta-label="{{ s.name }} entdecken">
+      <div class="svc-card__media">
+        {{ pic(s.media.tile.src, alt=s.media.tile.alt, ratio='4/5', focus=s.media.tile.focus, sizes='(max-width: 600px) 100vw, (max-width: 1000px) 50vw, 480px', widths=(480, 760, 1100)) }}
+        <span class="svc-card__frame" aria-hidden="true"></span>
+        <div class="svc-card__overlay">
+          <span class="svc-card__index">{{ '%02d'|format(n.i) }}</span>
+          <h3 class="svc-card__name">{{ s.nav_name }}</h3>
+          {{ m.more() }}
+        </div>
+      </div>
+    </a>
+    {% endfor %}{% endfor %}
+  </div>
+</section>
+
+{# ================================================================ WASSER / SMART / KARRIERE / REGION #}
+{% set pool = S[M.water[0]] %}
+{% set pond = S[M.water[1]] %}
+<section class="corners container" id="wasser">
+  <header class="section-head">
+    <h2 class="title" data-scrub-reveal>{{ H.water_title_html|safe }}</h2>
+    <p class="p-lg" data-fade>{{ H.water_intro }}</p>
+  </header>
+
+  <div class="featured">
+    <div class="featured__item">
+      <div class="idt idt--stretch">
+        <a class="idt__image" href="{{ url(pool.url) }}" data-cta-trigger="main" data-cta-label="{{ pool.name }} entdecken" data-reveal-img>
+          {{ pic(pool.media.tile.src, alt=pool.media.tile.alt, ratio='410/620', focus=pool.media.tile.focus, sizes='(max-width: 1000px) 50vw, 410px', widths=(480, 760, 1100)) }}
+        </a>
+        <div class="idt__content">
+          <div class="duo">
+            {% for s in [pool, pond] %}
+            <a class="duo__entry" href="{{ url(s.url) }}" data-cta-trigger="main" data-cta-label="{{ s.name }} entdecken">
+              {{ m.heading_label('Neu' if s.slug == 'poolbau' else 'Leistung', s.name, 'h3') }}
+              <div class="duo__bottom">
+                <p class="p-md">{{ s.teaser }}</p>
+                {{ m.more() }}
+              </div>
+            </a>
+            {% endfor %}
+          </div>
+        </div>
+        <a class="idt__image" href="{{ url(pond.url) }}" data-cta-trigger="main" data-cta-label="{{ pond.name }} entdecken" data-reveal-img>
+          {{ pic(pond.media.tile.src, alt=pond.media.tile.alt, ratio='410/620', focus=pond.media.tile.focus, sizes='(max-width: 1000px) 50vw, 410px', widths=(480, 760, 1100)) }}
+        </a>
+      </div>
+    </div>
+
+    <div class="featured__item">
+      <a class="it" href="{{ url('smart-garden.html') }}" data-cta-trigger="main" data-cta-label="{{ H.smart.cta }}">
+        <div class="it__media">
+          {% for im in M.smart_media %}
+          <div class="images" data-reveal-img>
+            {% if im.video %}
+            <video data-autoplay muted playsinline loop preload="metadata" poster="{{ url(im.poster) }}" src="{{ url(im.video) }}"></video>
+            {% else %}
+            {{ pic(im.src, alt=im.alt, ratio='505/702', focus=im.focus, sizes='(max-width: 1000px) 50vw, 27vw', widths=(640, 1000, 1400)) }}
+            {% endif %}
+          </div>
+          {% endfor %}
+        </div>
+        <div class="it__content">
+          <div class="paragraph-spaced paragraph-spaced--flush">
+            <h3 class="heading" data-scrub-reveal>{{ H.smart.title_html|safe }}</h3>
+            <div class="paragraph-spaced__bottom">
+              <p class="p-md">{{ H.smart.text }}</p>
+              <ul class="chips">{% for sp in smart_pages %}<li>{{ sp.name }}</li>{% endfor %}</ul>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="featured__item">
+      <a class="it it--reversed" href="{{ url('karriere.html') }}" data-cta-trigger="main" data-cta-label="{{ H.career.cta }}">
+        <div class="it__media">
+          {% for im in M.career_media %}
+          <div class="images" data-reveal-img>
+            {{ pic(im.src, alt=im.alt, ratio=('1035/702' if M.career_media|length == 1 else '505/702'), focus=im.focus, sizes='(max-width: 1000px) 100vw, 55vw', widths=(640, 1000, 1400, 2000)) }}
+          </div>
+          {% endfor %}
+        </div>
+        <div class="it__content">
+          <div class="paragraph-spaced paragraph-spaced--flush">
+            <h3 class="heading" data-scrub-reveal>{{ H.career.title_html|safe }}</h3>
+            <div class="paragraph-spaced__bottom">
+              <p class="p-md">{{ H.career.text }}</p>
+              <div class="chips">{{ m.more(H.career.cta) }}</div>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="featured__item">
+      <a class="it" href="{{ url('kontakt.html') }}" data-cta-trigger="main" data-cta-label="{{ H.region.cta }}">
+        <div class="it__media">
+          {% for im in M.region_media %}
+          <div class="images images--map" data-reveal-img>
+            {{ pic(im.src, alt=im.alt, ratio=('1035/702' if M.region_media|length == 1 else '505/702'), focus=im.focus, sizes='(max-width: 1000px) 100vw, 55vw', widths=(640, 1000, 1400, 2000)) }}
+          </div>
+          {% endfor %}
+        </div>
+        <div class="it__content">
+          <div class="paragraph-spaced paragraph-spaced--flush">
+            <h3 class="heading" data-scrub-reveal>{{ H.region.title_html|safe }}</h3>
+            <div class="paragraph-spaced__bottom">
+              <p class="p-md">{{ H.region.text }}</p>
+              <ul class="town-list">
+                {% for t in M.towns %}<li>{{ t }}</li>{% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+{# ================================================================ REFERENZEN (cards carousel) #}
+<section class="cards" data-carousel aria-label="Referenzen">
+  <div class="cards__top">
+    <h2 class="heading" data-scrub-reveal>{{ H.references_title_html|safe }}</h2>
+    <div class="cards__controls">
+      <div class="cards__arrows">
+        <button class="cards__btn cards__btn--prev" type="button" data-prev aria-label="Vorherige Referenz">{{ m.icon('arrow') }}</button>
+        <button class="cards__btn" type="button" data-next aria-label="Nächste Referenz">{{ m.icon('arrow') }}</button>
+      </div>
+      <a class="link" href="{{ url('galerie.html') }}">{{ H.references_cta }}</a>
+    </div>
+  </div>
+  <div class="cards__wrapper" data-cards-wrapper>
+    <div class="cards__track" data-track>
+      {% for p in c.projects %}{% set im = M.projects[loop.index0] %}
+      <a class="card" href="{{ url('galerie.html') }}#gaerten" data-cta-trigger="main" data-cta-label="Zur Galerie">
+        <div class="card__image">
+          {{ pic(im.src, alt=im.alt, ratio='392/588', focus=im.focus, sizes='(max-width: 1000px) 84vw, 27vw', widths=(640, 1000)) }}
+        </div>
+        <div class="card__content">
+          <div class="card__content-top"><span class="card__label">Referenz</span><span class="card__meta">{{ '%02d'|format(loop.index) }}</span></div>
+          <h3 class="title-medium">{{ p.title }}</h3>
+          <p class="p-md card__excerpt">{{ p.short }}</p>
+          <span class="card__more">{{ m.more('Zur Galerie') }}</span>
+        </div>
+      </a>
+      {% endfor %}
+      {% for s in [S['treppenanlagen'], S['hangbefestigung-mauerbau']] %}
+      <a class="card" href="{{ url(s.url) }}" data-cta-trigger="main" data-cta-label="{{ s.name }} entdecken">
+        <div class="card__image">
+          {{ pic(s.media.images[0].src, alt=s.media.images[0].alt, ratio='392/588', focus=s.media.images[0].focus, sizes='(max-width: 1000px) 84vw, 27vw', widths=(640, 1000)) }}
+        </div>
+        <div class="card__content">
+          <div class="card__content-top"><span class="card__label">Leistung</span><span class="card__meta">{{ '%02d'|format(loop.index + c.projects|length) }}</span></div>
+          <h3 class="title-medium">{{ s.name }}</h3>
+          <p class="p-md card__excerpt">{{ s.teaser }}</p>
+          <span class="card__more">{{ m.more() }}</span>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{# ================================================================ WUNSCHGARTEN #}
+<section class="wish">
+  <h2 class="title" data-scrub-reveal>{{ H.wish.title_html|safe }}</h2>
+  <div class="wish__text" data-fade>
+    <p class="p-lg">{{ H.wish.paragraphs[0] }}</p>
+    <a class="cta cta--filled" href="{{ url('kontakt.html') }}">{{ H.wish.cta }} {{ m.icon('arrow') }}</a>
+  </div>
+</section>
+
+{# ================================================================ ANSPRUCH #}
+<section class="promise" data-promise>
+  <div class="promise__media">
+    {% for im in M.promise_media %}
+    <div class="images" data-reveal-img>
+      {{ pic(im.src, alt=im.alt, ratio='620/860', focus=im.focus, sizes='(max-width: 1000px) 50vw, 33vw', widths=(640, 1000, 1400)) }}
+    </div>
+    {% endfor %}
+  </div>
+  <div class="promise__widget" data-fade>
+    <h2 class="title-medium">{{ H.promise.title_html|safe }}</h2>
+    <div class="promise__slides" aria-live="polite">
+      {% for it in H.promise['items'] %}
+      <div class="promise__slide{% if loop.first %} is-active{% endif %}">
+        <span class="promise__slide-num">{{ '%02d'|format(loop.index) }}</span>
+        <h3>{{ it.title }}</h3>
+        <p class="p-lg">{{ it.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+    <div class="promise__bar">
+      <div class="promise__dots">
+        {% for it in H.promise['items'] %}<button class="promise__dot{% if loop.first %} is-active{% endif %}" type="button" aria-label="{{ it.title }}"></button>{% endfor %}
+      </div>
+      <div class="promise__progress"><i></i></div>
+      <div class="promise__nav">
+        <button class="promise__arrow promise__arrow--prev" type="button" data-promise-prev aria-label="Vorheriger Punkt">{{ m.icon('arrow') }}</button>
+        <span class="promise__count" aria-hidden="true">01 / {{ '%02d'|format(H.promise['items']|length) }}</span>
+        <button class="promise__arrow" type="button" data-promise-next aria-label="Nächster Punkt">{{ m.icon('arrow') }}</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+{# ================================================================ KONTAKT TEASER #}
+<section class="connect">
+  <div class="connect__col" data-fade>
+    <h2 class="title-medium">{{ H.contact_teaser.left_title }}</h2>
+    <span class="connect__eyebrow">Telefon</span>
+    <p class="p-md">{{ H.contact_teaser.left_text }}</p>
+    <a class="cta" href="{{ company.phone_href }}">{{ m.icon('phone') }} {{ company.phone }}</a>
+  </div>
+  <div class="connect__col" data-fade>
+    <h2 class="title-medium">{{ H.contact_teaser.right_title }}</h2>
+    <span class="connect__eyebrow">E-Mail</span>
+    <p class="p-md">{{ H.contact_teaser.right_text }}</p>
+    <a class="cta" href="{{ url('kontakt.html') }}">{{ m.icon('mail') }} Nachricht senden</a>
+  </div>
+</section>
+
+{# ================================================================ GALERIE (vertical cards) #}
+<section class="cards cards--gallery" data-carousel aria-label="Galerie">
+  <div class="cards__top">
+    <h2 class="heading" data-scrub-reveal>{{ H.gallery_title_html|safe }}</h2>
+    <div class="cards__controls">
+      <div class="cards__arrows">
+        <button class="cards__btn cards__btn--prev" type="button" data-prev aria-label="Zurück">{{ m.icon('arrow') }}</button>
+        <button class="cards__btn" type="button" data-next aria-label="Weiter">{{ m.icon('arrow') }}</button>
+      </div>
+      <a class="link" href="{{ url('galerie.html') }}">{{ H.gallery_cta }}</a>
+    </div>
+  </div>
+  <div class="cards__wrapper" data-cards-wrapper>
+    <div class="cards__track" data-track>
+      {% for g in M.gallery_cards %}
+      <a class="card card--vertical" href="{{ url('galerie.html') }}#{{ g.cat }}" data-cta-trigger="main" data-cta-label="Bilder ansehen">
+        <div class="card__image">
+          {{ pic(g.src, alt=g.alt, ratio='425/440', focus=g.focus, sizes='(max-width: 700px) 84vw, 24vw', widths=(640, 900)) }}
+        </div>
+        <div class="card__content">
+          <div class="card__content-top"><span class="card__label">Galerie</span><span class="card__meta">{{ g.count }} Fotos</span></div>
+          <h3 class="title-medium">{{ g.name }}</h3>
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+{% endblock %}

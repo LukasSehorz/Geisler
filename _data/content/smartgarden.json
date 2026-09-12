@@ -1,0 +1,74 @@
+{"smartgarden":{
+ "overview":{
+  "title_html":"Smart <em>Garden</em>",
+  "label":"Smart Garden",
+  "lead":"Abends nach Hause kommen, auf der Terrasse Platz nehmen und bei einem Glas Wein den gepflegten Garten genießen – statt noch zu gießen, zu mähen und Grünschnitt wegzufahren.",
+  "excerpt":"Kennen Sie das? Kaum zu Hause, geht es noch einmal hinaus: die Pflanzen gießen, den Rasen mähen, den Grünschnitt wegbringen. Mit einem Mähroboter und einer automatischen Bewässerung erledigt sich vieles davon wie von selbst. Und wenn die Sonne untergeht, müssen Sie nicht im Dunkeln sitzen: Ein passendes Lichtkonzept lässt Ihren Garten auch bei Nacht wirken. Lassen Sie uns gemeinsam die passende Lösung für Ihren Wohlfühlgarten finden.",
+  "seo_title":"Smart Garden | Gartengestaltung Geißler Eschau",
+  "seo_description":"Mähroboter, automatische Bewässerung und Lichtdesign: smarte Lösungen für mehr Zeit im eigenen Garten – geplant von Gartengestaltung Geißler, Eschau."
+ },
+ "pages":[
+  {"slug":"maehroboter","name":"Mähroboter","nav_name":"Mähroboter","label":"Smart Garden","title_html":"Ein Elektroschaf im <em>Garten</em>",
+   "teaser":"Leise, sparsam und zuverlässig: Ein Mähroboter hält Ihren Rasen stets gepflegt – ganz ohne Rasenschnitt und Fahrspuren.",
+   "lead":"Was vor zehn Jahren noch in den Kinderschuhen steckte, ist heute ausgereifte und bewährte Technik. Viele unserer Kunden können sich ihren Garten ohne diesen kleinen Helfer nicht mehr vorstellen.",
+   "excerpt":"Ein Mähroboter arbeitet leise und unauffällig, während Sie Ihren Tag verbringen. Er schneidet den Rasen regelmäßig, sodass kein Rasenschnitt entsorgt werden muss, und hinterlässt auch bei nasser Witterung keine Fahrspuren. Entscheidend ist eine gute Planung: Bei einem Besichtigungstermin in Ihrem Garten finden wir das passende Modell für Ihre Rasenfläche und geben Ihnen Tipps, wie sich Ihr Garten mähroboterfreundlich gestalten lässt.",
+   "features_title_html":"Gut geplant, <em>zuverlässig</em> gemäht",
+   "features":[
+    {"title":"Besichtigung vor Ort","text":"Bei einem Termin in Ihrem Garten sehen wir uns Größe, Form und Gefälle der Rasenfläche an und wählen gemeinsam das passende Modell aus."},
+    {"title":"Das passende Modell","text":"Nicht jeder Mähroboter passt zu jedem Garten. Wir empfehlen ein Gerät, das zu Ihrer Fläche, zum Gelände und zu Ihren Ansprüchen passt."},
+    {"title":"Mähroboterfreundlich gestalten","text":"Wir geben Ihnen Tipps, wie Sie Ihren Garten rasenmäherfreundlich gestalten – etwa mit klaren Rasenkanten und durchdachten Übergängen."},
+    {"title":"Zuverlässig im Alltag","text":"Eine durchdachte Planung ist die Grundlage: Dann läuft der Mähroboter absolut zuverlässig und beschert Ihnen eine stets gepflegte Rasenfläche."},
+    {"title":"Bedienung per App","text":"Auf Wunsch lässt sich Ihr Mähroboter bequem per Handy-App bedienen – so haben Sie Ihren Rasen auch unterwegs jederzeit im Blick."}
+   ],
+   "benefits":["Immer ein perfekt geschnittener Rasen","Nahezu geräuschlos – keine Lärmbelästigung","Keine Fahrspuren, auch bei nasser Witterung","Kein Rasenschnitt zu entsorgen","Auf Wunsch per Handy-App bedienbar","Sehr sparsam: rund 20 € Stromkosten im Jahr"],
+   "process_note":"Alles beginnt mit einem Besichtigungstermin in Ihrem Garten. Dort finden wir das passende Modell und besprechen, wie Ihre Rasenfläche optimal vorbereitet wird.",
+   "cta_title_html":"Ihr Rasen, <em>mühelos</em> gepflegt",
+   "cta_text":"Vereinbaren Sie einen Besichtigungstermin. Wir sehen uns Ihre Rasenfläche an, empfehlen Ihnen das passende Modell und beraten Sie zur Gestaltung.",
+   "seo_title":"Mähroboter | Gartengestaltung Geißler Eschau",
+   "seo_description":"Mähroboter mit Beratung vor Ort: das passende Modell, Tipps für einen mähroboterfreundlichen Garten und stets gepflegter Rasen. Geißler aus Eschau."},
+  {"slug":"bewaesserung","name":"Bewässerung","nav_name":"Bewässerung","label":"Smart Garden","title_html":"Ohne Wasser kein <em>Leben</em>",
+   "teaser":"Ein automatisches Bewässerungssystem versorgt Pflanzen und Rasen zuverlässig – auch in heißen Sommern und langen Trockenperioden.",
+   "lead":"Damit Pflanzen und Rasen gesund bleiben, ist eine optimale Wasserversorgung wichtig. Bei immer heißeren Sommern und Trockenperioden schon im Frühjahr lohnt sich ein automatisches Bewässerungssystem.",
+   "excerpt":"Wir entwickeln für Ihren Garten ein Bewässerungskonzept, das genau auf Pflanzen, Rasen und Standort abgestimmt ist. Von der richtigen Wassereinspeisung über das Verlegen der Rohrleitungen bis zur Positionierung der einzelnen Regner planen und installieren wir Ihr Beregnungssystem. So kommt das Wasser dort an, wo es gebraucht wird – und Sie genießen den Sommer ganz entspannt, statt abends mit dem Schlauch durch den Garten zu gehen.",
+   "features_title_html":"Vom Konzept zur <em>Beregnung</em>",
+   "features":[
+    {"title":"Individuelles Konzept","text":"Wir sehen uns Ihren Garten genau an und entwickeln ein Bewässerungskonzept, das auf Pflanzen, Rasenflächen und die Gegebenheiten vor Ort abgestimmt ist."},
+    {"title":"Wassereinspeisung","text":"Die richtige Einspeisung ist die Grundlage für ein zuverlässiges System. Wir planen den Anschluss passend zu Ihrer Wasserversorgung – auf Wunsch mit Zisterne."},
+    {"title":"Verlegung der Rohrleitungen","text":"Wir verlegen die Leitungen sauber und unauffällig im Boden, sodass Ihr Garten nach der Installation wieder ganz wie gewohnt aussieht."},
+    {"title":"Positionierung der Regner","text":"Jeder Regner wird so gesetzt, dass die Flächen gleichmäßig versorgt werden – ohne trockene Stellen und ohne Wasser auf Wegen und Terrassen."},
+    {"title":"Entspannt durch den Sommer","text":"Einmal eingerichtet, arbeitet die Bewässerung automatisch. So bleiben Pflanzen und Rasen auch dann gut versorgt, wenn Sie nicht zu Hause sind."}
+   ],
+   "benefits":["Gesunde Pflanzen und ein grüner Rasen","Zuverlässig auch in Trockenperioden","Kein abendliches Gießen mehr","Wasser genau dort, wo es gebraucht wird","Unsichtbar im Boden verlegt","Planung und Installation aus einer Hand"],
+   "process_note":"Wir sehen uns Ihren Garten an, planen Einspeisung, Leitungsverlauf und Regnerpositionen und installieren das System fachgerecht – für einen entspannten Sommer.",
+   "cta_title_html":"Entspannt durch den <em>Sommer</em>",
+   "cta_text":"Sie möchten Ihren Garten automatisch bewässern? Wir entwickeln ein Bewässerungskonzept, das genau zu Ihren Pflanzen und Ihrem Grundstück passt.",
+   "seo_title":"Bewässerung | Gartengestaltung Geißler Eschau",
+   "seo_description":"Automatische Gartenbewässerung: Konzept, Wassereinspeisung, Rohrleitungen und Regner – geplant und installiert von Gartengestaltung Geißler aus Eschau."},
+  {"slug":"lichtdesign","name":"Lichtdesign","nav_name":"Lichtdesign","label":"Smart Garden","title_html":"Der Garten bei <em>Nacht</em>",
+   "teaser":"Mit dem passenden Lichtkonzept macht Ihr Garten auch bei Nacht eine gute Figur – stimmungsvoll, sicher und effizient.",
+   "lead":"Wenn abends die Sonne untergeht, müssen Sie nicht im Dunkeln sitzen. Licht verlängert den Tag im Garten, schafft Atmosphäre und macht jeden Grillabend zu einem besonderen Erlebnis.",
+   "excerpt":"Gutes Licht zeigt nicht alles, sondern das Richtige. Ein angestrahlter Baum wird zur Skulptur, eine beleuchtete Wasserfläche beginnt zu schimmern, sanft erhellte Wege und Stufen führen sicher durch den Garten. Am besten planen wir die Beleuchtung gemeinsam mit der Gestaltung Ihres Gartens, damit Leitungen und Leuchten von Anfang an ihren Platz finden. Effiziente LED-Technik sorgt dabei für stimmungsvolles Licht bei geringem Verbrauch.",
+   "features_title_html":"Ein Konzept für <em>Licht</em>",
+   "features":[
+    {"title":"Atmosphäre","text":"Warmes, gezielt gesetztes Licht verwandelt Terrasse und Sitzplätze am Abend in Räume, in denen man gern noch ein wenig länger bleibt."},
+    {"title":"Sicherheit auf Wegen und Stufen","text":"Dezente Leuchten an Wegen, Treppen und Eingängen sorgen für Orientierung und machen den Garten auch im Dunkeln sicher begehbar."},
+    {"title":"Bäume und Gehölze betonen","text":"Von unten angestrahlt, entfalten Bäume und markante Gehölze nachts eine ganz eigene Wirkung und geben dem Garten räumliche Tiefe."},
+    {"title":"Licht am Wasser","text":"Beleuchtete Teiche, Wasserspiele oder Pools setzen stimmungsvolle Akzente und lassen das Wasser am Abend lebendig schimmern."},
+    {"title":"Effiziente LED-Technik","text":"Moderne LED-Leuchten verbrauchen wenig Energie, sind langlebig und ermöglichen fein abgestimmte Lichtstimmungen im gesamten Garten."}
+   ],
+   "benefits":["Stimmungsvolle Atmosphäre am Abend","Mehr Sicherheit auf Wegen und Stufen","Bäume und Wasser wirkungsvoll in Szene gesetzt","Energieeffiziente LED-Technik","Geplant zusammen mit Ihrem Garten"],
+   "process_note":"Idealerweise planen wir das Licht gemeinsam mit der Gestaltung Ihres Gartens. So werden Leitungen frühzeitig verlegt und Leuchten genau dort gesetzt, wo sie wirken.",
+   "cta_title_html":"Ihr Garten in neuem <em>Licht</em>",
+   "cta_text":"Sie möchten Ihren Garten auch am Abend genießen? Wir beraten Sie gern und entwickeln ein Lichtkonzept, das zu Ihrem Garten und Ihrem Alltag passt.",
+   "seo_title":"Lichtdesign | Gartengestaltung Geißler Eschau",
+   "seo_description":"Lichtdesign für Ihren Garten: stimmungsvolle Atmosphäre, sichere Wege und Stufen, betonte Bäume und Wasser mit effizienter LED-Technik – aus Eschau."}
+ ]
+},
+"services_overview":{
+ "title_html":"Unsere <em>Dienstleistungen</em>",
+ "label":"Leistungen",
+ "lead":"Als Meisterbetrieb im Garten- und Landschaftsbau begleiten wir Ihr Projekt von der ersten Idee bis zur Pflege – mit eigenem Team, modernem Maschinenpark und Sorgfalt im Detail.",
+ "excerpt":"Ob Sie einen neuen Garten anlegen, eine bestehende Anlage umgestalten oder Unterstützung bei der Pflege wünschen: Bei uns erhalten Sie alle Leistungen aus einer Hand. Wir planen und bauen Terrassen, Wege und Treppen, sichern Hänge mit Mauern, gestalten Pflanzungen, Teiche und Pools und kümmern uns um Sichtschutz, Rasen und Erdarbeiten. Eine fachgerechte, saubere und termingerechte Ausführung ist für uns dabei selbstverständlich.",
+ "seo_title":"Dienstleistungen | Gartengestaltung Geißler Eschau",
+ "seo_description":"Gartenpflege, Bepflanzung, Beläge, Mauerbau, Treppen, Teiche, Poolbau und mehr: Garten- und Landschaftsbau aus einer Hand vom Meisterbetrieb in Eschau."
+}}

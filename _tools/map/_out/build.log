@@ -1,0 +1,21 @@
+  fonts loaded: Hanken Grotesk normal 300 500, Newsreader italic 300 500
+  fonts loaded: Hanken Grotesk normal 300 500, Newsreader italic 300 500
+Fetching boundaries …
+  21 boundaries
+Fetching towns …
+  31 towns
+Fetching rivers …
+  Main ways: 136, stream ways: 236
+  [landscape] town labels: 28 + Eschau, unlabeled dots: ['Dorfprozelten', 'Stadtprozelten'], arc at -58°, river label: True
+  wrote site/assets/img/map/einzugsgebiet.svg 215 KB
+  wrote site/assets/img/map/einzugsgebiet-2400.webp 2400x1800 134 KB
+  wrote site/assets/img/map/einzugsgebiet-2400.jpg 230 KB
+  wrote site/assets/img/map/einzugsgebiet-1400.webp 1400x1050 70 KB
+  wrote site/assets/img/map/einzugsgebiet-800.webp 800x600 31 KB
+  ! no spot for Landkreis Miltenberg
+  ! no spot for Landkreis Aschaffenburg
+  [portrait] town labels: 25 + Eschau, unlabeled dots: ['Kleinwallstadt', 'Leidersbach', 'Mönchberg', 'Dorfprozelten', 'Stadtprozelten'], arc at -60°, river label: True
+  wrote site/assets/img/map/einzugsgebiet-portrait.svg 201 KB
+  wrote site/assets/img/map/einzugsgebiet-portrait-1500.webp 1500x2000 108 KB
+  wrote site/assets/img/map/einzugsgebiet-portrait-900.webp 900x1200 59 KB
+  wrote _data/einzugsgebiet.json (30 towns)

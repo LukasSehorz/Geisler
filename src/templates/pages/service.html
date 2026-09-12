@@ -1,0 +1,118 @@
+{% extends 'base.html' %}
+{% import 'partials/macros.html' as m %}
+{% block title %}{{ s.seo_title }}{% endblock %}
+{% block description %}{{ s.seo_description }}{% endblock %}
+{% block body_class %}has-hero page-service{% endblock %}
+
+{% block content %}
+{% set is_smart = kind == 'smart' %}
+{% set parent_label = 'Smart Garden' if is_smart else 'Dienstleistungen' %}
+{% set parent_url = 'smart-garden.html' if is_smart else 'dienstleistungen.html' %}
+{% set M = s.media %}
+
+{# ================================================================ HERO #}
+{{ m.page_hero(M.hero.src, s.title_html, s.lead, label='', crumbs=[(parent_label, parent_url)], focus=M.hero.focus, alt=M.hero.alt) }}
+
+{# ================================================================ EXCERPT #}
+<section class="service__excerpt">
+  <div class="service__excerpt-content">
+    <span class="eyebrow" data-fade>{{ s.label }} · {{ s.name }}</span>
+    <p class="p-lg" data-fade>{{ s.excerpt }}</p>
+  </div>
+</section>
+
+{# ================================================================ IMAGES + PROCESS #}
+<section class="service__images">
+  <div class="images-shifted">
+    {% for im in M.images[:2] %}
+    <div class="images-shifted__image" data-reveal-img>
+      {{ pic(im.src, alt=im.alt, ratio=('600/860' if loop.first else '450/620'), focus=im.focus, sizes='(max-width: 1000px) 50vw, 31vw', widths=(640, 1000, 1400)) }}
+    </div>
+    {% endfor %}
+  </div>
+  <div class="service__note" data-fade>
+    <span class="title-small">So gehen wir vor</span>
+    <p class="p-lg">{{ s.process_note }}</p>
+    <a class="cta" href="{{ url('kontakt.html') }}">Beratung anfragen {{ m.icon('arrow') }}</a>
+  </div>
+</section>
+
+{# ================================================================ FEATURES #}
+<section class="service__features">
+  <div class="service__features-left">
+    <h2 class="heading" data-scrub-reveal>{{ s.features_title_html|safe }}</h2>
+    <div class="features-list">
+      {% for f in s.features %}
+      <div class="feature{% if loop.first %} is-open{% endif %}">
+        <button class="feature__heading" type="button" aria-expanded="{{ 'true' if loop.first else 'false' }}">
+          <span class="feature__num">{{ '%02d'|format(loop.index) }}</span>
+          <span>{{ f.title }}</span>
+          <span class="feature__toggler" aria-hidden="true"></span>
+        </button>
+        <div class="feature__wrapper"><div class="feature__inner"><p class="p-lg">{{ f.text }}</p></div></div>
+      </div>
+      {% endfor %}
+    </div>
+    {% if s.benefits %}
+    <ul class="benefits" data-fade-group>
+      {% for b in s.benefits %}<li>{{ b }}</li>{% endfor %}
+    </ul>
+    {% endif %}
+  </div>
+  <div class="service__features-image">
+    <div class="images" data-reveal-img>
+      {{ pic(M.feature.src, alt=M.feature.alt, ratio='536/700', focus=M.feature.focus, sizes='(max-width: 1000px) 100vw, 36vw', widths=(640, 1000, 1400)) }}
+    </div>
+  </div>
+</section>
+
+{# ================================================================ WIDE GALLERY #}
+{% if M.slider|length >= 2 %}
+<section class="wide-gallery" data-wide-gallery aria-label="Bilder aus unseren Projekten">
+  <div class="wide-gallery__viewport">
+    <div class="wide-gallery__track">
+      {% for im in M.slider %}
+      <div class="wide-gallery__slide">
+        {{ pic(im.src, alt=im.alt, ratio='16/9', focus=im.focus, sizes='100vw', widths=(900, 1400, 2000)) }}
+      </div>
+      {% endfor %}
+    </div>
+    <button class="wide-gallery__hit wide-gallery__hit--prev" type="button" data-gal-prev data-cta-trigger="main" data-cta-label="Vorheriges Foto" aria-label="Vorheriges Foto"></button>
+    <button class="wide-gallery__hit wide-gallery__hit--next" type="button" data-gal-next data-cta-trigger="main" data-cta-label="Nächstes Foto" aria-label="Nächstes Foto"></button>
+  </div>
+  <div class="wide-gallery__bar">
+    <span class="eyebrow">Aus unseren Projekten</span>
+    <div class="wide-gallery__arrows">
+      <button class="cards__btn cards__btn--prev" type="button" data-gal-prev aria-label="Vorheriges Foto">{{ m.icon('arrow') }}</button>
+      <span class="wide-gallery__count">01 / {{ '%02d'|format(M.slider|length) }}</span>
+      <button class="cards__btn" type="button" data-gal-next aria-label="Nächstes Foto">{{ m.icon('arrow') }}</button>
+    </div>
+  </div>
+</section>
+{% endif %}
+
+{# ================================================================ CTA #}
+<section class="wish">
+  <h2 class="title" data-scrub-reveal>{{ s.cta_title_html|safe }}</h2>
+  <div class="wish__text" data-fade>
+    <p class="p-lg">{{ s.cta_text }}</p>
+    <a class="cta cta--filled" href="{{ url('kontakt.html') }}">Kontakt aufnehmen {{ m.icon('arrow') }}</a>
+    <a class="link" href="{{ company.phone_href }}">Oder direkt anrufen: {{ company.phone }}</a>
+  </div>
+</section>
+
+{# ================================================================ NEXT #}
+{% if next_s %}
+<a class="service__next" href="{{ url(next_s.url) }}" data-cta-trigger="main" data-cta-label="{{ next_s.name }} entdecken">
+  <span class="eyebrow">{{ 'Weiter im Smart Garden' if is_smart else 'Nächste Leistung' }}</span>
+  <div class="service__next-media">
+    {{ pic(next_s.media.hero.src, alt=next_s.media.hero.alt, ratio='16/10', focus=next_s.media.hero.focus, sizes='(max-width: 1000px) 100vw, 50vw', widths=(800, 1200, 1600)) }}
+  </div>
+  <h2 class="title-medium">{{ next_s.name }}</h2>
+</a>
+{% endif %}
+<div class="service__footer">
+  <a class="cta cta--back" href="{{ url(parent_url) }}">{{ m.icon('arrow') }} Alle {{ parent_label if not is_smart else 'Smart-Garden-Lösungen' }}</a>
+  <a class="cta cta--filled" href="{{ url('kontakt.html') }}">Anfrage stellen</a>
+</div>
+{% endblock %}
